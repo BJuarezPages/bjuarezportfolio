@@ -4,8 +4,134 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bjuarezportfolio</title>
+    <link rel=stylesheet href="/css/global.css" type="text/css" media=screen>
   </head>
   <body>
+    <header>
+      <div id="icons" class="flex_around">
+        <img src="../resources/Portfolio/Icon_Instagram.png">
+        <img src="../resources/Portfolio/Icon_Linkedin.png">
+        <img src="../resources/Portfolio/Icon_Message.png">
+      </div>
+      <div id="pages" class="flex_around">
+        <div>
+          <img src="../resources/Portfolio/Home_W.png">
+          <p>INICIO</p>
+        </div>
+        <div>
+          <img src="../resources/Portfolio/MyWork_W.png">
+          <p>MY<b>WORK</b></p>
+        </div>
+        <div>
+          <img src="../resources/Portfolio/About me_W.png">
+          <p>SOBRE MÍ</p>
+        </div>
+        <div>
+          <img src="../resources/Portfolio/Contacto_W.png">
+          <p>CONTACTO</p>
+        </div>
+      </div>
+      <div id="languages" class="flex_around">
+        <img src="../resources/Portfolio/Icon_Catala_BW.png">
+        <img src="../resources/Portfolio/Icon_Castella_BW.png">
+        <img src="../resources/Portfolio/Icon_English_BW.png">
+      </div>
+    </header>
+    <section id="desktop">
+      <div id="home">
+        <img src="../resources/Portfolio/Logo_BJ_Stroke.png" class="logo_BJ_Stroke">
+        <img src="../resources/Portfolio/LightBackground_Mode_SoftLight.png" class="lightBackground">
+        <div id="portfolio">
+          <div>
+            <h2>BERNAT JUAREZ <img src="../resources/Portfolio/Home_W.png"></h2>
+            <h1>PORTFOLIO</h1>
+            <h3>Graphic Design · Motion Graphics · UX/UI Design</h3>
+            <br>
+            <button>Ir a MY<b>WORK</b></button>
+          </div>
+          <div id="video" class="flex_center">
+            <video id="videoPlayer">
+              <source src="" type="video/mp4">
+              Tu navegador no soporta el vídeo de HTML5
+            </video>
+          </div>
+        </div>
+      </div>
+      <div id="myWork">
+          <div>
+            <h3>MY<b>WORK</b><img src="../resources/Portfolio/MyWork_W.png"></h3>
+          </div>
+          <div id="containerMarks" class="flex_wrap_column2">
+            <div id="gallo" class="sizeContainer"></div>
+            <div id="bocca" class="sizeContainer"></div>
+            <div id="moritz" class="sizeContainer"></div>
+            <div id="affinity" class="sizeContainer"></div>
+            <div id="tatung" class="sizeContainer"></div>
+            <div id="elprimo" class="sizeContainer"></div>
+            <div id="elrowlimited" class="sizeContainer"></div>
+            <div id="babiesuganda" class="sizeContainer"></div>
+          </div>
+          <button>OTROS<b>PROYECTOS</b></button>
+          <span></span>
+          <div id="rectangleMarks" class="flex_around">
+            <img src="../resources/Portfolio/Logo_Bocca.png">
+            <img src="../resources/Portfolio/Logo_Gallo.png">
+            <img src="../resources/Portfolio/Logo_Affinity.png">
+            <img src="../resources/Portfolio/Logo_BabiesUganda.png">
+            <img src="../resources/Portfolio/Logo_ElRowLimited.png">
+            <img src="../resources/Portfolio/Logo_ElPrimo.png">
+            <img src="../resources/Portfolio/Logo_Moritz.png">
+            <img src="../resources/Portfolio/Logo_Ta-Tung.png">
+            <img src="../resources/Portfolio/Logo_Kiron.png">
+            <img src="../resources/Portfolio/Logo_Rocktail.png">
+            <img src="../resources/Portfolio/Logo_ClinicaDentalGilVernet.png">
+          </div>
+      </div>
+      <div id="aboutMe">
+        <div id="aboutMeLeft">
+          <img id="puzzle1" src="../resources/Portfolio/Puzzle 1.png">
+          <div>
+            <h3><b>SOBRE MÍ</b><img src="../resources/Portfolio/About me_W.png"></h3>
+            <br>
+            <p><b>Diseñador gráfico</b> creativo, enérgico e innovador con más de 6 años de experiencia que domina la creación de imágenes, ilustración, tipografía, locución, creación y edición de video y motion graphics.</p>
+            <p>Considero importante que se tenga que estar siempre <b>aprendiendo y creciendo</b>, por eso me gusta desafiarme a mi mismo para mejorar mis habilidades y aprender cosas nuevas.</p>
+            <p>Me considero una persona que se puede <b>adaptar a diferentes roles</b>.</p>
+          </div>
+        </div>
+        <div id="aboutMeRight">
+          <img id="puzzle2" src="../resources/Portfolio/Puzzle 1.png">
+          <img id="puzzle3" src="../resources/Portfolio/Puzzle 1.png">
+          <div id="circle" class="flex_center"></div>
+          <img id="bernatPhoto" src="../resources/Portfolio/Bernat BW.png">
+        </div>
+      </div>
+      <div id="contact">
+        <div id="aboutMeLeft">
+          <img id="puzzle1" src="../resources/Portfolio/Puzzle 1.png">
+          <div>
+            <h3>¡CONTACTA<b>CONMIGO!</b> <img src="../resources/Portfolio/Contacto_W.png"></h3>
+            <br>
+            <form id="consultForm">
+              <input type="email" id="emailFormValue" name="email" placeholder="example@gmail.com" required><br><br>
+              <input type="text" id="nameFormValue" name="name" placeholder="Escribe tu nombre" required><br><br>
+              <textarea id="consultFormValue" name="consult" rows="4" placeholder="¿Qué quieres contarme? ¿Quieres enviarme alguna imagen?" required></textarea><br><br>
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
+        </div>
+        <div id="aboutMeRight">
+          <img id="puzzle2" src="../resources/Portfolio/Puzzle 1.png">
+          <img id="puzzle3" src="../resources/Portfolio/Puzzle 1.png">
+          <div id="circle" class="flex_center"></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>©bjuarezdesigns / Todos los derechos reservados.</div>
+      <div>Tel: +34 663 507 349 · juarezbernat@gmail.com</div>
+      <div>Desde Terrassa, o por ahí.</div>
+    </footer>
   </body> 
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script src="../js/portfolio_home.js"></script>
 </HTML>

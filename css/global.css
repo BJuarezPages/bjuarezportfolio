@@ -1,0 +1,319 @@
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #0E2433;
+    background-image: url(../resources/Portfolio/Background_Dibujos_W.png);
+}
+
+h3{
+    font-size: x-large;
+}
+
+p{
+    font-size: x-large;
+}
+
+header{
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 98%;
+    height: 8vh;
+    background-color: #152d40;
+    padding: 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 17px;
+    opacity: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: #FFFFFF;
+}
+
+#icons, #languages{
+    width: 16vw;
+}
+
+#pages{
+    width: 26vw;
+}
+
+.flex_around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background: #071017;
+    color: #FFFFFF;
+    width: 100%;
+    height: 5vh;
+    font-size: 2.25vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#desktop{
+    /* height: 120vh; */
+    width: 100%;
+    height: fit-content;
+}
+
+/* HOME */
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: #071017;
+    position: relative;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 12%;
+}
+
+#home > #portfolio{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#portfolio > #video{
+    z-index: 1;
+    background-color: #0E2433;
+    background-image: url(../resources/Portfolio/Background_Dibujos_W.png);
+    border-radius: 50%;
+    width: 35vw;
+    height: 70vh;
+    border: 0.5vh solid #FFFFFF;
+}
+
+#videoPlayer{
+    z-index: 1;
+    width: 70vw;
+    height: 40vh;
+}
+
+.logo_BJ_Stroke {
+    position: absolute;
+    top: -8%;
+    left: 50%;
+    transform: translateX(-30%);
+    width: 105vh;
+}
+
+.lightBackground {
+    width: 105vw;
+    height: 105vh;
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    transform: rotate(33.85deg) translateX(10%);
+    opacity: 20%;
+}
+
+/* MYWORK */
+
+#myWork{
+    width: 100%;
+    height: 100%;
+    background-color: #071017;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12%;
+}
+
+#containerMarks{
+    width: 100%;
+    height: 267.3vh;
+}
+
+.flex_wrap_column2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.sizeContainer{
+    width: 35vw;
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.sizeContainer:hover{
+    transform: scale(1.1);
+}
+
+#containerMarks > #gallo{
+    background-image: url(../resources/Portfolio/Portada_Gallo_Color.png);
+}
+
+#containerMarks > #gallo:hover{
+    background-image: url(../resources/Portfolio/Portada_Gallo_Hover.png);
+}
+
+#containerMarks > #bocca{
+    background-image: url(../resources/Portfolio/Portada_Bocca.png);
+}
+
+#containerMarks > #bocca:hover{
+    background-image: url(../resources/Portfolio/Portada_Bocca_Hover.png);
+}
+
+#containerMarks > #moritz{
+    background-image: url(../resources/Portfolio/Portada_Moritz.png);
+}
+
+#containerMarks > #moritz:hover{
+    background-image: url(../resources/Portfolio/Portada_Moritz_Hover.png);
+}
+
+#containerMarks > #affinity{
+    background-image: url(../resources/Portfolio/Portada_Affinity.png);
+}
+
+#containerMarks > #affinity:hover{
+    background-image: url(../resources/Portfolio/Portada_Affinity_Hover.png);
+}
+
+#containerMarks > #tatung{
+    background-image: url(../resources/Portfolio/Portada_Ta-Tung.png);
+}
+
+#containerMarks > #tatung:hover{
+    background-image: url(../resources/Portfolio/Portada_Ta-Tung_Hover.png);
+}
+
+#containerMarks > #elprimo{
+    background-image: url(../resources/Portfolio/Portada_ElPrimo.png);
+}
+
+#containerMarks > #elprimo:hover{
+    background-image: url(../resources/Portfolio/Portada_ElPrimo_Hover.png);
+}
+
+#containerMarks > #elrowlimited{
+    background-image: url(../resources/Portfolio/Portada_ElRowLimited.png);
+}
+
+#containerMarks > #elrowlimited:hover{
+    background-image: url(../resources/Portfolio/Portada_ElRowLimited_Hover.png);
+}
+
+#containerMarks > #babiesuganda{
+    background-image: url(../resources/Portfolio/Portada_BabiesUganda.png);
+}
+
+#containerMarks > #babiesuganda:hover{
+    background-image: url(../resources/Portfolio/Portada_BabiesUganda_Hover.png);
+}
+
+#rectangleMarks{
+    width: 100%;
+}
+
+/* ABOUT ME */
+
+#aboutMe{
+    width: 100%;
+    height: 135vh;
+    background-color: #071017;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12%;
+}
+
+#aboutMeLeft{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutMeRight{
+    width: 50%;
+}
+
+#aboutMeRight > #circle{
+    background-color: #0E2433;
+    background-image: url(../resources/Portfolio/Background_Dibujos_W.png);
+    border-radius: 50%;
+    width: 35vw;
+    height: 80vh;
+    border: 0.5vh solid #FFFFFF;
+    position: absolute;
+    transform: translate(9%,55%);
+}
+
+#puzzle1{
+    width: 10vh;
+    position: absolute;
+    top: 81%;
+    left: 10%;
+    transform: rotate(-80deg)
+}
+#puzzle2{
+    width: 12vh;
+    position: absolute;
+    top: 27%;
+    left: 53%;
+    transform: rotate(15deg)
+}
+#puzzle3{
+    width: 18vh;
+    position: absolute;
+    top: 82%;
+    left: 88%;
+}
+
+#bernatPhoto{
+    width: 70vh;
+    position: absolute;
+    transform: translate(15%,25%);
+}
+
+/* CONTACT */
+
+#contact{
+    width: 100%;
+    height: 135vh;
+    background-color: #071017;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
