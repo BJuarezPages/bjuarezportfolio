@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Futura Std';
+    src: url("../fonts/Futura_STD/FuturaStdBook.otf");
+}
+
+.FuturaStd {
+    font-family: 'Futura Std';
+}
+
+@font-face {
+    font-family: 'Futura Std Light';
+    src: url("../fonts/Futura_STD/FuturaStdLight.otf");
+}
+
+.FuturaStdLight {
+    font-family: 'Futura Std Light';
+}
+
+@font-face {
+    font-family: 'Futura Std Bold';
+    src: url("../fonts/Futura_STD/FuturaStdBold.otf");
+}
+
+.FuturaStdBold {
+    font-family: 'Futura Std Bold';
+}
+
+@font-face {
+    font-family: 'Futura Std Condensed Bold';
+    src: url("../fonts/Futura_STD/FuturaStdCondensedBold.otf");
+}
+
+.FuturaStdCondensedBold {
+    font-family: 'Futura Std Condensed Bold';
+}
+
+
+/* font-size */
+
+.font-size-10 {
+    font-size: 18vh;
+}
+
+/* font-weight */
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.font-weight-750 {
+    font-weight: 750;
+}
