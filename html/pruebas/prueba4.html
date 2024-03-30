@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectángulo de Imágenes Arrastrable</title>
+    <style>
+        @keyframes move-left-right {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .moving-div {
+            animation: move-left-right 10s linear infinite;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;color:white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 moving-div">
+                <a href="#">Este texto se moverá de derecha a izquierda en un bucle continuo.</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

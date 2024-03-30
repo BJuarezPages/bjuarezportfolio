@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rectángulo de Imágenes Arrastrable</title>
+  <style>
+    #rectangleMarks {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      cursor: grab;
+      white-space: nowrap; /* Para que las imágenes no se rompan en varias líneas */
+      animation: scrollImages 10s linear infinite; /* Animación de desplazamiento */
+    }
+    .sizeContainerWork {
+      width: 20%; /* Porcentaje del ancho del contenedor padre */
+      max-width: 200px; /* Ancho máximo */
+      height: auto; /* Altura automática */
+      margin: 0 2%; /* Espacio entre las imágenes */
+      flex-shrink: 0; /* Evita que las imágenes se reduzcan más allá de su tamaño */
+    }
+
+    @keyframes scrollImages {
+      0% {
+        transform: translateX(0); /* Posición inicial */
+      }
+      100% {
+        transform: translateX(calc(-100% - 4px)); /* Desplazamiento al final */
+      }
+    }
+  </style>
+</head>
+<body style="background-color: black;">
+  <div id="rectangleMarks" class="flex_around">
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Bocca.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Gallo.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Affinity.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_ElRowLimited.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_ElPrimo.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Moritz.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Ta-Tung.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Kiron.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Rocktail.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_ClinicaDentalGilVernet.png"></div>
+
+  </div>
+
+  <script>
+    // Variables
+    let isDragging = false;
+    let startX, scrollLeft;
+    const imagesContainer = document.getElementById('rectangleMarks');
+
+    // Función para manejar el clic y arrastre
+    function handleMouseDown(e) {
+      isDragging = true;
+      startX = e.pageX - imagesContainer.offsetLeft;
+      scrollLeft = imagesContainer.scrollLeft;
+    }
+
+    function handleMouseMove(e) {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.pageX - imagesContainer.offsetLeft;
+      const walk = (x - startX) * 3; // Ajusta la sensibilidad del arrastre
+      imagesContainer.scrollLeft = scrollLeft - walk;
+    }
+
+    function handleMouseUp() {
+      isDragging = false;
+    }
+
+    // Event Listeners
+    imagesContainer.addEventListener('mousedown', handleMouseDown);
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleMouseUp);
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rectángulo de Imágenes Arrastrable</title>
+  <style>
+    #rectangleMarks {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      cursor: grab;
+    }
+    .sizeContainerWork {
+      width: 20%; /* Porcentaje del ancho del contenedor padre */
+      max-width: 200px; /* Ancho máximo */
+      height: auto; /* Altura automática */
+      margin: 0 2%; /* Espacio entre las imágenes */
+    }
+  </style>
+</head>
+<body style="background-color: black;">
+  <div id="rectangleMarks" class="flex_around">
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Bocca.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Gallo.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Affinity.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_ElRowLimited.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_ElPrimo.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Moritz.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Ta-Tung.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Kiron.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Rocktail.png"></div>
+    <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_ClinicaDentalGilVernet.png"></div>
+</div>
+
+  <script>
+    // Variables
+    let isDragging = false;
+    let startX, scrollLeft;
+
+    // Función para manejar el clic y arrastre
+    function handleMouseDown(e) {
+      isDragging = true;
+      startX = e.pageX - document.getElementById('rectangleMarks').offsetLeft;
+      scrollLeft = document.getElementById('rectangleMarks').scrollLeft;
+    }
+
+    function handleMouseMove(e) {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.pageX - document.getElementById('rectangleMarks').offsetLeft;
+      const walk = (x - startX) * 3; // Ajusta la sensibilidad del arrastre
+      document.getElementById('rectangleMarks').scrollLeft = scrollLeft - walk;
+    }
+
+    function handleMouseUp() {
+      isDragging = false;
+    }
+
+    // Función para controlar el cambio de div al llegar al final
+    function handleScroll() {
+      const rectMarks = document.getElementById('rectangleMarks');
+      const divs = document.querySelectorAll('.sizeContainerWork');
+      const rectWidth = rectMarks.offsetWidth;
+      const lastDiv = divs[divs.length - 1];
+      
+      if (rectMarks.scrollLeft + rectWidth >= lastDiv.offsetLeft + lastDiv.offsetWidth) {
+        // Movimiento a la derecha
+        rectMarks.prepend(divs[divs.length - 1]);
+        rectMarks.scrollLeft -= lastDiv.offsetWidth;
+      } else if (rectMarks.scrollLeft <= 0) {
+        // Movimiento a la izquierda
+        rectMarks.appendChild(divs[0]);
+        rectMarks.scrollLeft += divs[0].offsetWidth;
+      }
+    }
+
+    // Event Listeners
+    document.getElementById('rectangleMarks').addEventListener('mousedown', handleMouseDown);
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleMouseUp);
+    document.getElementById('rectangleMarks').addEventListener('scroll', handleScroll);
+
+    function moveAutomatically() {
+      if (!isDragging) {
+        const rect = document.getElementById('rectangleMarks');
+        const maxScrollLeft = rect.scrollWidth - rect.clientWidth;
+        if (rect.scrollLeft >= maxScrollLeft) {
+          rect.scrollLeft = 0;
+        } else {
+          rect.scrollLeft += 1; // Velocidad del movimiento automático
+        }
+      } 
+      setTimeout(moveAutomatically, 50); // Ajusta el intervalo de tiempo
+    }
+
+    moveAutomatically();
+  </script>
+</body>
+</html>

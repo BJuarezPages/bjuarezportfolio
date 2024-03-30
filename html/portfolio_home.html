@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel=stylesheet href="/css/global.css" type="text/css" media=screen>
   <link rel=stylesheet href="/css/fonts.css" type="text/css" media=screen>
 </head>
+
 <body class="FuturaStd">
   <header>
     <div id="backgroundHeader"></div>
@@ -15,32 +17,54 @@
       <div id="iconLinkedin" class="backgroundSizeContainer"></div>
       <div id="iconMessage" class="backgroundSizeContainer"></div>
     </div>
-    <div id="pages" class="flex_around FuturaStd">
-      <div class="flex_center_column">
+    <!--<div id="pages" class="flex_around FuturaStd">
+      <a id="linkHome" class="flex_center_column" href="#home">
         <div id="pageHome" class="backgroundSizeContainer2"></div>
         <p>INICIO</p>
-      </div>
-      <div class="flex_center_column">
+      </a>
+      <a id="linkMyWork" class="flex_center_column" href="#myWork">
         <div id="pageMyWork" class="backgroundSizeContainer2"></div>
         <p>MY<span class="FuturaStdBold">WORK</span></p>
-      </div>
-      <div class="flex_center_column">
+      </a>
+      <a id="linkAboutMe" class="flex_center_column" href="#aboutMe">
         <div id="pageAboutMe" class="backgroundSizeContainer2"></div>
         <p>SOBRE MÍ</p>
-      </div>
-      <div class="flex_center_column">
+      </a>
+      <a id="linkContact" class="flex_center_column" href="#contact">
         <div id="pageContact" class="backgroundSizeContainer2"></div>
         <p>CONTACTO</p>
-      </div>
+      </a>
+    </div> -->
+    <div id="pages" class="flex_around FuturaStd">
+      <a id="linkHome" class="flex_center_column current" href="#home">
+        <div id="pageHome" class="backgroundSizeContainer2 home-icon icon-home"></div>
+        <p class="current-text">INICIO</p>
+      </a>
+      <a id="linkMyWork" class="flex_center_column" href="#myWork">
+        <div id="pageMyWork" class="backgroundSizeContainer2 mywork-icon icon-mywork"></div>
+        <p>MY<span class="FuturaStdBold">WORK</span></p>
+      </a>
+      <a id="linkAboutMe" class="flex_center_column" href="#aboutMe">
+        <div id="pageAboutMe" class="backgroundSizeContainer2 aboutme-icon icon-aboutme"></div>
+        <p>SOBRE MÍ</p>
+      </a>
+      <a id="linkContact" class="flex_center_column" href="#contact">
+        <div id="pageContact" class="backgroundSizeContainer2 contact-icon icon-contact"></div>
+        <p>CONTACTO</p>
+      </a>
     </div>
+    
+    
+    
+    
     <div id="languages" class="flex_around">
       <div id="langCat" class="backgroundSizeContainer"></div>
       <div id="langCast" class="backgroundSizeContainer"></div>
       <div id="langEng" class="backgroundSizeContainer"></div>
     </div>
   </header>
-  <section id="desktop">
-    <div id="home">
+  <div id="desktop">
+    <section id="home">
       <img src="../resources/Portfolio/Logo_BJ_Stroke.png" class="logo_BJ_Stroke">
       <img src="../resources/Portfolio/LightBackground_Mode_SoftLight.png" class="lightBackground">
       <div id="portfolio">
@@ -62,8 +86,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div id="myWork">
+    </section>
+    <section id="myWork">
       <div id="title">
         <p id="name">MY<span class="FuturaStdBold">WORK</span> <img src="../resources/Portfolio/MyWork_W.png"></p>
       </div>
@@ -79,21 +103,21 @@
       </div>
       <button id="buttonOther">OTROS<span class="FuturaStdBold">PROYECTOS</span></button>
       <span></span>
-      <div id="rectangleMarks" class="flex_around">
-        <img src="../resources/Portfolio/Logo_Bocca.png">
-        <img src="../resources/Portfolio/Logo_Gallo.png">
-        <img src="../resources/Portfolio/Logo_Affinity.png">
-        <img src="../resources/Portfolio/Logo_BabiesUganda.png">
-        <img src="../resources/Portfolio/Logo_ElRowLimited.png">
-        <img src="../resources/Portfolio/Logo_ElPrimo.png">
-        <img src="../resources/Portfolio/Logo_Moritz.png">
-        <img src="../resources/Portfolio/Logo_Ta-Tung.png">
-        <img src="../resources/Portfolio/Logo_Kiron.png">
-        <img src="../resources/Portfolio/Logo_Rocktail.png">
-        <img src="../resources/Portfolio/Logo_ClinicaDentalGilVernet.png">
+      <div id="rectangleMarks">
+        <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Bocca.png"></div>
+        <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Gallo.png"></div>
+        <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Affinity.png"></div>
+        <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"></div>
+        <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_ElRowLimited.png"></div>
+        <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_ElPrimo.png"></div>
+        <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Moritz.png"></div>
+        <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Ta-Tung.png"></div>
+        <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Kiron.png"></div>
+        <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_Rocktail.png"></div>
+        <div class="sizeContainerWork"><img src="../resources/Portfolio/Logo_ClinicaDentalGilVernet.png"></div>
       </div>
-    </div>
-    <div id="aboutMe">
+    </section>
+    <section id="aboutMe">
       <div id="aboutMeLeft">
         <img id="puzzle1" src="../resources/Portfolio/Puzzle 1.png">
         <div id="containerText">
@@ -115,17 +139,18 @@
         <div id="circle" class="flex_center_row"></div>
         <img id="bernatPhoto" src="../resources/Portfolio/Bernat_BW.png">
       </div>
-    </div>
-    <div id="contact">
+    </section>
+    <section id="contact">
       <div id="contactLeft">
         <img id="puzzle1" src="../resources/Portfolio/Puzzle 1.png">
+        <img id="puzzle2" src="../resources/Portfolio/Puzzle 1.png">
         <div id="containerForm">
           <p id="title">¡CONTACTA<span class="FuturaStdBold">CONMIGO!</span> <img
               src="../resources/Portfolio/Contacto_W.png"></p>
           <br>
           <form id="consultForm">
-            <input type="email" id="emailFormValue" name="email" placeholder="example@gmail.com" required><br><br>
-            <input type="text" id="nameFormValue" name="name" placeholder="Escribe tu nombre" required><br><br>
+            <input type="email" id="emailFormValue" name="email" placeholder="example@gmail.com" required autocomplete="email"><br><br>
+            <input type="text" id="nameFormValue" name="name" placeholder="Escribe tu nombre" required autocomplete="name"><br><br>
             <textarea id="consultFormValue" name="consult" rows="4"
               placeholder="¿Qué quieres contarme? ¿Quieres enviarme alguna imagen?" required></textarea><br><br>
             <input id="buttonSend" type="submit" value="ENVIAR">
@@ -133,29 +158,28 @@
         </div>
       </div>
       <div id="contactRight">
-        <img id="puzzle2" src="../resources/Portfolio/Puzzle 1.png">
-        <img id="puzzle3" src="../resources/Portfolio/Puzzle 1.png">
+        <img id="puzzle3" src="../resources/Portfolio/Puzzle 2.png">
         <div id="circle" class="flex_center_column">
-          <div id="contactContainer" class="flex_center_column">
-            <div class="flex_center_row">
-              <div id="iconTV" class="backgroundSizeContainer"></div>CONNECT ONLINE
+          <div id="contactContainer">
+            <div id="titleTV" class="flex_center_row">
+              <div id="iconTV" class="backgroundSizeContainer2"></div>CONNECT ONLINE
             </div>
             <div id="icons" class="flex_around">
               <div id="iconInstagram" class="backgroundSizeContainer"></div>
               <div id="iconLinkedin" class="backgroundSizeContainer"></div>
               <div id="iconMessage" class="backgroundSizeContainer"></div>
             </div>
-            <div class="flex_center_row">
-              <div id="iconEmail" class="backgroundSizeContainer"></div>EMAIL
+            <div id="titleEmail" class="flex_center_row">
+              <div id="iconEmail" class="backgroundSizeContainer2"></div>EMAIL
             </div>
-            <div id="email">juarezbernat@gmail.com</div>
-            <button id="buttonCV" class="flex_center_row">CV <div id="iconCV" class="backgroundSizeContainer"></div>
+            <div id="emailName">juarezbernat@gmail.com</div>
+            <button id="buttonCV" class="flex_center_row">CV <div id="iconCV" class="backgroundSizeContainer2"></div>
             </button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <footer>
     <div>©bjuarezdesigns / Todos los derechos reservados.</div>
     <div>Tel: +34 663 507 349 · juarezbernat@gmail.com</div>
@@ -164,4 +188,5 @@
 </body>
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="../js/portfolio_home.js"></script>
+
 </HTML>

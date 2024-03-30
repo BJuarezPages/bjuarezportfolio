@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Rectángulo de Imágenes Arrastrable</title>
+	<style>
+		#rectangleMarks {
+			display: flex;
+			overflow: hidden;
+			position: relative;
+			cursor: grab;
+			background-color: black;
+		}
+
+		.sizeContainerWork {
+			width: 200px;
+			/* Ajusta el tamaño según tus necesidades */
+			height: 200px;
+			/* Ajusta el tamaño según tus necesidades */
+			margin: 0 10px;
+			/* Espacio entre las imágenes */
+		}
+	</style>
+</head>
+
+<body>
+	<div id="rectangleMarks" class="flex_around">
+		<div id="logo_Bocca" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Bocca"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<div id="logo_Gallo" class="sizeContainerWork"><img src="../resources/Portfolio/Logo_BabiesUganda.png"
+				alt="Gallo"></div>
+		<!-- Agrega más divs con imágenes aquí -->
+		        <!-- <div id="logo_Bocca" class="sizeContainerWork"></div>
+        <div id="logo_Gallo" class="sizeContainerWork"></div>
+        <div id="logo_Affinity" class="sizeContainerWork"></div>
+        <div id="logo_BabiesUganda" class="sizeContainerWork"></div>
+        <div id="logo_ElRowLimited" class="sizeContainerWork"></div>
+        <div id="logo_ElPrimo" class="sizeContainerWork"></div>
+        <div id="logo_Moritz" class="sizeContainerWork"></div>
+        <div id="logo_Ta-Tung" class="sizeContainerWork"></div>
+        <div id="logo_Kiron" class="sizeContainerWork"></div>
+        <div id="logo_Rocktail" class="sizeContainerWork"></div>
+        <div id="logo_ClinicaDentalGilVernet" class="sizeContainerWork"></div>-->
+	</div>
+
+</body>
+<script>
+	// Variables
+	let isDragging = false;
+	let startX, scrollLeft;
+
+	// Función para manejar el clic y arrastre
+	function handleMouseDown(e) {
+		isDragging = true;
+		startX = e.pageX - document.getElementById('rectangleMarks').offsetLeft;
+		scrollLeft = document.getElementById('rectangleMarks').scrollLeft;
+	}
+
+	function handleMouseMove(e) {
+		if (!isDragging) return;
+		e.preventDefault();
+		const x = e.pageX - document.getElementById('rectangleMarks').offsetLeft;
+		const walk = (x - startX) * 3; // Ajusta la sensibilidad del arrastre
+		document.getElementById('rectangleMarks').scrollLeft = scrollLeft - walk;
+	}
+
+	function handleMouseUp() {
+		isDragging = false;
+	}
+
+	// Event Listeners
+	document.getElementById('rectangleMarks').addEventListener('mousedown', handleMouseDown);
+	document.addEventListener('mousemove', handleMouseMove);
+	document.addEventListener('mouseup', handleMouseUp);
+</script>
+
+</html>
