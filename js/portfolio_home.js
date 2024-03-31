@@ -1,16 +1,6 @@
-/* HEADER */
-document.addEventListener("DOMContentLoaded", function () {
-  window.addEventListener("scroll", function () {
-    let barra = window.scrollY;
-    let posicion = (barra * 0.3);
-    document.body.style.backgroundPosition = "center " + posicion + "px";
-    let contentsDesktop = document.getElementsByClassName("desktop");
-    for (let content of contentsDesktop) {
-      content.style.transform = "translateY(" + posicion + "px)";
-    }
-  });
-});
+/* ---- HEADER ---- */
 
+/* MOVEMENT ON THE WEB */
 function updateHeader() {
   const currentSectionId = getVisibleSectionId();
   const links = document.querySelectorAll('#pages a');
@@ -97,43 +87,84 @@ document.querySelectorAll('#pages a').forEach(link => {
 });
 
 
-/* HOME */
-
-/* MYWORK */
-
-// Variables
-/*let isDragging = false;
-let startX, scrollLeft;
-
-// Función para manejar el clic y arrastre
-function handleMouseDown(e) {
-  isDragging = true;
-  startX = e.pageX - document.getElementById('rectangleMarks').offsetLeft;
-  scrollLeft = document.getElementById('rectangleMarks').scrollLeft;
+/* ---- HOME ---- */
+//Ir a la seccion de MyWork
+function redirectToMyWork() {
+  var myWorkSection = document.getElementById('myWork');
+  if (myWorkSection) {
+    myWorkSection.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    window.location.href = 'index.html';
+  }
 }
 
-function handleMouseMove(e) {
-  if (!isDragging) return;
-  e.preventDefault();
-  const x = e.pageX - document.getElementById('rectangleMarks').offsetLeft;
-  const walk = (x - startX) * 3; // Ajusta la sensibilidad del arrastre
-  document.getElementById('rectangleMarks').scrollLeft = scrollLeft - walk;
+/* ---- MYWORK ---- */
+
+/* SCROLL INTERACTIVE */
+// Variables para almacenar la posición de desplazamiento anterior y la dirección del desplazamiento
+let lastScrollPos = window.scrollY || window.pageYOffset;
+let scrollDirection;
+
+// Función para manejar la visibilidad de los elementos
+function handleVisibility() {
+  // Obtener la posición actual del desplazamiento
+  const currentScrollPos = window.scrollY || window.pageYOffset;
+
+  // Determinar la dirección del desplazamiento
+  if (currentScrollPos > lastScrollPos) {
+    scrollDirection = 'down';
+  } else {
+    scrollDirection = 'up';
+  }
+
+  // Actualizar la posición de desplazamiento anterior
+  lastScrollPos = currentScrollPos;
+
+  // Obtener todos los elementos .sizeContainer
+  const elements = document.querySelectorAll('.sizeContainer');
+
+  // Iterar sobre los elementos y manejar la visibilidad
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const isInViewport = (
+      rect.bottom >= 0 &&
+      rect.right >= 0 &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+
+    // Mostrar u ocultar el elemento según la dirección del desplazamiento y su posición en la pantalla
+    if (scrollDirection === 'down' && rect.bottom <= window.innerHeight) {
+      el.classList.add('visible');
+    } else if (scrollDirection === 'up' && rect.bottom > window.innerHeight) {
+      el.classList.remove('visible');
+    }
+  });
 }
 
-function handleMouseUp() {
-  isDragging = false;
+// Función para determinar si un elemento está en el viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
 }
 
-// Event Listeners
-document.getElementById('rectangleMarks').addEventListener('mousedown', handleMouseDown);
-document.addEventListener('mousemove', handleMouseMove);
-document.addEventListener('mouseup', handleMouseUp);*/
+// Evento de desplazamiento para manejar la visibilidad de los elementos
+window.addEventListener('scroll', handleVisibility);
 
+// Llamar a handleVisibility en la carga inicial de la página
+document.addEventListener('DOMContentLoaded', handleVisibility);
 
-/* ABOUT ME */
+/* WHILE SLIDER */
 
-/* CONTACT */
+/* ---- ABOUT ME ---- */
 
+/* ---- CONTACT ---- */
+/*
 document.getElementById("consultForm").addEventListener("submit", function (event) {
   event.preventDefault(); // Prevenir el envío del formulario
 
@@ -157,6 +188,7 @@ document.getElementById("consultForm").addEventListener("submit", function (even
     alert("Error al enviar la consulta. Por favor, inténtelo de nuevo más tarde.");
   });
 });
+*/
 
-/* EXAMPLE */
+/* ---- EXAMPLE ---- */
 
