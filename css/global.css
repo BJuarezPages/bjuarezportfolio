@@ -79,11 +79,11 @@ header {
 }
 
 .aboutme-icon {
-    background-image: url("../resources/Portfolio/About_Me_50.png");
+    background-image: url("../resources/Portfolio/About_me_50.png");
 }
 
 .aboutme-icon.current {
-    background-image: url("../resources/Portfolio/About_Me_V.png");
+    background-image: url("../resources/Portfolio/About_me_V.png");
     opacity: 1;
 }
 
@@ -118,7 +118,7 @@ header {
 }
 
 #pages a:hover .icon-aboutme {
-    background-image: url("../resources/Portfolio/About_Me_W.png");
+    background-image: url("../resources/Portfolio/About_me_W.png");
 }
 
 #pages a:hover .icon-contact {
@@ -604,6 +604,15 @@ footer {
     display: flex;
     flex-direction: row;
 }
+
+.backgroundSizeContainer3 {
+    height: 3vh;
+    width: 1.5vw;
+    max-width: 2.2vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 #contactLeft {
     width: 50%;
