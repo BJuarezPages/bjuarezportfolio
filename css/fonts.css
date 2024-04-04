@@ -25,6 +25,17 @@
     font-family: 'Futura Std Bold';
 }
 
+
+@font-face {
+    font-family: 'Futura Std Extra Bold';
+    src: url("../fonts/Futura_STD/FuturaStdExtraBold.otf");
+}
+
+.FuturaStdExtraBold {
+    font-family: 'Futura Std Extra Bold';
+    color: #CCFF00;
+}
+
 @font-face {
     font-family: 'Futura Std Condensed Bold';
     src: url("../fonts/Futura_STD/FuturaStdCondensedBold.otf");
@@ -34,6 +45,23 @@
     font-family: 'Futura Std Condensed Bold';
 }
 
+@font-face {
+    font-family: 'Futura Std Book';
+    src: url("../fonts/Futura_STD/FuturaStdBook.otf");
+}
+
+.FuturaStdBook {
+    font-family: 'Futura Std Book';
+}
+
+@font-face {
+    font-family: 'Futura Std Condensed Extra Bold';
+    src: url("../fonts/Futura_STD/FuturaStdCondensedExtraBd.otf");
+}
+
+.FuturaStdCondensedExtraBold {
+    font-family: 'Futura Std Condensed Extra Bold';
+}
 
 /* font-size */
 
@@ -65,4 +93,10 @@
 
 .font-weight-750 {
     font-weight: 750;
+}
+
+/* letter-spacing */
+
+.letter-spacing-20{
+    letter-spacing: 0.2em;
 }

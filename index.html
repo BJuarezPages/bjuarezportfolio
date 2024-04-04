@@ -44,14 +44,14 @@
   <div id="desktop">
     <section id="home">
       <img src="./resources/Portfolio/Logo_BJ_Stroke.png" class="logo_BJ_Stroke">
-      <img src="./resources/Portfolio/LightBackground_Mode_SoftLight.png" class="lightBackground">
+      <div class="light lightBackground"></div>
       <div id="portfolio">
         <div id="container">
-          <p id="name">BERNAT JUAREZ <img src="./resources/Portfolio/Home_W.png"></p>
+          <p id="name" class="FuturaStdBook letter-spacing-20">BERNAT JUAREZ <img src="./resources/Portfolio/Home_W.png"></p>
           <p id="portName">PORTFOLIO</p>
-          <p id="work">Graphic Design · Motion Graphics · UX/UI Design</p>
+          <p id="work" class="FuturaStdLight">Graphic Design <span class="FuturaStdExtraBold">·</span> Motion Graphics <span class="FuturaStdExtraBold">·</span> UX/UI Design</p>
           <br>
-          <button id="buttonWork" class="FuturaStd" onclick="redirectToMyWork()">Ir a MY<span class="FuturaStdBold">WORK</span></button>
+          <button id="buttonWork" class="FuturaStdCondensedExtraBold" onclick="redirectToMyWork()">IR A MY WORK</button>
         </div>
         <div id="video" class="flex_center_column">
           <div class="video-wrapper">
@@ -66,8 +66,10 @@
       </div>
     </section>
     <section id="myWork">
+      <div class="light lightBackground1"></div>
+      <div class="light lightBackground2"></div>
       <div id="title">
-        <p id="name">MY<span class="FuturaStdBold">WORK</span> <img src="./resources/Portfolio/MyWork_W.png"></p>
+        <p id="name" class="FuturaStdCondensedExtraBold">MY WORK <img src="./resources/Portfolio/MyWork_W.png"></p>
       </div>
       <div id="containerMarks" class="flex_wrap_column2">
         <div id="gallo" class="sizeContainer"></div>
@@ -79,8 +81,8 @@
         <div id="elrowlimited" class="sizeContainer"></div>
         <div id="babiesuganda" class="sizeContainer"></div>
       </div>
-      <button id="buttonOther">OTROS<span class="FuturaStdBold">PROYECTOS</span></button>
-      <span></span>
+      <button id="buttonOther" class="FuturaStdCondensedExtraBold">OTROS PROYECTOS</button>
+      <span id="spaceSlider"></span>
       <div id="rectangleMarks">
         <div class="sizeContainerWork"><img src="./resources/Portfolio/Logo_Bocca.png"></div>
         <div class="sizeContainerWork"><img src="./resources/Portfolio/Logo_Gallo.png"></div>
@@ -96,10 +98,11 @@
       </div>
     </section>
     <section id="aboutMe">
+      <div class="light lightBackground"></div>
       <div id="aboutMeLeft">
         <img id="puzzle1" src="./resources/Portfolio/Puzzle_1.png" class="shake-on-hover1">
         <div id="containerText">
-          <p id="title"><span class="FuturaStdBold">SOBRE MÍ</span><img src="./resources/Portfolio/About_me_W.png"></p>
+          <p id="title"><span class="FuturaStdCondensedExtraBold">SOBRE MÍ </span><img src="./resources/Portfolio/About_me_W.png"></p>
           <p><span class="FuturaStdBold">Diseñador gráfico</span> creativo, enérgico e innovador con más de 6 años de
             experiencia que domina la creación de imágenes, ilustración, tipografía, locución, creación y edición de
             video y motion graphics.</p>
@@ -119,11 +122,12 @@
       </div>
     </section>
     <section id="contact">
+      <div class="light lightBackground"></div>
       <div id="contactLeft">
         <img id="puzzle1" src="./resources/Portfolio/Puzzle_1.png" class="shake-on-hover1">
         <img id="puzzle2" src="./resources/Portfolio/Puzzle_1.png" class="shake-on-hover2">
         <div id="containerForm">
-          <p id="title">¡CONTACTA<span class="FuturaStdBold">CONMIGO!</span> <img
+          <p id="title" class="FuturaStdCondensedExtraBold">¡CONTACTA CONMIGO! <img
               src="./resources/Portfolio/Contacto_W.png"></p>
           <br>
           <form id="consultForm">

@@ -5,9 +5,20 @@
 }
 
 body {
-    background-color: #0E2433;
+    background-color: #071017;
     background-image: url("../resources/Portfolio/Background.png");
     scroll-behavior: smooth;
+}
+
+.light {
+    width: 52.5vw;
+    height: 210vh;
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(ellipse farthest-corner at center, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0) 70%);
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: 1;
 }
 
 header {
@@ -127,7 +138,7 @@ header {
 
 #backgroundHeader {
     z-index: -1;
-    background-color: #152d40;
+    background-color: #071017;
     opacity: 50%;
     position: absolute;
     border-radius: 17px;
@@ -259,7 +270,7 @@ footer {
 }
 
 #home>#portfolio {
-    z-index: 1;
+    z-index: 10;
     width: 100%;
     height: 100%;
     display: flex;
@@ -269,9 +280,9 @@ footer {
 }
 
 #portfolio>#video {
-    z-index: 1;
     background-color: #0E2433;
     background-image: url("../resources/Portfolio/Background.png");
+    background-size: 100vw 700vh;
     border-radius: 50%;
     width: 35vw;
     height: 80vh;
@@ -296,6 +307,7 @@ footer {
 .vid {
     width: 100%;
     height: auto;
+    border-radius: 2vh;
 }
 
 #videoPlayer {
@@ -312,14 +324,24 @@ footer {
     width: 105vh;
 }
 
-.lightBackground {
+/*#home::after {
+    content: "";
+    position: absolute;
     width: 105vw;
     height: 105vh;
-    position: absolute;
     top: -40%;
     left: -20%;
     transform: rotate(33.85deg) translateX(10%);
-    opacity: 20%;
+    background: radial-gradient(ellipse farthest-corner at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 50%);
+    mix-blend-mode: soft-light;
+    pointer-events: none;
+    z-index: 9999;
+}*/
+
+#home>.lightBackground {
+    top: -74%;
+    left: 17%;
+    transform: rotate(-33.85deg) translateX(10%);
 }
 
 #portfolio>#container>#name {
@@ -331,14 +353,13 @@ footer {
 }
 
 #portfolio>#container>#portName {
-    font-family: 'Futura Std Condensed Bold';
-    font-size: 14vh;
+    font-family: 'Futura Std Condensed Extra Bold';
+    font-size: 7vw;
     font-weight: 750;
     text-align: left;
 }
 
 #portfolio>#container>#work {
-    font-family: 'Futura Std Light';
     font-size: 3vh;
     font-weight: 300;
     line-height: 37px;
@@ -364,6 +385,8 @@ footer {
     width: 100%;
     height: 100%;
     background-color: #071017;
+    position: relative;
+    overflow: hidden;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -372,9 +395,22 @@ footer {
     margin-bottom: 12%;
 }
 
+#myWork>.lightBackground1 {
+    top: -40vh;
+    left: 35%;
+    transform: rotate(-10.94deg);
+}
+
+#myWork>.lightBackground2 {
+    top: 122vh;
+    left: 8%;
+    transform: rotate(-10.94deg);
+}
+
 #myWork>#title {
     width: 100%;
     margin-top: 10%;
+    z-index: 10;
 }
 
 #myWork>#title>#name {
@@ -385,6 +421,7 @@ footer {
 #containerMarks {
     width: 100%;
     height: 267.3vh;
+    z-index: 10;
 }
 
 .flex_wrap_column2 {
@@ -406,7 +443,8 @@ footer {
     /* Inicialmente oculto */
     transform: scale(0.5);
     /* Escalar inicialmente al 50% */
-    border-radius: 15px; /* Agrega esquinas redondeadas al contenedor */
+    border-radius: 15px;
+    /* Agrega esquinas redondeadas al contenedor */
 }
 
 .sizeContainer.visible {
@@ -426,8 +464,6 @@ footer {
 
 #containerMarks>#gallo:hover {
     background-image: url("../resources/Portfolio/Portada_Gallo_Hover.png");
-    background-size: cover;
-    background-position: center;
 }
 
 #containerMarks>#bocca {
@@ -494,10 +530,17 @@ footer {
     font-size: 3vh;
     margin-bottom: 10%;
     cursor: pointer;
+    z-index: 10;
 }
 
 #buttonOther:hover {
     transform: scale(1.1);
+}
+
+#spaceSlider {
+    width: 100%;
+    height: 0.5vh;
+    background-color: #0E2433;
 }
 
 @keyframes moveLeftToRight {
@@ -520,8 +563,7 @@ footer {
     max-width: 100%;
     width: 100%;
     animation: moveLeftToRight 10s linear infinite;
-    /* Animación */
-
+    z-index: 10;
 }
 
 .sizeContainerWork {
@@ -545,11 +587,18 @@ footer {
     margin-bottom: 12%;
 }
 
+#aboutMe>.lightBackground {
+    top: -88vh;
+    left: 35%;
+    transform: rotate(19.65deg);
+}
+
 #aboutMeLeft {
     width: 50%;
     display: flex;
     justify-content: right;
     align-items: center;
+    z-index: 10;
 }
 
 #aboutMeLeft>#containerText {
@@ -564,11 +613,13 @@ footer {
 
 #aboutMeRight {
     width: 50%;
+    z-index: 10;
 }
 
 #aboutMeRight>#circle {
     background-color: #0E2433;
     background-image: url("../resources/Portfolio/Background.png");
+    background-size: 100vw 700vh;
     border-radius: 50%;
     width: 35vw;
     height: 80vh;
@@ -623,6 +674,11 @@ footer {
     flex-direction: row;
 }
 
+#contact>.lightBackground {
+    top: -80vh;
+    left: 25%;
+}
+
 .backgroundSizeContainer3 {
     height: 3vh;
     width: 1.5vw;
@@ -631,12 +687,12 @@ footer {
     background-repeat: no-repeat;
 }
 
-
 #contactLeft {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
 #contactLeft>#containerForm {
@@ -665,11 +721,19 @@ footer {
     border: none;
     border-radius: 2vh;
     background-color: #11212D;
-    color: #1B3142;
+    color: #FFFFFF;
     font-size: medium;
     font-family: "Futura Std Light";
     font-weight: bold;
     text-align: left;
+    resize: none;
+    overflow-y: auto;
+}
+
+#emailFormValue::placeholder,
+#nameFormValue::placeholder,
+#consultFormValue::placeholder {
+    color: #1B3142;
 }
 
 #buttonSend {
@@ -678,7 +742,7 @@ footer {
     background: #CCFF00;
     border-radius: 2vh;
     font-size: 3vh;
-    font-family: "Futura Std Bold";
+    font-family: "Futura Std Condensed Extra Bold";
     cursor: pointer;
 }
 
@@ -688,11 +752,13 @@ footer {
 
 #contactRight {
     width: 50%;
+    z-index: 10;
 }
 
 #contactRight>#circle {
     background-color: #0E2433;
     background-image: url("../resources/Portfolio/Background.png");
+    background-size: 100vw 700vh;
     border-radius: 50%;
     width: 35vw;
     height: 80vh;
@@ -792,19 +858,24 @@ footer {
 .shake-on-hover2:hover {
     animation: shake2 0.5s ease forwards;
 }
+
 @keyframes shake1 {
     0% {
         transform: rotate(-80deg) translate(0, 0) rotate(0);
     }
+
     25% {
         transform: rotate(-80deg) translate(-5px, -5px) rotate(-5deg);
     }
+
     50% {
         transform: rotate(-80deg) translate(5px, 5px) rotate(5deg);
     }
+
     75% {
         transform: rotate(-80deg) translate(-5px, -5px) rotate(-5deg);
     }
+
     100% {
         transform: rotate(-80deg) translate(0, 0) rotate(0);
     }
@@ -814,17 +885,20 @@ footer {
     0% {
         transform: rotate(15deg) translate(0, 0) rotate(0);
     }
+
     25% {
         transform: rotate(15deg) translate(-5px, -5px) rotate(-5deg);
     }
+
     50% {
         transform: rotate(15deg) translate(5px, 5px) rotate(5deg);
     }
+
     75% {
         transform: rotate(15deg) translate(-5px, -5px) rotate(-5deg);
     }
+
     100% {
         transform: rotate(15deg) translate(0, 0) rotate(0);
     }
 }
-  
