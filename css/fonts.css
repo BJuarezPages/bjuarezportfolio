@@ -1,3 +1,4 @@
+/* ---- Futura Std ---- */
 @font-face {
     font-family: 'Futura Std';
     src: url("../fonts/Futura_STD/FuturaStdBook.otf");
@@ -63,13 +64,35 @@
     font-family: 'Futura Std Condensed Extra Bold';
 }
 
-/* font-size */
+/* ---- Karma ---- */
+
+@font-face {
+    font-family: 'Karma Bold';
+    src: url("../fonts/Karma/Karma-Bold.ttf");
+}
+
+.KarmaBold {
+    font-family: 'Karma Bold';
+}
+
+/* ---- Arquitecta ---- */
+
+@font-face {
+    font-family: 'Arquitecta Black';
+    src: url("../fonts/Arquitecta/Latinotype\ -\ ArquitectaBlack.otf");
+}
+
+.ArquitectaBlack {
+    font-family: 'Arquitecta Black';
+}
+
+/* ---- font-size ---- */
 
 .font-size-10 {
     font-size: 18vh;
 }
 
-/* font-weight */
+/* ---- font-weight ---- */
 
 .font-weight-300 {
     font-weight: 300;

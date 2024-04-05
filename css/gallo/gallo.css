@@ -7,7 +7,7 @@
 }
 
 #galloTitleContainer {
-    width: 78%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -20,6 +20,10 @@
     height: 30vh;
     background-color: #071017;
     border-radius: 3vh;
+    background-image: url("../../resources/Portfolio/Logo_Gallo_SVG.svg");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #galloDescription {
@@ -27,14 +31,143 @@
     height: 30vh;
     background-color: #071017;
     border-radius: 3vh;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+#galloDescription>p {
+    font-size: 1.2vw;
+}
+
+#galloDescription>#title {
+    font-size: 2.3vw;
+}
+
+#galloDescription>p>#agency, #galloDescription>p>#year {
+    color: #CCFF00;
 }
 
 /* ---- WHITE ---- */
 #galloWhite {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-image: url("../../resources/Gallo/Fondo_Gallo.png");
     background-color: #D8D8D8;
+}
+
+#galloWhiteLeft {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 68vh;
+    left: 10%;
+}
+
+#galloWhiteLeft>#title1 {
+    color: #000000;
+    font-family: 'Karma Bold';
+    font-weight: 700;
+    font-size: 1.6vw;
+    margin-bottom: -3%;
+}
+
+#galloWhiteLeft>#title2 {
+    color: #E31F1D;
+    font-family: 'Arquitecta Black';
+    font-weight: 950;
+    font-size: 3.3vw;
+    margin-bottom: 2%;
+}
+
+#flexPanel {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.sizeContainer {
+    width: calc(33.33% - 10px);
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: calc(33.33% - 10px);
+    max-width: 100%;
+}
+
+#flexPanel>#image1 {
+    background-image: url("../../resources/Gallo/Post_Gallo_1.png");
+}
+
+#flexPanel>#image2 {
+    background-image: url("../../resources/Gallo/Post_Gallo_2.png");
+}
+
+#flexPanel>#image3 {
+    background-image: url("../../resources/Gallo/Post_Gallo_3.png");
+}
+
+#flexPanel>#image4 {
+    background-image: url("../../resources/Gallo/Post_Gallo_4.png");
+}
+
+#flexPanel>#image5 {
+    background-image: url("../../resources/Gallo/Post_Gallo_5.png");
+}
+
+#flexPanel>#image6 {
+    background-image: url("../../resources/Gallo/Post_Gallo_6.png");
+}
+
+#flexPanel>#image7 {
+    background-image: url("../../resources/Gallo/Post_Gallo_7.png");
+}
+
+#flexPanel>#image8 {
+    background-image: url("../../resources/Gallo/Post_Gallo_8.png");
+}
+
+#flexPanel>#image9 {
+    background-image: url("../../resources/Gallo/Post_Gallo_9.png");
+}
+
+#galloWhiteRight {
+    width: 30%;
+    height: 110%;
+    position: absolute;
+    top: 72vh;
+    left: 58%;
+    rotate: 6.49deg;
+    background-image: url("../../resources/Gallo/Mockup_Redes_Gallo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    pointer-events: none;
+    z-index: 11;
+}
+
+#galloWhiteRightShadow {
+    width: 26%;
+    height: 110%;
+    position: absolute;
+    top: 74vh;
+    left: 59.5%;
+    rotate: 6.49deg;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.3);
+    filter: blur(10px);
+    z-index: 10;
 }
 
 /* ---- BLACK ---- */
@@ -42,6 +175,17 @@
     width: 100%;
     height: 100vh;
     background-color: #000000;
+    position: relative;
+}
+
+#light1 {
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 212, 198, 0) 100%);
 }
 
 /* ---- COMBINATED ---- */
