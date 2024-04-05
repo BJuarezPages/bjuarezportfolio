@@ -1,0 +1,78 @@
+/* ---- TITLE ---- */
+#galloTitle {
+    width: 100%;
+    height: 58vh;
+    display: flex;
+    justify-content: center;
+}
+
+#galloTitleContainer {
+    width: 78%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#galloLogo {
+    width: 15vw;
+    height: 30vh;
+    background-color: #071017;
+    border-radius: 3vh;
+}
+
+#galloDescription {
+    width: 60vw;
+    height: 30vh;
+    background-color: #071017;
+    border-radius: 3vh;
+}
+
+/* ---- WHITE ---- */
+#galloWhite {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../resources/Gallo/Fondo_Gallo.png");
+    background-color: #D8D8D8;
+}
+
+/* ---- BLACK ---- */
+#galloBlack {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+}
+
+/* ---- COMBINATED ---- */
+#galloCombinated {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#galloCombinatedContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#galloCombinatedLeft {
+    width: 60%;
+    height: 100%;
+    background-color: #F2EEE7;
+}
+
+#galloCombinatedRight {
+    width: 40%;
+    height: 100%;
+    background-color: #1A1816;
+}
+
+#redBar {
+    width: 100%;
+    height: 5%;
+    background-color: #E31F1D;
+}
