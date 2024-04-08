@@ -8,6 +8,16 @@ body {
     background-color: #071017;
     background-image: url("../resources/Portfolio/Background.png");
     scroll-behavior: smooth;
+    opacity: 0;
+}
+
+body.fade-in {
+    opacity: 0;
+}
+
+body.fade-in-active {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
 }
 
 .light {

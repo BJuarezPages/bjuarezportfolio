@@ -173,9 +173,12 @@
 /* ---- BLACK ---- */
 #galloBlack {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: #000000;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #light1 {
@@ -184,8 +187,89 @@
     height: 25vh;
     top: 40%;
     left: 50%;
+    opacity: 20%;
     transform: translateX(-50%);
     background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 212, 198, 0) 100%);
+}
+
+#light2 {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    top: 40%;
+    left: 50%;
+    opacity: 20%;
+    transform: translateX(-50%);
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 122, 0, 0) 100%);
+}
+
+#galloBlackContainer {
+    width: 80%;
+    height: 70%;
+    z-index: 1;
+}
+
+#imageMockupWebBanner {
+    width: 55%;
+    height: 100%;
+    background-image: url("../../resources/Gallo/Mockup_Gallo_BannerWeb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    pointer-events: none;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    z-index: 2;
+}
+
+#imageBlackContainer {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 51%;
+}
+
+#imageBackgroundGallo {
+    width: 100%;
+    height: 50%;
+    background-image: url("../../resources/Gallo/Dibujo_Fondo_BannersWeb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -23%;
+}
+
+#imageBackgroundGallo>#text1 {
+    color: #E4C494;
+    font-family: 'EastGood';
+    font-weight: 400;
+    font-size: 2.7vw;
+    line-height: 2vw;
+    text-align: center;
+}
+
+#imageBackgroundGallo>#text1>#text2 {
+    color: #F0E6D8;
+    font-family: 'Arquitecta Black';
+    font-weight: 950;
+    font-size: 4vw;
+}
+
+#imageWebBanner {
+    width: 100%;
+    height: 34%;
+    background-image: url("../../resources/Gallo/Gallo_BannerWeb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    pointer-events: none;
 }
 
 /* ---- COMBINATED ---- */
@@ -194,6 +278,7 @@
     height: 95vh;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 #galloCombinatedContainer {
@@ -207,16 +292,112 @@
     width: 60%;
     height: 100%;
     background-color: #F2EEE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imageWheat {
+    width: 24%;
+    height: 130%;
+    position: absolute;
+    top: -30vh;
+    left: -1%;
+    background-image: url("../../resources/Gallo/Imagen_Blat.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    pointer-events: none;
+    z-index: 11;
+}
+
+#galloCombinatedLeftContainer {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10%;
+}
+
+#galloCombinatedLeftContainer>#title1 {
+    color: #E31F1D;
+    font-family: 'Karma Bold';
+    font-weight: 600;
+    font-size: 2vw;
+    margin-bottom: -3%;
+}
+
+#galloCombinatedLeftContainer>#title2 {
+    color: #000000;
+    font-family: 'Arquitecta Black';
+    font-weight: 950;
+    font-size: 4.5vw;
+    line-height: 4vw;
+}
+
+#galloCombinatedLeftContainer>#description {
+    color: #000000;
+    font-family: 'Arquitecta Book';
+    font-weight: 400;
+    font-size: 1.7vw;
+    margin-bottom: 2%;
+}
+
+#videoButton {
+    width: 45%;
+    height: 20%;
+    background-color: #E31F1D;
+    font-family: 'Arquitecta Black';
+    font-size: 2vw;
+    color: #FFFFFF;
+    padding: 1%;
+    border: 0;
+    cursor: pointer;
+}
+
+#videoButton:hover {
+    transform: scale(1.1);
 }
 
 #galloCombinatedRight {
     width: 40%;
     height: 100%;
     background-color: #1A1816;
+    background-image: url("../../resources/Gallo/ElNombreDeLaPasta_Imagen.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 #redBar {
     width: 100%;
     height: 5%;
     background-color: #E31F1D;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5% 0 0.5% 0;
+}
+
+#redBar>#iconInstagram {
+    width: 3%;
+    height: 90%;
+    background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Instagram_Gallo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+#redBar>#iconWeb {
+    width: 3%;
+    height: 90%;
+    background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Web_Gallo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
 }

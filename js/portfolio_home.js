@@ -191,4 +191,3 @@ document.getElementById("consultForm").addEventListener("submit", function (even
 */
 
 /* ---- EXAMPLE ---- */
-

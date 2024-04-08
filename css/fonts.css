@@ -86,6 +86,26 @@
     font-family: 'Arquitecta Black';
 }
 
+@font-face {
+    font-family: 'Arquitecta Book';
+    src: url("../fonts/Arquitecta/Latinotype\ -\ ArquitectaBook.otf");
+}
+
+.ArquitectaBook {
+    font-family: 'Arquitecta Book';
+}
+
+/* ---- East Good ---- */
+
+@font-face {
+    font-family: 'EastGood';
+    src: url("../fonts/Eastgood/Eastgood.otf");
+}
+
+.EastGood {
+    font-family: 'EastGood';
+}
+
 /* ---- font-size ---- */
 
 .font-size-10 {
