@@ -373,7 +373,7 @@
 
 #redBar {
     width: 100%;
-    height: 5%;
+    height: 4.5vh;
     background-color: #E31F1D;
     display: flex;
     flex-direction: row;

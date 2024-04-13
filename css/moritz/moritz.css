@@ -1,0 +1,530 @@
+/* ---- TITLE ---- */
+#moritzTitle {
+    width: 100%;
+    height: 58vh;
+    display: flex;
+    justify-content: center;
+}
+
+#moritzTitleContainer {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#moritzLogo {
+    width: 15vw;
+    height: 30vh;
+    background-color: #071017;
+    border-radius: 3vh;
+    background-image: url("../../resources/Portfolio/Logo_Moritz_SVG.svg");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#moritzDescription {
+    width: 60vw;
+    height: 30vh;
+    background-color: #071017;
+    border-radius: 3vh;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+#moritzDescription>p {
+    font-size: 1.2vw;
+}
+
+#moritzDescription>#title {
+    font-size: 2.3vw;
+}
+
+#moritzDescription>p>#agency, #moritzDescription>p>#year {
+    color: #CCFF00;
+}
+
+/* ---- WHITE ---- */
+#moritzWhite {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#moritzWhiteContainer {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#moritzWhiteLeft {
+    width: 50%;
+    height: 100%;
+    background-color: #F0EFED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#moritzWhiteLeftTitle {
+    width: 80%;
+    height: 60%;
+}
+
+#moritzWhiteLeftTitle>#title1 {
+    color: #E0881E;
+    font-family: 'Montserrat Extra Bold';
+    font-weight: 800;
+    font-size: 1.4vw;
+}
+
+#moritzWhiteLeftTitle>#title2 {
+    color: #191919;
+    font-family: 'Futura Std Condensed Extra Bold';
+    font-weight: 750;
+    font-size: 3vw;
+    margin-bottom: 5%;
+}
+
+#buttonVideo {
+    width: 45%;
+    height: 20%;
+    background-color: #E0881E;
+    font-family: 'Montserrat Extra Bold';
+    font-size: 1.5vw;
+    text-align: center;
+    color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+}
+
+#moritzWhiteRight {
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* ---- VIDEO ---- */
+#moritzVideoContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+#backgroundGray {
+    width: 100%;
+    height: 90%;
+    background-color: #F0EFED;
+}
+
+#textContainer {
+    width: 30%;
+    height: 12%;
+    position: absolute;
+    top: 12vh;
+    left: 10%;
+}
+
+#textContainer>#title1 {
+    color: #E0881E;
+    font-family: 'Montserrat Extra Bold';
+    font-weight: 800;
+    font-size: 1.4vw;
+}
+
+#textContainer>#title2 {
+    color: #191919;
+    font-family: 'Futura Std Condensed Extra Bold';
+    font-weight: 750;
+    font-size: 3vw;
+}
+
+#beerMoritz {
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    top: 0vh;
+    left: 0%;
+    background-image: url("./../../resources/Moritz/Cervesa\ moritz\ de\ costat.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    pointer-events: none;
+}
+
+#videoMobile {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top: 0vh;
+    left: 0%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    pointer-events: none;
+}
+
+#imageMoritz {
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    top: 10vh;
+    left: 45%;
+    background-image: url("./../../resources/Moritz/Fabrica\ moritz.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    pointer-events: none;
+}
+
+/* ---- SLIDE BAR ---- */
+#moritzSlideBar {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#moritzSlideBarContainer {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.slideItem {
+    width: 22%;
+    height: 100%;
+    flex-shrink: 0;
+    background-color: #F0EFED;
+    position: relative;
+    margin-right: 2%;
+}
+
+#slideHeart {
+    width: 7%;
+    height: 7%;
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    background-image: url("./../../resources/Moritz/Asset\ Heart.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#slideImage {
+    width: 65%;
+    height: 50%;
+    position: absolute;
+    top: 12%;
+    left: 17%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#slideImage.image1 {
+    background-image: url("./../../resources/Moritz/VideoFrame_1.png");
+}
+
+#slideImage.image2 {
+    background-image: url("./../../resources/Moritz/VideoFrame_2.png");
+}
+
+#slideImage.image3 {
+    background-image: url("./../../resources/Moritz/VideoFrame_2-1.png");
+}
+
+#slideContainer {
+    width: 88%;
+    height: 20%;
+    position: absolute;
+    top: 68%;
+    left: 6%;
+}
+
+#slideContainer>.text1 {
+    color: #E0881E;
+    font-family: 'Montserrat Extra Bold';
+    font-weight: 800;
+    font-size: 0.9vw;
+    border-bottom: 3%;
+}
+
+#slideContainer>.text2 {
+    color: #191919;
+    font-family: 'Futura Std Condensed Extra Bold';
+    font-weight: 750;
+    font-size: 1.8vw;
+}
+
+.slideItem>#videoButton {
+    width: 88%;
+    height: 10%;
+    position: absolute;
+    top: 85%;
+    left: 6%;
+    background-color: #191919;
+    font-family: 'Montserrat Extra Bold';
+    font-weight: 800;
+    font-size: 1.3vw;
+    color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+}
+
+/* ---- moritzBig ---- */
+#moritzBig {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#moritzBigContainer {
+    width: 80%;
+    height: 70%;
+    background-color: #F0EFED;
+    position: relative;
+}
+
+#moritzBigContainerText {
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 4%;
+}
+
+#moritzBigContainerText>.text1 {
+    color: #E0881E;
+    font-family: 'Montserrat Extra Bold';
+    font-weight: 800;
+    font-size: 1.4vw;
+}
+
+#moritzBigContainerText>.text2 {
+    color: #191919;
+    font-family: 'Futura Std Condensed Extra Bold';
+    font-weight: 750;
+    font-size: 3vw;
+}
+
+#moritzBigImage {
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    background-image: url("./../../resources/Moritz/M\ Horaria.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    pointer-events: none;
+}
+
+
+/* ---- moritzGraphics ---- */
+#moritzGraphics {
+    width: 100%;
+    height: 150vh;
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+#moritzGraphicsContainer {
+    width: 100%;
+    height: 50%;
+    background-color: #034D99;
+    position: relative;
+    overflow: hidden;
+}
+
+#moritzGraphicsContainerText {
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 14%;
+}
+
+#moritzGraphicsContainerText>.text1 {
+    color: #E0881E;
+    font-family: 'Montserrat Extra Bold';
+    font-weight: 800;
+    font-size: 1.4vw;
+}
+
+#moritzGraphicsContainerText>.text2 {
+    color: #FFFFFF;
+    font-family: 'Futura Std Condensed Extra Bold';
+    font-weight: 750;
+    font-size: 3vw;
+}
+
+#moritzGraphicsImage {
+    width: 60%;
+    height: 108vh;
+    position: absolute;
+    top: -34%;
+    left: 0%;
+    background-image: url("./../../resources/Moritz/M.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    pointer-events: none;
+}
+
+#beerImage {
+    width: 60%;
+    height: 70vh;
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    background-image: url(./../../resources/Moritz/Beer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    pointer-events: none;
+    rotate: 8deg;
+    filter: drop-shadow(-4vh 4vh 8px rgba(0, 0, 0, 0.5));
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---- Social ---- */
+#redBar {
+    width: 100%;
+    height: 4.5vh;
+    background-color: #F0EFED;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5% 0 0.5% 0;
+}
+
+#redBar>#iconInstagram {
+    width: 3%;
+    height: 90%;
+    background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Instagram_Moritz.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+#redBar>#iconWeb {
+    width: 3%;
+    height: 90%;
+    background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Web_Moritz.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* ---- POPUP CONTAINER ---- */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3000;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.3s ease;
+}
+
+.popup-container.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#darkOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3001;
+}
+
+.popup-inner {
+    background-color: #333;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 3vw;
+    border: 2px solid #CCFF00;
+    color: white;
+    text-align: center;
+    z-index: 3001;
+    position: relative;
+}
+
+.vid {
+    width: 85%;
+    height: 90%;
+    border-radius: 3vw;
+}
+
+#closeButton {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    color: #FFFFFF;
+    background-color: unset;
+    border: unset;
+    font-weight: bolder;
+    font-size: xx-large;
+    cursor: pointer;
+}
