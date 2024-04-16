@@ -117,6 +117,26 @@
     font-family: 'Montserrat Extra Bold';
 }
 
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+}
+
+.MontserratExtraBold {
+    font-family: 'Montserrat Extra Bold';
+}
+
+/* ---- Pulp Display ---- */
+
+@font-face {
+    font-family: 'Pulp Display Bold';
+    src: url("../fonts/Pulp_Display/PulpDisplay-Bold.ttf");
+}
+
+.PulpDisplayBold {
+    font-family: 'Pulp Display Bold';
+}
+
 /* ---- font-size ---- */
 
 .font-size-10 {

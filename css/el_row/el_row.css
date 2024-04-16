@@ -1,0 +1,267 @@
+/* ---- TITLE ---- */
+#elRowTitle {
+    width: 100%;
+    height: 58vh;
+    display: flex;
+    justify-content: center;
+}
+
+#elRowTitleContainer {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#elRowLogo {
+    width: 15vw;
+    height: 30vh;
+    background-color: #071017;
+    border-radius: 3vh;
+    background-image: url("../../resources/Portfolio/Logo_elRow_SVG.svg");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#elRowDescription {
+    width: 60vw;
+    height: 30vh;
+    background-color: #071017;
+    border-radius: 3vh;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+#elRowDescription>p {
+    font-size: 1.2vw;
+}
+
+#elRowDescription>#title {
+    font-size: 2.3vw;
+}
+
+#elRowDescription>p>#agency, #elRowDescription>p>#year {
+    color: #CCFF00;
+}
+
+/* ---- WHITE ---- */
+#elRowWhite {
+    width: 100%;
+    height: 100vh;
+    background-color: #F2E5F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#elRowContainer {
+    width: 100%;
+    height: 100%;
+}
+
+#elRowWhiteLeft {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#elRowWhiteLeft>#title {
+    color: #7E00C1;
+    font-family: 'Pulp Display Bold';
+    font-weight: 400;
+    font-size: 8vw;
+}
+
+#elRowWhiteLeft>#text {
+    width: 60%;
+    height: 40%;
+    color: #191919;
+    font-family: 'Futura Std Light';
+    font-weight: 750;
+    font-size: 1.4vw;
+}
+
+#elRowWhiteRight {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#elRowCard {
+    width: 50%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2%;
+}
+
+#elRowCard>#image {
+    width: 100%;
+    height: 100%;
+}
+
+#elRowCard>#text1 {
+    width: 100%;
+    height: 40%;
+    color: #191919;
+    font-family: 'Futura Std Light';
+    font-weight: 750;
+    font-size: 1.4vw;
+    text-align: left;
+}
+
+#elRowCard>#text2 {
+    width: 100%;
+    height: 40%;
+    color: #191919;
+    font-family: 'Futura Std Light';
+    font-weight: 750;
+    font-size: 1.4vw;
+    text-align: left;
+}
+
+#elRowCard>#text3 {
+    width: 100%;
+    height: 40%;
+    color: #191919;
+    font-family: 'Futura Std Light';
+    font-weight: 750;
+    font-size: 1.4vw;
+    text-align: left;
+}
+
+
+#buttonVideo {
+    width: 45%;
+    height: 20%;
+    background-color: #FF0076;
+    font-family: 'Montserrat Extra Bold';
+    font-size: 1.5vw;
+    text-align: center;
+    color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* ---- Social ---- */
+#redBar {
+    width: 100%;
+    height: 4.5vh;
+    background-color: #FF0076;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5% 0 0.5% 0;
+}
+
+#redBar>#iconInstagram {
+    width: 3%;
+    height: 90%;
+    background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Instagram_elRow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+#redBar>#iconWeb {
+    width: 3%;
+    height: 90%;
+    background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Web_elRow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* ---- POPUP CONTAINER ---- */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3000;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.3s ease;
+}
+
+.popup-container.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#darkOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3001;
+}
+
+.popup-inner {
+    background-color: #333;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 3vw;
+    border: 2px solid #CCFF00;
+    color: white;
+    text-align: center;
+    z-index: 3001;
+    position: relative;
+}
+
+.vid {
+    width: 85%;
+    height: 90%;
+    border-radius: 3vw;
+}
+
+#closeButton {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    color: #FFFFFF;
+    background-color: unset;
+    border: unset;
+    font-weight: bolder;
+    font-size: xx-large;
+    cursor: pointer;
+}

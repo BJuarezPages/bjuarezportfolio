@@ -142,7 +142,7 @@
     background-image: url("../../resources/Gallo/Post_Gallo_9.png");
 }
 
-#galloWhiteRight {
+ #galloWhiteRight {
     width: 30%;
     height: 110%;
     position: absolute;
@@ -154,6 +154,17 @@
     background-size: contain;
     background-position: center;
     pointer-events: none;
+    z-index: 12;
+}
+
+#videoGalloMobile{
+    width: 25%;
+    height: 104%;
+    position: absolute;
+    top: 70vh;
+    left: 60.7%;
+    rotate: 6.49deg;
+    border-radius: 5vw;
     z-index: 11;
 }
 

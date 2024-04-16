@@ -1,0 +1,228 @@
+/* ---- TITLE ---- */
+#elPrimoTitle {
+    width: 100%;
+    height: 58vh;
+    display: flex;
+    justify-content: center;
+}
+
+#elPrimoTitleContainer {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#elPrimoLogo {
+    width: 15vw;
+    height: 30vh;
+    background-color: #071017;
+    border-radius: 3vh;
+    background-image: url("../../resources/Portfolio/Logo_elPrimo_SVG.svg");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#elPrimoDescription {
+    width: 60vw;
+    height: 30vh;
+    background-color: #071017;
+    border-radius: 3vh;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+#elPrimoDescription>p {
+    font-size: 1.2vw;
+}
+
+#elPrimoDescription>#title {
+    font-size: 2.3vw;
+}
+
+#elPrimoDescription>p>#agency, #elPrimoDescription>p>#year {
+    color: #CCFF00;
+}
+
+/* ---- WHITE ---- */
+#elPrimoWhite {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#elPrimoWhiteContainer {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#elPrimoWhiteLeft {
+    width: 50%;
+    height: 100%;
+    background-color: #F0EFED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#elPrimoWhiteLeftTitle {
+    width: 80%;
+    height: 60%;
+}
+
+#elPrimoWhiteLeftTitle>#title1 {
+    color: #E0881E;
+    font-family: 'Montserrat Extra Bold';
+    font-weight: 800;
+    font-size: 1.4vw;
+}
+
+#elPrimoWhiteLeftTitle>#title2 {
+    color: #191919;
+    font-family: 'Futura Std Condensed Extra Bold';
+    font-weight: 750;
+    font-size: 3vw;
+    margin-bottom: 5%;
+}
+
+#buttonVideo {
+    width: 45%;
+    height: 20%;
+    background-color: #E0881E;
+    font-family: 'Montserrat Extra Bold';
+    font-size: 1.5vw;
+    text-align: center;
+    color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+}
+
+#elPrimoWhiteRight {
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---- Social ---- */
+#redBar {
+    width: 100%;
+    height: 4.5vh;
+    background-color: #F0EFED;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5% 0 0.5% 0;
+}
+
+#redBar>#iconInstagram {
+    width: 3%;
+    height: 90%;
+    background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Instagram_elPrimo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+#redBar>#iconWeb {
+    width: 3%;
+    height: 90%;
+    background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Web_elPrimo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* ---- POPUP CONTAINER ---- */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3000;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.3s ease;
+}
+
+.popup-container.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#darkOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3001;
+}
+
+.popup-inner {
+    background-color: #333;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 3vw;
+    border: 2px solid #CCFF00;
+    color: white;
+    text-align: center;
+    z-index: 3001;
+    position: relative;
+}
+
+.vid {
+    width: 85%;
+    height: 90%;
+    border-radius: 3vw;
+}
+
+#closeButton {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    color: #FFFFFF;
+    background-color: unset;
+    border: unset;
+    font-weight: bolder;
+    font-size: xx-large;
+    cursor: pointer;
+}
