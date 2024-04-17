@@ -7,3 +7,14 @@ document.getElementById('videoButton').addEventListener('click', function () {
         window.location.href = 'gallo.html';
     }
 });
+
+//Hearts
+const slideItems = document.querySelectorAll('#moritzSlideBarContainer .slideItem');
+
+slideItems.forEach(slideItem => {
+    const slideHeart = slideItem.querySelector('#slideHeart');
+
+    slideHeart.addEventListener('click', () => {
+        slideHeart.classList.toggle('slideHeartClick');
+    });
+});

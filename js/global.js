@@ -32,6 +32,8 @@ function openPopup() {
 }
 
 function closePopup() {
+    const video = document.querySelector('.vid');
+    video.pause();
     popupContainer.classList.remove('active');
 }
 
