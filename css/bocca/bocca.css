@@ -20,7 +20,7 @@
     height: 30vh;
     background-color: #071017;
     border-radius: 3vh;
-    background-image: url("../../resources/Portfolio/Logo_bocca_SVG.svg");
+    background-image: url("../../resources/Portfolio/Logo_Bocca_SVG.svg");
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
@@ -420,7 +420,7 @@
 #redBar>#iconInstagram {
     width: 3%;
     height: 90%;
-    background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Instagram_bocca.svg");
+    background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Instagram_Bocca.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -430,7 +430,7 @@
 #redBar>#iconWeb {
     width: 3%;
     height: 90%;
-    background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Web_bocca.svg");
+    background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Web_Bocca.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

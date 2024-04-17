@@ -18,6 +18,15 @@
 }
 
 @font-face {
+    font-family: 'Futura Std Condensed Light';
+    src: url("../fonts/Futura_STD/FuturaStdCondensedLight.otf");
+}
+
+.FuturaStdCondensedLight {
+    font-family: 'Futura Std Condensed Light';
+}
+
+@font-face {
     font-family: 'Futura Std Bold';
     src: url("../fonts/Futura_STD/FuturaStdBold.otf");
 }
@@ -127,6 +136,15 @@
 }
 
 /* ---- Pulp Display ---- */
+
+@font-face {
+    font-family: 'Pulp Display Light';
+    src: url("../fonts/Pulp_Display/PulpDisplay-Light.ttf");
+}
+
+.PulpDisplayLight {
+    font-family: 'Pulp Display Light';
+}
 
 @font-face {
     font-family: 'Pulp Display Bold';
