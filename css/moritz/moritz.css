@@ -177,6 +177,11 @@
     border-radius: 4vw;
     rotate: -5deg;
     z-index: 2;
+    transition: transform 0.3s;
+}
+
+.video-container1:hover {
+    transform: scale(1.1);
 }
 
 .video-container1 video {
@@ -363,14 +368,19 @@
 
 .video-container2 {
     position: relative;
-    width: 46vh;
-    height: 90vh;
+    width: 44vh;
+    height: 85vh;
     overflow: hidden;
-    top: -10vh;
+    top: -8vh;
     left: 70%;
     border-radius: 4vw;
     rotate: 8deg;
     z-index: 2;
+    transition: transform 0.3s;
+}
+
+.video-container2:hover {
+    transform: scale(1.1);
 }
 
 .video-container2 video {
@@ -482,6 +492,11 @@
     border-radius: 4vw;
     rotate: -7deg;
     z-index: 4;
+    transition: transform 0.3s;
+}
+
+.video-container3:hover {
+    transform: scale(1.1);
 }
 
 .video-container3 video {
