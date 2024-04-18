@@ -142,43 +142,26 @@
     background-image: url("../../resources/Gallo/Post_Gallo_9.png");
 }
 
- #galloWhiteRight {
-    width: 30%;
-    height: 110%;
-    position: absolute;
-    top: 72vh;
-    left: 58%;
-    rotate: 6.49deg;
-    background-image: url("../../resources/Gallo/Mockup_Redes_Gallo.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    pointer-events: none;
-    z-index: 12;
-}
-
 #videoGalloMobile{
-    width: 25%;
-    height: 104%;
-    position: absolute;
-    top: 70vh;
+    width: 49vh;
+    height: 104vh;
+    position: relative;
+    overflow: hidden;
+    top: 15vh;
     left: 60.7%;
     rotate: 6.49deg;
-    border-radius: 5vw;
+    border-radius: 3vw;
     z-index: 11;
 }
 
-#galloWhiteRightShadow {
-    width: 26%;
-    height: 110%;
-    position: absolute;
-    top: 74vh;
-    left: 59.5%;
-    rotate: 6.49deg;
-    border-radius: 10%;
-    background-color: rgba(0, 0, 0, 0.3);
-    filter: blur(10px);
-    z-index: 10;
+#videoGalloMobile:hover {
+    transform: scale(1.1);
+}
+
+#videoGalloMobile video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ---- BLACK ---- */

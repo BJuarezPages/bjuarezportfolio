@@ -177,6 +177,11 @@
     border: 0;
     border-radius: 1vw;
     cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#buttonVideo:hover {
+    transform: scale(1.1);
 }
 
 
