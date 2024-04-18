@@ -110,6 +110,11 @@
     color: #FFFFFF;
     border: 0;
     cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#buttonVideo:hover {
+    transform: scale(1.1);
 }
 
 #moritzWhiteRight {
@@ -169,7 +174,7 @@
 
 .video-container1 {
     position: relative;
-    width: 50vh;
+    width: 46vh;
     height: 100vh;
     overflow: hidden;
     top: -5vh;
@@ -368,7 +373,7 @@
 
 .video-container2 {
     position: relative;
-    width: 44vh;
+    width: 39vh;
     height: 85vh;
     overflow: hidden;
     top: -8vh;
@@ -484,8 +489,8 @@
 
 .video-container3 {
     position: absolute;
-    width: 47vh;
-    height: 90vh;
+    width: 44vh;
+    height: 95vh;
     overflow: hidden;
     top: -8vh;
     left: 40%;
@@ -562,6 +567,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 #darkOverlay {
@@ -579,27 +585,20 @@
     width: 80vw;
     height: 80vh;
     border-radius: 3vw;
-    border: 2px solid #CCFF00;
     color: white;
     text-align: center;
     z-index: 3001;
-    position: relative;
-}
-
-.vid {
-    width: 85%;
-    height: 90%;
-    border-radius: 3vw;
 }
 
 #closeButton {
     position: absolute;
-    top: 10%;
-    right: 5%;
-    color: #FFFFFF;
+    top: 15%;
+    right: 13%;
+    color: #CCFF00;
     background-color: unset;
     border: unset;
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: xxx-large;
     cursor: pointer;
+    z-index: 3002;
 }

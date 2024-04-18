@@ -32,7 +32,7 @@ function openPopup() {
 }
 
 function closePopup() {
-    const video = document.querySelector('.vid');
+    const video = document.querySelector('.popup-inner');
     video.pause();
     popupContainer.classList.remove('active');
 }
