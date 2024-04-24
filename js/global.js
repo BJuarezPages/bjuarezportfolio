@@ -21,11 +21,19 @@ enlaces.forEach(function (enlace) {
     });
 });
 
-//Video POPUP
-const openButton = document.getElementById('buttonVideo');
-const closeButton = document.getElementById('closeButton');
-const popupContainer = document.getElementById('popupContainer');
-const darkOverlay = document.getElementById('darkOverlay');
+document.addEventListener("DOMContentLoaded", function() {
+    const openButton = document.getElementById('buttonVideo');
+    const closeButton = document.getElementById('closeButton');
+    const darkOverlay = document.getElementById('darkOverlay');
+    const popupContainer = document.getElementById('popupContainer');
+
+    // Verificar si los elementos existen antes de agregar los listeners
+    if (openButton && closeButton && darkOverlay && popupContainer) {
+        openButton.addEventListener('click', openPopup);
+        closeButton.addEventListener('click', closePopup);
+        darkOverlay.addEventListener('click', closePopup);
+    }
+});
 
 function openPopup() {
     popupContainer.classList.add('active');
@@ -36,7 +44,3 @@ function closePopup() {
     video.pause();
     popupContainer.classList.remove('active');
 }
-
-openButton.addEventListener('click', openPopup);
-closeButton.addEventListener('click', closePopup);
-darkOverlay.addEventListener('click', closePopup);
