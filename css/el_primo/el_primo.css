@@ -118,55 +118,56 @@
     object-fit: cover;
 }
 
-.cloud1 {
+.cloud-container {
     position: absolute;
-    top: 4%;
-    left: -2%;
-    width: 27%;
-    height: 12%;
-    background-image: url("./../../resources/El Primo/Nubeversario 1.svg");
-    background-position: center;
+    top: 1%;
+    left: 0%;
+    width: 100%;
+    height: 169vh;
+    transform-origin: center;
+    transition: transform 2s ease-out
+}
+
+.cloud-container .cloud {
+    position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.cloud2 {
-    position: absolute;
+.cloud-container .cloud1 {
+    top: 18%;
+    left: -2%;
+    width: 36vw;
+    height: 62vh;
+    background-image: url("./../../resources/El Primo/Nubeversario 1.svg");
+}
+
+.cloud-container .cloud2 {
     top: 0%;
     left: 36%;
-    width: 20%;
-    height: 4%;
+    width: 20vw;
+    height: 13vh;
     background-image: url("./../../resources/El Primo/Nubeversario 2.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
-.cloud3 {
-    position: absolute;
-    top: 3%;
+.cloud-container .cloud3 {
+    top: 20%;
     left: 75%;
     width: 20%;
     height: 10%;
     background-image: url("./../../resources/El Primo/Nubeversario 3.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     rotate: 73.36deg;
 }
 
-.cloud4 {
-    position: absolute;
-    top: 20%;
-    left: 80%;
-    width: 20%;
-    height: 4%;
+.cloud-container .cloud4 {
+    top: 69%;
+    left: 78%;
+    width: 22%;
+    height: 8%;
     background-image: url("./../../resources/El Primo/Nubeversario 2.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     rotate: 118.24deg;
 }
+
 
 .primo-aniversary1 {
     position: absolute;
