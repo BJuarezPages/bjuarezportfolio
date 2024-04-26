@@ -20,7 +20,7 @@
     height: 30vh;
     background-color: #071017;
     border-radius: 3vh;
-    background-image: url("../../resources/Portfolio/Logo_elPrimo_SVG.svg");
+    background-image: url("../../resources/Portfolio/Logo_ElPrimo_SVG.svg");
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +90,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    transition: transform 1.5s ease-out
+    transition: transform 1.5s ease-out;
+    z-index: 2;
 }
 
 .video-world {
@@ -167,6 +168,55 @@
     background-image: url("./../../resources/El Primo/Nubeversario 2.svg");
     rotate: 118.24deg;
 }
+
+.number-container {
+    position: absolute;
+    width: 100%;
+    height: 169vh;
+    top: 0%;
+    left: 0%;
+}
+
+.primo-number {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./../../resources/El Primo/3.svg");
+    z-index: 1;
+    transition: top 2s ease-out, left 2s ease-out, right 2s ease-out, bottom 2s ease-out;
+}
+
+.primo-number1 {
+    top: 45%;
+    left: 45%;
+    width: 7%;
+    height: 26vh;
+    rotate: -41.87deg;
+}
+
+.primo-number2 {
+    top: 45%;
+    right: 45%;
+    width: 7%;
+    height: 26vh;
+    rotate: 2.55deg;
+}
+
+.primo-number3 {
+    bottom: 45%;
+    left: 45%;
+    width: 9%;
+    height: 33.5vh;
+}
+
+.primo-number4 {
+    bottom: 45%;
+    right: 45%;
+    width: 6.9%;
+    height: 25.5vh;
+    rotate: -59.42deg;
+}
+
 
 
 .primo-aniversary1 {
