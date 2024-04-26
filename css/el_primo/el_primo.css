@@ -55,9 +55,8 @@
 /* ---- WHITE ---- */
 #elPrimoWhite {
     width: 100%;
-    height: 600vh;
+    height: 750vh;
     background: linear-gradient(180deg, #00B7FF 0%, #04E2F3 32.88%, #F500A5 52.07%, #FF0D1B 72.05%);
-    /* background-image: url("./../../resources/El Primo/Fondo_Elprimo.png"); */
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,12 +85,12 @@
     top: 1%;
     left: 0%;
     width: 100%;
-    height: 28%;
+    height: 169vh;
     background-image: url("./../../resources/El Primo/World.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    transition: transform 0.1s ease;
+    transition: transform 1.5s ease-out
 }
 
 .video-world {
@@ -102,9 +101,10 @@
     top: 45vh;
     left: 37%;
     border-radius: 4vw;
-    border: 13px solid #FFFFFF;
+    border: 1.5vh solid #FFFFFF;
     rotate: 5deg;
     z-index: 2;
+    background-color: #FFFFFF;
     transition: transform 0.3s;
 }
 
@@ -120,7 +120,7 @@
 
 .cloud1 {
     position: absolute;
-    top: 5%;
+    top: 4%;
     left: -2%;
     width: 27%;
     height: 12%;
@@ -152,7 +152,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    rotate: 66.36deg;
+    rotate: 73.36deg;
 }
 
 .cloud4 {
@@ -168,9 +168,49 @@
     rotate: 118.24deg;
 }
 
+.primo-aniversary1 {
+    position: absolute;
+    top: 23%;
+    left: 15%;
+    width: 27%;
+    height: 83vh;
+    background-image: url("./../../resources/El Primo/Primoversary_Poster.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1vh solid #FFFFFF;
+    rotate: -8.3deg;
+    z-index: 3;
+    transition: transform 0.3s;
+}
+
+.primo-aniversary1:hover {
+    transform: scale(1.1);
+}
+
+.primo-aniversary2 {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    width: 46%;
+    height: 50vh;
+    background-image: url("./../../resources/El Primo/Primoversary_Eventbrite.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1vh solid #FFFFFF;
+    rotate: 8.15deg;
+    z-index: 3;
+    transition: transform 0.3s;
+}
+
+.primo-aniversary2:hover {
+    transform: scale(1.1);
+}
+
 .background-happy {
     position: absolute;
-    top: 30%;
+    top: 26%;
     left: 0%;
     width: 100%;
     height: 250vh;
@@ -178,10 +218,292 @@
     background-position: center;
     background-repeat: no-repeat;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 1) 50%);
-
 }
 
+.video-happy {
+    position: absolute;
+    width: 53vh;
+    height: 93vh;
+    overflow: hidden;
+    top: 40%;
+    left: 37%;
+    border-radius: 4vw;
+    border: 1.5vh solid #FFFFFF;
+    rotate: -4.19deg;
+    z-index: 3;
+    background-color: #FFFFFF;
+    transition: transform 0.3s;
+}
 
+.video-happy:hover {
+    transform: scale(1.1);
+}
+
+.video-happy video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.r-back1 {
+    position: absolute;
+    top: 43%;
+    left: 22%;
+    width: 28%;
+    height: 64vh;
+    background-image: url("./../../resources/El Primo/Recuadros_Back.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.r-back2 {
+    position: absolute;
+    top: 42.5%;
+    left: 50%;
+    width: 28%;
+    height: 64vh;
+    background-image: url("./../../resources/El Primo/Recuadros_Back.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    rotate: 30deg;
+}
+
+.primo-high1 {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 27%;
+    height: 83vh;
+    background-image: url("./../../resources/El Primo/HappyHigh_Poster.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2vh solid #FFFFFF;
+    rotate: -8.3deg;
+    z-index: 3;
+    transition: transform 0.3s;
+}
+
+.primo-high1:hover {
+    transform: scale(1.1);
+}
+
+.primo-high2 {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    width: 44%;
+    height: 47vh;
+    background-image: url("./../../resources/El Primo/HappyHigh_Eventbrite.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2vh solid #FFFFFF;
+    rotate: 8.15deg;
+    z-index: 3;
+    transition: transform 0.3s;
+}
+
+.primo-high2:hover {
+    transform: scale(1.1);
+}
+
+.mark-t-left {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    width: 27%;
+    height: 70vh;
+    background-image: url("./../../resources/El Primo/Encuadre AI.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.mark-t-right {
+    position: absolute;
+    top: 70%;
+    right: 0%;
+    width: 27%;
+    height: 70vh;
+    background-image: url("./../../resources/El Primo/Encuadre AD.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.mark-b-left {
+    position: absolute;
+    bottom: 1.5%;
+    left: 0%;
+    width: 27%;
+    height: 70vh;
+    background-image: url("./../../resources/El Primo/Encuadre BI.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.mark-b-right {
+    position: absolute;
+    bottom: 1.5%;
+    right: 0%;
+    width: 27%;
+    height: 70vh;
+    background-image: url("./../../resources/El Primo/Encuadre BD.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.background-carnival {
+    position: absolute;
+    top: 65%;
+    left: -25%;
+    width: 150%;
+    height: 215vh;
+    background-image: url("./../../resources/El Primo/ChinaTown_Background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 1) 20%);
+}
+
+.background-carnival-const {
+    position: absolute;
+    top: 68.5%;
+    left: 0;
+    width: 100%;
+    height: 180vh;
+    background-image: url("./../../resources/El Primo/Construccion.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.video-carnival {
+    position: absolute;
+    width: 47vh;
+    height: 84vh;
+    overflow: hidden;
+    top: 73.5%;
+    left: 38.4%;
+    border-radius: 4vw;
+    border: 1.5vh solid #FFFFFF;
+    z-index: 3;
+    background-color: #FFFFFF;
+    transition: transform 0.3s;
+}
+
+.video-carnival:hover {
+    transform: scale(1.1);
+}
+
+.video-carnival video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.primo-carnival1 {
+    position: absolute;
+    top: 87%;
+    left: 16%;
+    width: 24%;
+    height: 73vh;
+    background-image: url("./../../resources/El Primo/Chinatown_Poster.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2vh solid #FFFFFF;
+    rotate: -8.3deg;
+    z-index: 3;
+    transition: transform 0.3s;
+}
+
+.primo-carnival1:hover {
+    transform: scale(1.1);
+}
+
+.primo-carnival2 {
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    width: 39%;
+    height: 42vh;
+    background-image: url("./../../resources/El Primo/Chinatown_Eventbrite.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2vh solid #FFFFFF;
+    rotate: 8.15deg;
+    z-index: 3;
+    transition: transform 0.3s;
+}
+
+.primo-carnival2:hover {
+    transform: scale(1.1);
+}
+
+.primo-bambu1 {
+    position: absolute;
+    bottom: 0%;
+    left: -4%;
+    width: 21%;
+    height: 143vh;
+    background-image: url("./../../resources/El Primo/Bambu_I1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.primo-bambu2 {
+    position: absolute;
+    bottom: 0%;
+    left: 27%;
+    width: 21%;
+    height: 107vh;
+    background-image: url("./../../resources/El Primo/Bambu_I2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.primo-bambu3 {
+    position: absolute;
+    bottom: 0%;
+    right: 27%;
+    width: 19%;
+    height: 128vh;
+    background-image: url("./../../resources/El Primo/Bambu_D1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.primo-bambu4 {
+    position: absolute;
+    bottom: -0.1%;
+    right: 0%;
+    width: 19%;
+    height: 128vh;
+    background-image: url("./../../resources/El Primo/Bambu_D2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
 
 
 
