@@ -306,6 +306,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .r-back2 {
@@ -319,6 +320,65 @@
     background-size: cover;
     background-repeat: no-repeat;
     rotate: 30deg;
+    z-index: 1;
+}
+
+.primo-hand {
+    position: absolute;
+    background-image: url("./../../resources/El Primo/Mano.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform-origin: right center;
+    z-index: 1;
+}
+
+.hand-left1 {
+    top: 42%;
+    left: 16%;
+    width: 27%;
+    height: 33vh;
+    rotate: 25deg;
+}
+
+.hand-left2 {
+    top: 44%;
+    left: 18%;
+    width: 27%;
+    height: 33vh;
+    rotate: 0deg;
+}
+
+.hand-left3 {
+    top: 46%;
+    left: 22%;
+    width: 27%;
+    height: 33vh;
+    rotate: -20deg;
+}
+
+.hand-right1 {
+    top: 41%;
+    right: 42%;
+    width: 27%;
+    height: 33vh;
+    rotate: -25deg;
+}
+
+.hand-right2 {
+    top: 43%;
+    right: 44%;
+    width: 27%;
+    height: 33vh;
+    rotate: 0deg;
+}
+
+.hand-right3 {
+    top: 44%;
+    right: 46%;
+    width: 27%;
+    height: 33vh;
+    rotate: 29deg;
 }
 
 .primo-high1 {
@@ -360,6 +420,114 @@
 .primo-high2:hover {
     transform: scale(1.1);
 }
+
+.flowers-container {
+    position: absolute;
+    width: 100%;
+    height: 250vh;
+    top: 35%;
+    left: 0%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.primo-flowers {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform-origin: center center;
+    transition: top 3s ease-out, left 3s ease-out, right 3s ease-out, bottom 3s ease-out;
+}
+
+.primo-flowers1-1 {
+    width: 28.8vw;
+    height: 59vh;
+    background-image: url("./../../resources/El Primo/Flor 1.svg");
+}
+
+.primo-flowers1-2 {
+    width: 23vw;
+    height: 47vh;
+    rotate: 33deg;
+    background-image: url("./../../resources/El Primo/Flor 1.svg");
+}
+
+.primo-flowers1-3 {
+    width: 6vw;
+    height: 14vh;
+    background-image: url("./../../resources/El Primo/Flor 3.svg");
+}
+
+.primo-flowers1-4 {
+    width: 6vw;
+    height: 13vh;
+    background-image: url("./../../resources/El Primo/Flor 2.svg");
+}
+
+.primo-flowers1-5 {
+    width: 14vw;
+    height: 29vh;
+    background-image: url("./../../resources/El Primo/Estrella.svg");
+}
+
+.primo-flowers2-1 {
+    width: 13.8vw;
+    height: 33vh;
+    background-image: url("./../../resources/El Primo/Flor 3.svg");
+}
+
+.primo-flowers2-2 {
+    width: 8vw;
+    height: 17vh;
+    rotate: 68.08deg;
+    background-image: url("./../../resources/El Primo/Estrella.svg");
+}
+
+.primo-flowers2-3 {
+    width: 8.5vw;
+    height: 18vh;
+    rotate: 130.28deg;
+    background-image: url("./../../resources/El Primo/Estrella.svg");
+}
+
+.primo-flowers2-4 {
+    width: 8vw;
+    height: 19vh;
+    background-image: url("./../../resources/El Primo/Flor 3.svg");
+}
+
+.primo-flowers3-1 {
+    width: 16vw;
+    height: 35vh;
+    rotate: 155.28deg;
+    background-image: url("./../../resources/El Primo/Estrella.svg");
+}
+.primo-flowers3-2 {
+    width: 9vw;
+    height: 16vh;
+    background-image: url("./../../resources/El Primo/Flor 2.svg");
+}
+.primo-flowers3-3 {
+    width: 12vw;
+    height: 22vh;
+    background-image: url("./../../resources/El Primo/Flor 2.svg");
+}
+.primo-flowers3-4 {
+    width: 19vw;
+    height: 39vh;
+    rotate: 33deg;
+    background-image: url("./../../resources/El Primo/Flor 1.svg");
+}
+.primo-flowers3-5 {
+    width: 14vw;
+    height: 33vh;
+    background-image: url("./../../resources/El Primo/Flor 3.svg");
+}
+
 
 .mark-t-left {
     position: absolute;

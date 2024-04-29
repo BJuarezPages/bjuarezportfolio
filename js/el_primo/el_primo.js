@@ -55,5 +55,123 @@ window.addEventListener('load', function () {
   window.addEventListener('scroll', handleScroll);
   window.addEventListener('resize', handleScroll);
 
-  handleScroll();
+  function moveHands() {
+    const hands = document.querySelectorAll('.primo-hand');
+
+    hands.forEach(function (hand) {
+      const randomRotation = Math.sin(Date.now() / 1000) * 10; // Rotación aleatoria entre -10 y 10 grados
+      const isRightHand = hand.className.includes('hand-right');
+
+      hand.style.transform = `rotate(${randomRotation}deg) ${isRightHand ? 'scaleX(-1)' : ''}`;
+    });
+
+    requestAnimationFrame(moveHands); // Llama recursivamente a la función para rotar los elementos de forma continua
+  }
+
+
+
+
+  handleScroll(); // Llama a handleScroll() para ajustar las posiciones iniciales
+  moveHands(); // Inicia el movimiento de las manos
+});
+
+//Funcion flores
+function adjustElementPositions(scrollDirection) {
+  var positions = {
+    'top': [
+      { top: '5%', left: '2%' },
+      { top: '5%', right: '-5%' },
+      { top: '3%', left: '45%' },
+      { top: '0%', left: '73%' },
+      { top: '7%', left: '60%' },
+
+      { top: '45%', left: '45%' },
+      { top: '45%', left: '45%' },
+      { top: '45%', right: '45%' },
+      { top: '45%', right: '45%' },
+
+      { top: '45%', left: '45%' },
+      { top: '45%', left: '45%' },
+      { top: '45%', left: '45%' },
+      { top: '45%', right: '45%' },
+      { top: '45%', right: '45%' }
+    ],
+    'middle': [
+      { top: '5%', left: '2%' },
+      { top: '5%', right: '-5%' },
+      { top: '3%', left: '45%' },
+      { top: '0%', left: '73%' },
+      { top: '7%', left: '60%' },
+
+      { top: '34%', left: '2%' },
+      { top: '36%', left: '20%' },
+      { top: '35%', right: '10%' },
+      { top: '26%', right: '2%' },
+
+      { top: '45%', left: '45%' },
+      { top: '45%', left: '45%' },
+      { top: '45%', left: '45%' },
+      { top: '45%', right: '45%' },
+      { top: '45%', right: '45%' }
+    ],
+    'bottom': [
+      { top: '5%', left: '2%' },
+      { top: '5%', right: '-5%' },
+      { top: '3%', left: '45%' },
+      { top: '0%', left: '73%' },
+      { top: '7%', left: '60%' },
+
+      { top: '34%', left: '2%' },
+      { top: '36%', left: '20%' },
+      { top: '35%', right: '10%' },
+      { top: '26%', right: '2%' },
+
+      { top: '61%', left: '-3%' },
+      { top: '56%', left: '20%' },
+      { top: '82%', left: '56%' },
+      { top: '51%', right: '3%' },
+      { top: '80%', right: '8%' }
+    ],
+    'default': [
+      { top: '45%', left: '45%' },
+      { top: '45%', right: '45%' },
+      { top: '45%', left: '45%' },
+      { top: '45%', left: '45%' },
+      { top: '45%', left: '45%' },
+
+      { top: '45%', left: '45%' },
+      { top: '45%', left: '45%' },
+      { top: '45%', right: '45%' },
+      { top: '45%', right: '45%' },
+
+      { top: '45%', left: '45%' },
+      { top: '45%', left: '45%' },
+      { top: '45%', left: '45%' },
+      { top: '45%', right: '45%' },
+      { top: '45%', right: '45%' }
+    ]
+  };
+
+  document.querySelectorAll('.primo-flowers').forEach(function (element, index) {
+    var pos = positions[scrollDirection][index];
+    element.style.top = pos.top || '';
+    element.style.left = pos.left || '';
+    element.style.right = pos.right || '';
+    element.style.bottom = pos.bottom || '';
+  });
+}
+
+window.addEventListener('scroll', function () {
+  var scrollDirection = 'default';
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 2200) {
+    scrollDirection = 'bottom';
+  } else if (scrollPosition > 2000) {
+    scrollDirection = 'middle';
+  } else if (scrollPosition > 1800) {
+    scrollDirection = 'top';
+  }
+
+  adjustElementPositions(scrollDirection);
 });
