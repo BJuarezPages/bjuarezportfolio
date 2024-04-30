@@ -55,24 +55,7 @@ window.addEventListener('load', function () {
   window.addEventListener('scroll', handleScroll);
   window.addEventListener('resize', handleScroll);
 
-  function moveHands() {
-    const hands = document.querySelectorAll('.primo-hand');
-
-    hands.forEach(function (hand) {
-      const randomRotation = Math.sin(Date.now() / 1000) * 10; // Rotación aleatoria entre -10 y 10 grados
-      const isRightHand = hand.className.includes('hand-right');
-
-      hand.style.transform = `rotate(${randomRotation}deg) ${isRightHand ? 'scaleX(-1)' : ''}`;
-    });
-
-    requestAnimationFrame(moveHands); // Llama recursivamente a la función para rotar los elementos de forma continua
-  }
-
-
-
-
   handleScroll(); // Llama a handleScroll() para ajustar las posiciones iniciales
-  moveHands(); // Inicia el movimiento de las manos
 });
 
 //Funcion flores
@@ -174,4 +157,12 @@ window.addEventListener('scroll', function () {
   }
 
   adjustElementPositions(scrollDirection);
+});
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+  const clouds = document.querySelectorAll('.carnival-cloud');
+  clouds.forEach(cloud => {
+      const randomSpeed = Math.random() * (20 - 5) + 5; // Velocidad aleatoria entre 5 y 20
+      cloud.style.animationDuration = `${randomSpeed}s`;
+  });
 });

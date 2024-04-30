@@ -333,12 +333,42 @@
     z-index: 1;
 }
 
+:root {
+    --initial-rotation-left1: 25deg;
+    --initial-rotation-left2: 0deg;
+    --initial-rotation-left3: -20deg;
+    --initial-rotation-right1: -25deg;
+    --initial-rotation-right2: 0deg;
+    --initial-rotation-right3: 29deg;
+  }
+  
+  @keyframes rotateHandsLeft {
+    0%, 100% {
+        transform: rotate(var(--initial-rotation-left1));
+    }
+
+    50% {
+        transform: rotate(calc(var(--initial-rotation-left2) - var(--initial-rotation-left1)));
+    }
+}
+
+@keyframes rotateHandsRight {
+    0%, 100% {
+        transform: rotate(var(--initial-rotation-right1)) scaleX(-1);
+    }
+
+    50% {
+        transform: rotate(calc(var(--initial-rotation-right2) - var(--initial-rotation-right1))) scaleX(-1);
+    }
+}
+
+
 .hand-left1 {
     top: 42%;
     left: 16%;
     width: 27%;
     height: 33vh;
-    rotate: 25deg;
+    transform: rotate(25deg);
 }
 
 .hand-left2 {
@@ -346,7 +376,7 @@
     left: 18%;
     width: 27%;
     height: 33vh;
-    rotate: 0deg;
+    transform: rotate(0deg);
 }
 
 .hand-left3 {
@@ -354,7 +384,14 @@
     left: 22%;
     width: 27%;
     height: 33vh;
-    rotate: -20deg;
+    transform: rotate(-20deg);
+}
+
+.hand-left1,
+.hand-left2,
+.hand-left3 {
+    animation: rotateHandsLeft infinite linear;
+    animation-duration: 5s;
 }
 
 .hand-right1 {
@@ -362,7 +399,7 @@
     right: 42%;
     width: 27%;
     height: 33vh;
-    rotate: -25deg;
+    transform: rotate(-25deg) scaleX(-1);
 }
 
 .hand-right2 {
@@ -370,15 +407,22 @@
     right: 44%;
     width: 27%;
     height: 33vh;
-    rotate: 0deg;
+    transform: rotate(0deg) scaleX(-1);
 }
 
 .hand-right3 {
-    top: 44%;
+    top: 45%;
     right: 46%;
     width: 27%;
     height: 33vh;
-    rotate: 29deg;
+    transform: rotate(29deg) scaleX(-1);
+}
+
+.hand-right1,
+.hand-right2,
+.hand-right3 {
+    animation: rotateHandsRight infinite linear;
+    animation-duration: 5s;
 }
 
 .primo-high1 {
@@ -506,22 +550,26 @@
     rotate: 155.28deg;
     background-image: url("./../../resources/El Primo/Estrella.svg");
 }
+
 .primo-flowers3-2 {
     width: 9vw;
     height: 16vh;
     background-image: url("./../../resources/El Primo/Flor 2.svg");
 }
+
 .primo-flowers3-3 {
     width: 12vw;
     height: 22vh;
     background-image: url("./../../resources/El Primo/Flor 2.svg");
 }
+
 .primo-flowers3-4 {
     width: 19vw;
     height: 39vh;
     rotate: 33deg;
     background-image: url("./../../resources/El Primo/Flor 1.svg");
 }
+
 .primo-flowers3-5 {
     width: 14vw;
     height: 33vh;
@@ -731,18 +779,19 @@
     background-repeat: no-repeat;
     animation: farolilloAnimation 5s infinite alternate;
     z-index: 3;
-  }
-  
-  @keyframes farolilloAnimation {
+}
+
+@keyframes farolilloAnimation {
     0% {
-      transform:  rotate(-30deg);
+        transform: rotate(-30deg);
     }
+
     100% {
-      transform:  rotate(30deg);
+        transform: rotate(30deg);
     }
-  }
-  
-  #farolillo1 {
+}
+
+#farolillo1 {
     background-image: url("./../../resources/El Primo/Farolillo_3.png");
     top: 72.4%;
     left: 25%;
@@ -751,9 +800,9 @@
     transform-origin: 40% top;
     animation-duration: 6s;
     animation-delay: 0.5s;
-  }
-  
-  #farolillo2 {
+}
+
+#farolillo2 {
     background-image: url("./../../resources/El Primo/Farolillo_2.png");
     top: 72.2%;
     left: 68%;
@@ -762,9 +811,9 @@
     transform-origin: 60% top;
     animation-duration: 5s;
     animation-delay: 1s;
-  }
-  
-  #farolillo3 {
+}
+
+#farolillo3 {
     background-image: url("./../../resources/El Primo/Farolillo_1.png");
     top: 70.35%;
     left: 66%;
@@ -773,10 +822,87 @@
     transform-origin: 30% top;
     animation-duration: 7s;
     animation-delay: 0.3s;
-  }
+}
 
+.carnival-cloud-container {
+    position: absolute;
+    top: 66%;
+    width: 100%;
+    height: 200vh;
+}
 
+.carnival-cloud {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: moveClouds linear infinite;
+}
 
+@keyframes moveClouds {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: calc(100% + 100px);
+    }
+}
+
+#carnival-cloud1 {
+    width: 11vw;
+    height: 8vh;
+    background-image: url("./../../resources/El Primo/Nube 3.svg");
+    top: 0%;
+    left: 65%;
+}
+
+#carnival-cloud2 {
+    width: 10vw;
+    height: 10.7vh;
+    background-image: url("./../../resources/El Primo/Nube 4.svg");
+    top: 4%;
+    left: 25%;
+}
+
+#carnival-cloud3 {
+    width: 11vw;
+    height: 11.2vh;
+    background-image: url("./../../resources/El Primo/Nube 1.svg");
+    top: 30%;
+    left: 5%;
+}
+
+#carnival-cloud4 {
+    width: 10vw;
+    height: 10.7vh;
+    background-image: url("./../../resources/El Primo/Nube 4.svg");
+    top: 25%;
+    left: 85%;
+}
+
+#carnival-cloud5 {
+    width: 9vw;
+    height: 12.2vh;
+    background-image: url("./../../resources/El Primo/Nube 2.svg");
+    top: 55%;
+    left: 20%;
+}
+
+#carnival-cloud6 {
+    width: 11vw;
+    height: 11.2vh;
+    background-image: url("./../../resources/El Primo/Nube 1.svg");
+    top: 48%;
+    left: 65%;
+}
+
+#carnival-cloud7 {
+    width: 12vw;
+    height: 8.65vh;
+    background-image: url("./../../resources/El Primo/Nube 3.svg");
+    top: 70%;
+    left: 80%;
+}
 
 /* ---- Social ---- */
 #redBar {
