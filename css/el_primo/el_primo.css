@@ -101,8 +101,8 @@
     overflow: hidden;
     top: 45vh;
     left: 37%;
-    border-radius: 4vw;
-    border: 1.5vh solid #FFFFFF;
+    border-radius: 3vw;
+    border: 1vh solid #FFFFFF;
     rotate: 5deg;
     z-index: 2;
     background-color: #FFFFFF;
@@ -278,8 +278,8 @@
     overflow: hidden;
     top: 40%;
     left: 37%;
-    border-radius: 4vw;
-    border: 1.5vh solid #FFFFFF;
+    border-radius: 3vw;
+    border: 1vh solid #FFFFFF;
     rotate: -4.19deg;
     z-index: 3;
     background-color: #FFFFFF;
@@ -391,7 +391,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 2vh solid #FFFFFF;
+    border: 1vh solid #FFFFFF;
     rotate: -8.3deg;
     z-index: 3;
     transition: transform 0.3s;
@@ -411,7 +411,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 2vh solid #FFFFFF;
+    border: 1vh solid #FFFFFF;
     rotate: 8.15deg;
     z-index: 3;
     transition: transform 0.3s;
@@ -615,8 +615,8 @@
     overflow: hidden;
     top: 73.5%;
     left: 38.4%;
-    border-radius: 4vw;
-    border: 1.5vh solid #FFFFFF;
+    border-radius: 3vw;
+    border: 1vh solid #FFFFFF;
     z-index: 3;
     background-color: #FFFFFF;
     transition: transform 0.3s;
@@ -642,7 +642,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 2vh solid #FFFFFF;
+    border: 1vh solid #FFFFFF;
     rotate: -8.3deg;
     z-index: 3;
     transition: transform 0.3s;
@@ -662,7 +662,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 2vh solid #FFFFFF;
+    border: 1vh solid #FFFFFF;
     rotate: 8.15deg;
     z-index: 3;
     transition: transform 0.3s;
@@ -724,7 +724,56 @@
     z-index: 1;
 }
 
-
+.farolillo {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: farolilloAnimation 5s infinite alternate;
+    z-index: 3;
+  }
+  
+  @keyframes farolilloAnimation {
+    0% {
+      transform:  rotate(-30deg);
+    }
+    100% {
+      transform:  rotate(30deg);
+    }
+  }
+  
+  #farolillo1 {
+    background-image: url("./../../resources/El Primo/Farolillo_3.png");
+    top: 72.4%;
+    left: 25%;
+    width: 8vw;
+    height: 18vh;
+    transform-origin: 40% top;
+    animation-duration: 6s;
+    animation-delay: 0.5s;
+  }
+  
+  #farolillo2 {
+    background-image: url("./../../resources/El Primo/Farolillo_2.png");
+    top: 72.2%;
+    left: 68%;
+    width: 6vw;
+    height: 19vh;
+    transform-origin: 60% top;
+    animation-duration: 5s;
+    animation-delay: 1s;
+  }
+  
+  #farolillo3 {
+    background-image: url("./../../resources/El Primo/Farolillo_1.png");
+    top: 70.35%;
+    left: 66%;
+    width: 4vw;
+    height: 12vh;
+    transform-origin: 30% top;
+    animation-duration: 7s;
+    animation-delay: 0.3s;
+  }
 
 
 
