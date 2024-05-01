@@ -20,9 +20,9 @@ window.addEventListener('load', function () {
   function getScrollDirection() {
     const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 700) {
+    if (scrollPosition > 500) {
       return 'bottom';
-    } else if (scrollPosition > 300) {
+    } else if (scrollPosition > 100) {
       return 'top';
     } else {
       return 'middle';

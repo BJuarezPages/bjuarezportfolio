@@ -98,8 +98,8 @@
 
 .video-world {
     position: absolute;
-    width: 50vh;
-    height: 90vh;
+    width: 47vh;
+    height: 84vh;
     overflow: hidden;
     top: 45vh;
     left: 37%;
@@ -185,7 +185,7 @@
     background-repeat: no-repeat;
     background-image: url("./../../resources/El Primo/3.svg");
     z-index: 1;
-    transition: top 2s ease-out, left 2s ease-out, right 2s ease-out, bottom 2s ease-out;
+    transition: top 1s ease-out, left 1s ease-out, right 1s ease-out, bottom 1s ease-out;
 }
 
 .primo-number1 {
@@ -275,11 +275,11 @@
 
 .video-happy {
     position: absolute;
-    width: 53vh;
-    height: 93vh;
+    width: 47vh;
+    height: 84vh;
     overflow: hidden;
     top: 40%;
-    left: 37%;
+    left: 39%;
     border-radius: 3vw;
     border: 1vh solid #FFFFFF;
     rotate: -4.19deg;
