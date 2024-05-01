@@ -16,7 +16,7 @@
 }
 
 #galloLogo {
-    width: 15vw;
+    width: 14vw;
     height: 30vh;
     background-color: #071017;
     border-radius: 3vh;
@@ -104,6 +104,11 @@
     background-position: center;
     padding-top: calc(33.33% - 10px);
     max-width: 100%;
+    transition: transform 0.3s;
+}
+
+.sizeContainer:hover {
+    transform: scale(1.1);
 }
 
 #flexPanel>#image1 {
@@ -142,8 +147,8 @@
     background-image: url("../../resources/Gallo/Post_Gallo_9.png");
 }
 
-#videoGalloMobile{
-    width: 49vh;
+#videoGalloMobile {
+    width: 52vh;
     height: 104vh;
     position: relative;
     overflow: hidden;
@@ -152,6 +157,7 @@
     rotate: 6.49deg;
     border-radius: 3vw;
     z-index: 11;
+    transition: transform 0.3s;
 }
 
 #videoGalloMobile:hover {
@@ -218,7 +224,7 @@
 }
 
 #imageBlackContainer {
-    width: 40%;
+    width: 39%;
     height: 100%;
     position: absolute;
     top: 0%;
@@ -238,6 +244,12 @@
     justify-content: center;
     align-items: center;
     margin-bottom: -23%;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#imageBackgroundGallo.visible {
+    opacity: 1;
 }
 
 #imageBackgroundGallo>#text1 {
@@ -264,6 +276,12 @@
     background-size: contain;
     background-position: center;
     pointer-events: none;
+    transform: translateX(-98%);
+    transition: transform 2s;
+}
+
+#imageWebBanner.visible {
+    transform: translateX(0%);
 }
 
 /* ---- COMBINATED ---- */
@@ -313,6 +331,15 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 10%;
+}
+
+#galloCombinatedLeftContainer p {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#galloCombinatedLeftContainer p.visible {
+    opacity: 1;
 }
 
 #galloCombinatedLeftContainer>#title1 {
@@ -447,8 +474,8 @@
 
 #closeButton {
     position: absolute;
-    top: 15%;
-    right: 13%;
+    top: 4%;
+    right: 3%;
     color: #CCFF00;
     background-color: unset;
     border: unset;
