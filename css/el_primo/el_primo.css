@@ -16,7 +16,7 @@
 }
 
 #elPrimoLogo {
-    width: 15vw;
+    width: 14vw;
     height: 30vh;
     background-color: #071017;
     border-radius: 3vh;
@@ -42,10 +42,12 @@
 
 #elPrimoDescription>p {
     font-size: 1.2vw;
+    font-family: 'Futura Std Book';
 }
 
 #elPrimoDescription>#title {
     font-size: 2.3vw;
+    font-family: 'Futura Std Condensed Extra Bold';
 }
 
 #elPrimoDescription>p>#agency, #elPrimoDescription>p>#year {
@@ -340,9 +342,9 @@
     --initial-rotation-right1: -25deg;
     --initial-rotation-right2: 0deg;
     --initial-rotation-right3: 29deg;
-  }
-  
-  @keyframes rotateHandsLeft {
+}
+
+@keyframes rotateHandsLeft {
     0%, 100% {
         transform: rotate(var(--initial-rotation-left1));
     }

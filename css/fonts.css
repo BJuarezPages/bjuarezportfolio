@@ -131,6 +131,15 @@
     src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
 }
 
+.MontserratRegular {
+    font-family: 'Montserrat Regular';
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
 .MontserratExtraBold {
     font-family: 'Montserrat Extra Bold';
 }
@@ -189,6 +198,6 @@
 
 /* letter-spacing */
 
-.letter-spacing-20{
+.letter-spacing-20 {
     letter-spacing: 0.2em;
 }

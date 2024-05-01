@@ -21,7 +21,7 @@ enlaces.forEach(function (enlace) {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const openButton = document.getElementById('buttonVideo');
     const closeButton = document.getElementById('closeButton');
     const darkOverlay = document.getElementById('darkOverlay');
