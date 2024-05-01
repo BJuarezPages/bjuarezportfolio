@@ -73,7 +73,7 @@
 
 #babiesUgandaWhiteLeft {
     width: 35%;
-    height: 70%;
+    height: 80%;
     background-color: #FFFFFF   ;
     display: flex;
     flex-direction: column;
@@ -81,6 +81,12 @@
     align-items: center;
     border-radius: 0.5vw;
     filter: drop-shadow(0vh 0vh 3px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#babiesUgandaWhiteLeft:hover {
+    transform: scale(1.1);
 }
 
 #babiesUgandaWhiteLeft > #top{
@@ -111,7 +117,7 @@
     width: 80%;
     height: 20%;
     background-color: #FF6863;
-    font-family: 'Montserrat Extra Bold';
+    font-family: 'Futura STD Book';
     font-size: 1.5vw;
     border-radius: 0.5vw;
     text-align: center;
@@ -244,8 +250,8 @@
 
 #closeButton {
     position: absolute;
-    top: 15%;
-    right: 13%;
+    top: 4%;
+    right: 3%;
     color: #CCFF00;
     background-color: unset;
     border: unset;

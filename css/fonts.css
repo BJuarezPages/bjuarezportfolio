@@ -88,7 +88,7 @@
 
 @font-face {
     font-family: 'Arquitecta Black';
-    src: url("../fonts/Arquitecta/Latinotype\ -\ ArquitectaBlack.otf");
+    src: url("../fonts/Arquitecta/Latinotype - ArquitectaBlack.otf");
 }
 
 .ArquitectaBlack {
@@ -97,7 +97,16 @@
 
 @font-face {
     font-family: 'Arquitecta Book';
-    src: url("../fonts/Arquitecta/Latinotype\ -\ ArquitectaBook.otf");
+    src: url("../fonts/Arquitecta/Latinotype - ArquitectaBook.otf");
+}
+
+.ArquitectaBold {
+    font-family: 'Arquitecta Bold';
+}
+
+@font-face {
+    font-family: 'Arquitecta Bold';
+    src: url("../fonts/Arquitecta/Latinotype - ArquitectaBold.otf");
 }
 
 .ArquitectaBook {
