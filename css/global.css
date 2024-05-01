@@ -7,7 +7,7 @@
 body {
     background-color: #071017;
     background-image: url("../resources/Portfolio/Background.png");
-    background-size: contain;
+    background-size: cover;
     scroll-behavior: smooth;
     opacity: 0;
 }

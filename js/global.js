@@ -22,20 +22,23 @@ enlaces.forEach(function (enlace) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const openButton = document.getElementById('buttonVideo');
     const closeButton = document.getElementById('closeButton');
     const darkOverlay = document.getElementById('darkOverlay');
     const popupContainer = document.getElementById('popupContainer');
 
     // Verificar si los elementos existen antes de agregar los listeners
-    if (openButton && closeButton && darkOverlay && popupContainer) {
-        openButton.addEventListener('click', openPopup);
+    if (closeButton && darkOverlay && popupContainer) {
         closeButton.addEventListener('click', closePopup);
         darkOverlay.addEventListener('click', closePopup);
     }
 });
 
-function openPopup() {
+function openPopup(videoSrc, popupWidth) {
+    const video = document.querySelector('.popup-inner');
+    video.src = videoSrc;
+    video.load();
+    video.style.width = popupWidth;
+    video.play();
     popupContainer.classList.add('active');
 }
 

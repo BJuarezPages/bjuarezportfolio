@@ -71,7 +71,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #071017;
     background-image: url("../../resources/Bocca/Background_Reja.png");
     background-size: 100%;
     background-position: center;
@@ -299,7 +298,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #071017;
     background-image: url("../../resources/Bocca/Background_Reja.png");
     background-size: 100%;
     background-position: center;

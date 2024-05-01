@@ -16,7 +16,7 @@
 }
 
 #moritzLogo {
-    width: 15vw;
+    width: 14vw;
     height: 30vh;
     background-color: #071017;
     border-radius: 3vh;
@@ -42,10 +42,13 @@
 
 #moritzDescription>p {
     font-size: 1.2vw;
+    font-family: 'Futura Std Book';
+    font-weight: 400;
 }
 
 #moritzDescription>#title {
     font-size: 2.3vw;
+    font-family: 'Futura Std Condensed Extra Bold';
 }
 
 #moritzDescription>p>#agency, #moritzDescription>p>#year {
@@ -63,7 +66,7 @@
 }
 
 #moritzWhiteContainer {
-    width: 80%;
+    width: 90%;
     height: 60%;
     display: flex;
     flex-direction: row;
@@ -81,7 +84,7 @@
 }
 
 #moritzWhiteLeftTitle {
-    width: 80%;
+    width: 78%;
     height: 60%;
 }
 
@@ -142,7 +145,7 @@
     height: 12%;
     position: absolute;
     top: 12vh;
-    left: 10%;
+    left: 9.9%;
 }
 
 #textContainer>#title1 {
@@ -179,7 +182,7 @@
     overflow: hidden;
     top: -5vh;
     left: 45%;
-    border-radius: 4vw;
+    border-radius: 3vw;
     rotate: -5deg;
     z-index: 2;
     transition: transform 0.3s;
@@ -245,7 +248,7 @@
     position: absolute;
     top: 5%;
     left: 85%;
-    background-image: url("./../../resources/Moritz/Asset Heart.png");
+    background-image: url("./../../resources/Moritz/Cor_None.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -275,10 +278,6 @@
     background-image: url("./../../resources/Moritz/VideoFrame_2.png");
 }
 
-#slideImage.image3 {
-    background-image: url("./../../resources/Moritz/VideoFrame_2-1.png");
-}
-
 #slideContainer {
     width: 88%;
     height: 20%;
@@ -302,7 +301,7 @@
     font-size: 1.8vw;
 }
 
-.slideItem>#videoButton {
+.slideItem>.videoButton {
     width: 88%;
     height: 10%;
     position: absolute;
@@ -323,17 +322,17 @@
     height: 100vh;
     background-color: #FFFFFF;
     position: relative;
-    overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 #moritzBigContainer {
-    width: 80%;
+    width: 90%;
     height: 70%;
     background-color: #F0EFED;
     position: relative;
+    margin-top: 2%;
 }
 
 #moritzBigContainerText {
@@ -341,7 +340,7 @@
     height: 60%;
     position: absolute;
     top: 20%;
-    left: 4%;
+    left: 5.3%;
 }
 
 #moritzBigContainerText>.text1 {
@@ -373,12 +372,12 @@
 
 .video-container2 {
     position: relative;
-    width: 39vh;
+    width: 45vh;
     height: 85vh;
     overflow: hidden;
     top: -8vh;
     left: 70%;
-    border-radius: 4vw;
+    border-radius: 3vw;
     rotate: 8deg;
     z-index: 2;
     transition: transform 0.3s;
@@ -415,7 +414,7 @@
     height: 60%;
     position: absolute;
     top: 20%;
-    left: 14%;
+    left: 10%;
 }
 
 #moritzGraphicsContainerText>.text1 {
@@ -437,7 +436,7 @@
     height: 108vh;
     position: absolute;
     top: -34%;
-    left: 0%;
+    left: -5%;
     background-image: url("./../../resources/Moritz/M.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -451,13 +450,13 @@
     position: absolute;
     top: 0%;
     left: 45%;
-    background-image: url("./../../resources/Moritz/Gif-0\,0-Cerveza.gif");
+    background-image: url("./../../resources/Moritz/Gif-0,0-Cerveza.gif");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     pointer-events: none;
     rotate: 8deg;
-    filter: drop-shadow(-4vh 4vh 8px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(-4vh 4vh 0px rgba(0, 0, 0, 0.1));
 }
 
 #moritzGridBeers {
@@ -470,7 +469,7 @@
 #beersPosition {
     width: 100%;
     position: absolute;
-    top: 20%;
+    top: 33%;
     left: 6%;
     display: flex;
     flex-direction: row;
@@ -480,11 +479,13 @@
 
 .beer-img {
     width: 9%;
+    max-height: 56vh;
     transition: transform 0.3s;
+    object-fit: contain;
 }
 
 .beer-img:hover {
-    transform: scale(1.1);
+    transform: translateY(-15%);
 }
 
 .video-container3 {
@@ -494,7 +495,7 @@
     overflow: hidden;
     top: -8vh;
     left: 40%;
-    border-radius: 4vw;
+    border-radius: 3vw;
     rotate: -7deg;
     z-index: 4;
     transition: transform 0.3s;
@@ -582,7 +583,7 @@
 
 .popup-inner {
     background-color: #333;
-    width: 80vw;
+    width: 65vw;
     height: 80vh;
     border-radius: 3vw;
     color: white;
@@ -592,8 +593,8 @@
 
 #closeButton {
     position: absolute;
-    top: 15%;
-    right: 13%;
+    top: 4%;
+    right: 3%;
     color: #CCFF00;
     background-color: unset;
     border: unset;
