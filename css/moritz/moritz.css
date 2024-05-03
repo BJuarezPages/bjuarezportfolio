@@ -1,60 +1,6 @@
 /* ---- TITLE ---- */
-#moritzTitle {
-    width: 100%;
-    height: 58vh;
-    display: flex;
-    justify-content: center;
-}
-
-#moritzTitleContainer {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#moritzLogo {
-    width: 14vw;
-    height: 30vh;
-    background-color: #071017;
-    border: 0.3vh solid #000000;
-    border-radius: 3vh;
+#generalLogo {
     background-image: url("../../resources/Portfolio/Logo_Moritz_SVG.svg");
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#moritzDescription {
-    width: 60vw;
-    height: 30vh;
-    background-color: #071017;
-    border: 0.3vh solid #000000;
-    border-radius: 3vh;
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 3%;
-    box-sizing: border-box;
-}
-
-#moritzDescription>p {
-    font-size: 1.2vw;
-    font-family: 'Futura Std Book';
-    font-weight: 400;
-}
-
-#moritzDescription>#title {
-    font-size: 2.3vw;
-    font-family: 'Futura Std Condensed Extra Bold';
-}
-
-#moritzDescription>p>#agency, #moritzDescription>p>#year {
-    color: #CCFF00;
 }
 
 /* ---- WHITE ---- */

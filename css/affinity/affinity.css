@@ -1,55 +1,6 @@
 /* ---- TITLE ---- */
-#affinityTitle {
-    width: 100%;
-    height: 58vh;
-    display: flex;
-    justify-content: center;
-}
-
-#affinityTitleContainer {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#affinityLogo {
-    width: 15vw;
-    height: 30vh;
-    background-color: #071017;
-    border-radius: 3vh;
+#generalLogo {
     background-image: url("../../resources/Portfolio/Logo_Affinity_SVG.svg");
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#affinityDescription {
-    width: 60vw;
-    height: 30vh;
-    background-color: #071017;
-    border-radius: 3vh;
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 3%;
-    box-sizing: border-box;
-}
-
-#affinityDescription>p {
-    font-size: 1.2vw;
-}
-
-#affinityDescription>#title {
-    font-size: 2.3vw;
-}
-
-#affinityDescription>p>#agency, #affinityDescription>p>#year {
-    color: #CCFF00;
 }
 
 /* ---- WHITE ---- */
@@ -102,7 +53,7 @@
     overflow: hidden;
 }
 
-.gif{
+.gif {
     position: absolute;
     width: 30% !important;
     height: 110% !important;
@@ -126,12 +77,6 @@
     left: 53.5%;
     rotate: 10deg;
 }
-
-
-
-
-
-
 
 /* ---- Social ---- */
 #redBar {

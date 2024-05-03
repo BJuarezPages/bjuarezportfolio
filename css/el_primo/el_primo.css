@@ -1,59 +1,6 @@
 /* ---- TITLE ---- */
-#elPrimoTitle {
-    width: 100%;
-    height: 58vh;
-    display: flex;
-    justify-content: center;
-}
-
-#elPrimoTitleContainer {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#elPrimoLogo {
-    width: 14vw;
-    height: 30vh;
-    background-color: #071017;
-    border: 0.3vh solid #000000;
-    border-radius: 3vh;
+#generalLogo {
     background-image: url("../../resources/Portfolio/Logo_ElPrimo_SVG.svg");
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#elPrimoDescription {
-    width: 60vw;
-    height: 30vh;
-    background-color: #071017;
-    border: 0.3vh solid #000000;
-    border-radius: 3vh;
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 3%;
-    box-sizing: border-box;
-}
-
-#elPrimoDescription>p {
-    font-size: 1.2vw;
-    font-family: 'Futura Std Book';
-}
-
-#elPrimoDescription>#title {
-    font-size: 2.3vw;
-    font-family: 'Futura Std Condensed Extra Bold';
-}
-
-#elPrimoDescription>p>#agency, #elPrimoDescription>p>#year {
-    color: #CCFF00;
 }
 
 /* ---- WHITE ---- */

@@ -277,3 +277,66 @@ footer {
     height: fit-content;
     scroll-behavior: smooth;
 }
+
+/* ---- TITLE ---- */
+#generalTitle {
+    width: 100%;
+    height: 58vh;
+    display: flex;
+    justify-content: center;
+}
+
+#generalTitleContainer {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#generalLogo {
+    width: 14vw;
+    height: 30vh;
+    background-color: #071017;
+    border: 0.3vh solid #000000;
+    border-radius: 3vh;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#generalDescription {
+    width: 60vw;
+    height: 30vh;
+    background-color: #071017;
+    border: 0.3vh solid #000000;
+    border-radius: 3vh;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+#generalDescription>p {
+    font-size: 1.2vw;
+    font-family: 'Futura Std Book';
+    font-weight: 400;
+}
+
+#generalDescription>#title {
+    font-size: 2.3vw;
+    font-family: 'Futura Std Condensed Extra Bold';
+}
+
+#generalDescription>p>#agency, #generalDescription>p>#year {
+    color: #CCFF00;
+}
+
+/* --- MOBILE MODE --- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+}
