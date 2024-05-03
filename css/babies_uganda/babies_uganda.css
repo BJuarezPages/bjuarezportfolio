@@ -19,6 +19,7 @@
     width: 15vw;
     height: 30vh;
     background-color: #071017;
+    border: 0.3vh solid #000000;
     border-radius: 3vh;
     background-image: url("../../resources/Portfolio/Logo_BabiesUganda_SVG.svg");
     background-size: 60%;
@@ -30,6 +31,7 @@
     width: 60vw;
     height: 30vh;
     background-color: #071017;
+    border: 0.3vh solid #000000;
     border-radius: 3vh;
     color: #FFFFFF;
     display: flex;

@@ -41,11 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Verificar si es un video de Bocca Club y ajustar el número del video si es necesario
                 if (folderName === "Bocca Club") {
                     videoSrc = `./../../resources/Bocca/${folderName}/Bocca_Video_${videoNumber}.mp4`;
-                    posterSrc = `./../../resources/Bocca/${folderName}/Bocca_Portada_${videoNumber}.mp4`;
+                    posterSrc = `./../../resources/Bocca/${folderName}/Bocca_Portada_${videoNumber}.png`;
 
                 } else {
                     videoSrc = `./../../resources/Bocca/${folderName}/Cachito_Video_${videoNumber}.mp4`;
-                    posterSrc = `./../../resources/Bocca/${folderName}/Cachito_Portada_${videoNumber}.mp4`;
+                    posterSrc = `./../../resources/Bocca/${folderName}/Cachito_Portada_${videoNumber}.png`;
                 }
 
                 mainVideo.pause(); // Pausar el video principal si está reproduciendo
