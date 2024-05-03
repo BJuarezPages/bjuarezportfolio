@@ -35,7 +35,6 @@
     font-family: 'Futura Std Bold';
 }
 
-
 @font-face {
     font-family: 'Futura Std Extra Bold';
     src: url("../fonts/Futura_STD/FuturaStdExtraBold.otf");
@@ -71,6 +70,15 @@
 
 .FuturaStdCondensedExtraBold {
     font-family: 'Futura Std Condensed Extra Bold';
+}
+
+@font-face {
+    font-family: 'Futura Std Medium';
+    src: url("../fonts/Futura_STD/FuturaStdMedium.otf");
+}
+
+.FuturaStdMedium {
+    font-family: 'Futura Std Medium';
 }
 
 /* ---- Karma ---- */

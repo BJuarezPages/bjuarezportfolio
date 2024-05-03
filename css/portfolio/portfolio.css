@@ -26,7 +26,9 @@
 #portfolio>#video {
     background-color: #0E2433;
     background-image: url("../../resources/Portfolio/Background.png");
-    background-size: 100vw 700vh;
+    background-size: 195vh;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 50%;
     width: 35vw;
     height: 80vh;
@@ -96,6 +98,10 @@
     text-align: left;
 }
 
+#portfolio>#container>#name img {
+    height: 2.5vh;
+}
+
 #portfolio>#container>#portName {
     font-family: 'Futura Std Condensed Extra Bold';
     font-size: 7vw;
@@ -117,6 +123,8 @@
     border-radius: 2vh;
     font-size: 3vh;
     cursor: pointer;
+    border: 0px;
+    transition: transform 0.3s;
 }
 
 #buttonWork:hover {
@@ -127,7 +135,7 @@
 
 #myWork {
     width: 100%;
-    height: 100%;
+    height: 320vh;
     background-color: #071017;
     position: relative;
     overflow: hidden;
@@ -153,13 +161,19 @@
 
 #myWork>#title {
     width: 100%;
-    margin-top: 10%;
+    height: 10%;
+    display: flex;
+    align-items: center;
     z-index: 10;
 }
 
 #myWork>#title>#name {
-    margin-left: 15%;
+    margin-left: 7.5%;
     font-size: 3vh;
+}
+
+#myWork>#title>#name img {
+    height: 2.5vh;
 }
 
 #containerMarks {
@@ -173,7 +187,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 5% 11%;
 }
 
 .sizeContainer {
@@ -194,12 +208,12 @@
 .sizeContainer.visible {
     opacity: 1;
     /* Mostrar cuando sea visible */
-    transform: scale(1);
+    transform: scale(1.1);
     /* Escalar al 100% cuando sea visible */
 }
 
 .sizeContainer:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 #containerMarks>#gallo {
@@ -266,15 +280,24 @@
     background-image: url("../../resources/Portfolio/Portada_BabiesUganda_Hover.png");
 }
 
+.buttonOtherContainer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #buttonOther {
     width: 18vw;
     height: 8vh;
     background: #CCFF00;
     border-radius: 2vh;
     font-size: 3vh;
-    margin-bottom: 10%;
     cursor: pointer;
+    border: 0px;
     z-index: 10;
+    transition: transform 0.3s;
 }
 
 #buttonOther:hover {
@@ -301,7 +324,7 @@
 #rectangleMarks {
     display: flex;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     cursor: grab;
     max-width: 100%;
@@ -328,6 +351,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-bottom: 12%;
 }
 
@@ -338,11 +362,20 @@
 }
 
 #aboutMeLeft {
-    width: 50%;
+    width: 42.5%;
     display: flex;
-    justify-content: right;
+    justify-content: left;
     align-items: center;
     z-index: 10;
+}
+
+#aboutMeLeft p {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#aboutMeLeft p.visible {
+    opacity: 1;
 }
 
 #aboutMeLeft>#containerText {
@@ -355,18 +388,22 @@
     margin-bottom: 10%;
 }
 
+#aboutMeLeft>#containerText>#title img {
+    height: 2.9vh;
+}
+
 #aboutMeRight {
-    width: 50%;
+    width: 42.5%;
     z-index: 10;
 }
 
 #aboutMeRight>#circle {
     background-color: #0E2433;
     background-image: url("../../resources/Portfolio/Background.png");
-    background-size: 100vw 700vh;
+    background-size: 195vh;
     border-radius: 50%;
-    width: 35vw;
-    height: 80vh;
+    width: 38vw;
+    height: 83vh;
     border: 0.5vh solid #FFFFFF;
     position: absolute;
     transform: translate(9%, 55%);
@@ -378,7 +415,8 @@
     top: 81%;
     left: 10%;
     transform: rotate(-80deg);
-    transition: transform 0.3s ease;
+    transform-origin: center center;
+    z-index: 20;
 }
 
 #puzzle2 {
@@ -387,7 +425,8 @@
     top: 27%;
     left: 53%;
     transform: rotate(15deg);
-    transition: transform 0.3s ease;
+    transform-origin: center center;
+    z-index: 20;
 }
 
 #puzzle3 {
@@ -396,13 +435,14 @@
     top: 82%;
     left: 88%;
     transform: rotate(15deg);
-    transition: transform 0.3s ease;
+    transform-origin: center center;
+    z-index: 20;
 }
 
 #bernatPhoto {
     width: 70vh;
     position: absolute;
-    transform: translate(15%, 25%);
+    transform: translate(21%, 25%);
 }
 
 /* CONTACT */
@@ -425,8 +465,8 @@
 
 .backgroundSizeContainer3 {
     height: 3vh;
-    width: 1.5vw;
-    max-width: 2.2vw;
+    width: 2vw;
+    max-width: 2vw;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -451,8 +491,12 @@
     font-size: 3vh;
 }
 
+#contactLeft>#containerForm>#title img {
+    height: 2.5vh;
+}
+
 #consultForm {
-    width: 100%;
+    width: 110%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -488,6 +532,8 @@
     font-size: 3vh;
     font-family: "Futura Std Condensed Extra Bold";
     cursor: pointer;
+    border: 0px;
+    transition: transform 0.3s;
 }
 
 #buttonSend:hover {
@@ -508,7 +554,7 @@
     height: 80vh;
     border: 0.5vh solid #FFFFFF;
     position: absolute;
-    transform: translate(9%, 30%);
+    transform: translate(19%, 30%);
 }
 
 #contactContainer {
@@ -544,6 +590,8 @@
     font-family: "Futura Std";
     text-align: center;
     cursor: pointer;
+    border: 0px;
+    transition: transform 0.3s;
 }
 
 #buttonCV:hover {
@@ -551,20 +599,19 @@
 }
 
 #iconTV {
-    background-image: url("../../resources/Portfolio/Icon_TV.png");
+    background-image: url("../../resources/Portfolio/Icon_TV.svg");
     margin-right: 1vh;
 }
 
 #iconEmail {
-    background-image: url("../../resources/Portfolio/Icon_Email.png");
+    background-image: url("../../resources/Portfolio/Icon_Email.svg");
     margin-right: 1vh;
 }
 
 #iconCV {
-    background-image: url("../../resources/Portfolio/CV.png");
+    background-image: url("../../resources/Portfolio/Icon_CV.svg");
     margin-left: 1vh;
 }
-
 
 #contactLeft>#puzzle1 {
     width: 10vh;
@@ -572,7 +619,8 @@
     top: 18%;
     left: 8%;
     transform: rotate(-80deg);
-    transition: transform 0.3s ease;
+    transform-origin: center center;
+    z-index: 20;
 }
 
 #contactLeft>#puzzle2 {
@@ -581,16 +629,18 @@
     top: 80%;
     left: 40%;
     transform: rotate(15deg);
-    transition: transform 0.3s ease;
+    transform-origin: center center;
+    z-index: 20;
 }
 
 #contactRight>#puzzle3 {
     width: 14vh;
     position: absolute;
-    top: 25%;
+    top: 18%;
     left: 88%;
     transform: rotate(-80deg);
-    transition: transform 0.3s ease;
+    transform-origin: center center;
+    z-index: 20;
 }
 
 /* PUZZLES */
@@ -605,44 +655,44 @@
 
 @keyframes shake1 {
     0% {
-        transform: rotate(-80deg) translate(0, 0) rotate(0);
+        transform: rotate(-80deg) rotate(0);
     }
 
     25% {
-        transform: rotate(-80deg) translate(-5px, -5px) rotate(-5deg);
+        transform: rotate(-80deg) rotate(-5deg);
     }
 
     50% {
-        transform: rotate(-80deg) translate(5px, 5px) rotate(5deg);
+        transform: rotate(-80deg) rotate(5deg);
     }
 
     75% {
-        transform: rotate(-80deg) translate(-5px, -5px) rotate(-5deg);
+        transform: rotate(-80deg) rotate(-5deg);
     }
 
     100% {
-        transform: rotate(-80deg) translate(0, 0) rotate(0);
+        transform: rotate(-80deg) rotate(0);
     }
 }
 
 @keyframes shake2 {
     0% {
-        transform: rotate(15deg) translate(0, 0) rotate(0);
+        transform: rotate(15deg) rotate(0);
     }
 
     25% {
-        transform: rotate(15deg) translate(-5px, -5px) rotate(-5deg);
+        transform: rotate(15deg) rotate(-5deg);
     }
 
     50% {
-        transform: rotate(15deg) translate(5px, 5px) rotate(5deg);
+        transform: rotate(15deg) rotate(5deg);
     }
 
     75% {
-        transform: rotate(15deg) translate(-5px, -5px) rotate(-5deg);
+        transform: rotate(15deg) rotate(-5deg);
     }
 
     100% {
-        transform: rotate(15deg) translate(0, 0) rotate(0);
+        transform: rotate(15deg) rotate(0);
     }
 }

@@ -1,8 +1,8 @@
 // Esperar a que la página se cargue completamente
-window.addEventListener('load', function () {
-    // Agregar clase para animar la transición
-    document.body.classList.add('fade-in-active');
-});
+// window.addEventListener('load', function () {
+//     // Agregar clase para animar la transición
+//     document.body.classList.add('fade-in-active');
+// });
 
 //Index redirect
 var enlaces = document.querySelectorAll('[id^="link"]');
@@ -12,7 +12,7 @@ enlaces.forEach(function (enlace) {
     enlace.addEventListener('click', function (event) {
         event.preventDefault();
         // Agregar clase para animar la transición
-        document.body.classList.add('fade-out');
+        // document.body.classList.add('fade-out');
         var href = this.getAttribute('href');
         // Esperar la animación antes de redirigir
         setTimeout(function () {

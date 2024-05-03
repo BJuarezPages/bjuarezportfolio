@@ -104,6 +104,7 @@ function redirectToMyWork() {
 // Variables para almacenar la posición de desplazamiento anterior y la dirección del desplazamiento
 let lastScrollPos = window.scrollY || window.pageYOffset;
 let scrollDirection;
+const elements = document.querySelectorAll('.sizeContainer'); // Obtener todos los elementos .sizeContainer
 
 // Función para manejar la visibilidad de los elementos
 function handleVisibility() {
@@ -120,31 +121,54 @@ function handleVisibility() {
   // Actualizar la posición de desplazamiento anterior
   lastScrollPos = currentScrollPos;
 
-  // Obtener todos los elementos .sizeContainer
-  const elements = document.querySelectorAll('.sizeContainer');
-
   // Iterar sobre los elementos y manejar la visibilidad
   elements.forEach(el => {
     const rect = el.getBoundingClientRect();
-    const isInViewport = (
-      rect.bottom >= 0 &&
-      rect.right >= 0 &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.left <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+    const halfwayPoint = (rect.top + rect.bottom) / 2; // Calcular el punto medio del elemento
 
     // Mostrar u ocultar el elemento según la dirección del desplazamiento y su posición en la pantalla
-    if (scrollDirection === 'down' && rect.bottom <= window.innerHeight) {
+    if (scrollDirection === 'down' && halfwayPoint <= window.innerHeight) {
       el.classList.add('visible');
-    } else if (scrollDirection === 'up' && rect.bottom > window.innerHeight) {
+    } else if (scrollDirection === 'up' && halfwayPoint > window.innerHeight) {
       el.classList.remove('visible');
     }
   });
 }
 
-// Función para determinar si un elemento está en el viewport
-function isElementInViewport(el) {
-  const rect = el.getBoundingClientRect();
+// Función para cargar todos los contenedores hasta el halfwaypoint en la carga inicial de la página
+function loadContainers() {
+  const halfwayPoint = window.innerHeight / 2; // Calcular halfwaypoint
+
+  // Iterar sobre los elementos y mostrar u ocultar según su posición en la pantalla
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const elHalfwayPoint = (rect.top + rect.bottom) / 2; // Calcular el halfwaypoint del elemento
+
+    // Mostrar u ocultar el elemento según su posición en la pantalla
+    if (elHalfwayPoint <= window.innerHeight) {
+      el.classList.add('visible');
+    }
+  });
+}
+
+// Evento de desplazamiento para manejar la visibilidad de los elementos
+window.addEventListener('scroll', handleVisibility);
+
+// Llamar a handleVisibility en la carga inicial de la página para mostrar elementos hasta el límite justo en ese momento
+document.addEventListener('DOMContentLoaded', () => {
+  handleVisibility();
+  loadContainers(); // Llamar a la función para cargar los contenedores hasta el halfwaypoint
+});
+
+
+/* WHILE SLIDER */
+
+/* ---- ABOUT ME ---- */
+
+const paragraphs = document.querySelectorAll('#aboutMeLeft p');
+
+function isElementInViewport(element) {
+  const rect = element.getBoundingClientRect();
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
@@ -153,15 +177,16 @@ function isElementInViewport(el) {
   );
 }
 
-// Evento de desplazamiento para manejar la visibilidad de los elementos
-window.addEventListener('scroll', handleVisibility);
+function addVisibleClass() {
+  paragraphs.forEach(paragraph => {
+    if (isElementInViewport(paragraph)) {
+      paragraph.classList.add('visible');
+    }
+  });
+}
 
-// Llamar a handleVisibility en la carga inicial de la página
-document.addEventListener('DOMContentLoaded', handleVisibility);
-
-/* WHILE SLIDER */
-
-/* ---- ABOUT ME ---- */
+window.addEventListener('scroll', addVisibleClass);
+addVisibleClass();
 
 /* ---- CONTACT ---- */
 /*
