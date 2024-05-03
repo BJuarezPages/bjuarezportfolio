@@ -173,7 +173,7 @@ header {
 }
 
 #iconInstagram:hover {
-    background-image: url("../resources/Portfolio/Icon_Instagram_V.svg");
+    background-image: ("../resources/Portfolio/Icon_Instagram_V.svg");
 }
 
 #iconLinkedin {
@@ -181,7 +181,7 @@ header {
 }
 
 #iconLinkedin:hover {
-    background-image: url("../resources/Portfolio/Icon_Linkedin_V.svg");
+    background-image: ("../resources/Portfolio/Icon_Linkedin_V.svg");
 }
 
 #iconMessage {
@@ -189,7 +189,7 @@ header {
 }
 
 #iconMessage:hover {
-    background-image: url("../resources/Portfolio/Behance_On.svg");
+    background-image: ("../resources/Portfolio/Behance_On.svg");
 }
 
 #langCat {
@@ -197,7 +197,7 @@ header {
 }
 
 #langCat:hover {
-    background-image: url("../resources/Portfolio/Icon_Catala_Color.svg");
+    background-image: ("../resources/Portfolio/Icon_Catala_Color.svg");
 }
 
 #langCast {
@@ -209,7 +209,7 @@ header {
 }
 
 #langEng:hover {
-    background-image: url("../resources/Portfolio/Icon_English_Color.svg");
+    background-image: ("../resources/Portfolio/Icon_English_Color.svg");
 }
 
 
