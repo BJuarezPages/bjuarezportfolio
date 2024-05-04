@@ -216,25 +216,3 @@ document.getElementById("consultForm").addEventListener("submit", function (even
 */
 
 /* ---- EXAMPLE ---- */
-
-document.addEventListener('DOMContentLoaded', function () {
-  function insertarImagen(url, contenedor) {
-    // Crear un elemento de imagen
-    const imagen = document.createElement('img');
-    imagen.src = url;
-
-    // Agregar la imagen al contenedor
-    contenedor.appendChild(imagen);
-  }
-
-  const contenedor = document.getElementById('image-container');
-  insertarImagen('./../resources/Portfolio/Portada_Gallo_Hover.png', contenedor);
-  insertarImagen('./../resources/Portfolio/Home_V.svg', contenedor);
-
-  function limpiarContenedor(contenedor) {
-    // Eliminar todo el contenido del contenedor
-    contenedor.innerHTML = '';
-  }
-
-  limpiarContenedor(contenedor);
-})

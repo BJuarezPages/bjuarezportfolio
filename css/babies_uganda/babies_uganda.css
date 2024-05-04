@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #babiesUgandaWhiteContainer {
@@ -25,7 +26,7 @@
 #babiesUgandaWhiteLeft {
     width: 35%;
     height: 80%;
-    background-color: #FFFFFF   ;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +41,7 @@
     transform: scale(1.1);
 }
 
-#babiesUgandaWhiteLeft > #top{
+#babiesUgandaWhiteLeft>#top {
     width: 100%;
     height: 60%;
     background-color: #F0EFED;
@@ -50,7 +51,7 @@
     align-items: center;
 }
 
-#babiesUgandaWhiteLeft > #bottom{
+#babiesUgandaWhiteLeft>#bottom {
     width: 100%;
     height: 40%;
     display: flex;
@@ -111,34 +112,15 @@
 
 /* ---- Social ---- */
 #redBar {
-    width: 100%;
-    height: 4.5vh;
     background-color: #FF6863;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5% 0 0.5% 0;
 }
 
-#redBar>#iconInstagram {
-    width: 3%;
-    height: 90%;
+#redBar>#redBarContainer>#iconInstagram {
     background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Instagram_BabiesUganda.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    cursor: pointer;
 }
 
-#redBar>#iconWeb {
-    width: 3%;
-    height: 90%;
+#redBar>#redBarContainer>#iconWeb {
     background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Web_BabiesUganda.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    cursor: pointer;
 }
 
 /* ---- POPUP CONTAINER ---- */
@@ -200,4 +182,41 @@
     font-size: xxx-large;
     cursor: pointer;
     z-index: 3002;
+}
+
+/* --- MOBILE MODE --- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    #babiesUgandaWhite {
+        height: 210vh;
+    }
+
+    #babiesUgandaWhiteContainer {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    #babiesUgandaWhiteLeft {
+        width: 100%;
+        height: 28%;
+    }
+
+    #buttonVideo {
+        font-size: 2.5vh;
+    }
+
+    #babiesUgandaWhiteRight {
+        width: 100%;
+        height: 55%;
+    }
+
+    #babiesUgandaWhiteRight>#title1 {
+        font-size: 3.4vh;
+    }
+
+    #babiesUgandaWhiteRight>.text {
+        font-size: 2.5vh;
+    }
+
 }
