@@ -216,25 +216,3 @@ document.getElementById("consultForm").addEventListener("submit", function (even
 */
 
 /* ---- EXAMPLE ---- */
-
-window.addEventListener('DOMContentLoaded', () => {
-  const images = document.querySelectorAll('img');
-  images.forEach(img => {
-    const src = img.getAttribute('src');
-    const preloadLink = document.createElement('link');
-    preloadLink.rel = 'preload';
-    preloadLink.href = src;
-    preloadLink.as = 'image';
-    document.head.appendChild(preloadLink);
-  });
-
-  const elementsWithBackground = document.querySelectorAll('[style*="background-image"]');
-  elementsWithBackground.forEach(element => {
-    const backgroundImage = element.style.backgroundImage.replace('url("', '').replace('")', '');
-    const preloadLink = document.createElement('link');
-    preloadLink.rel = 'preload';
-    preloadLink.href = backgroundImage;
-    preloadLink.as = 'image';
-    document.head.appendChild(preloadLink);
-  });
-});
