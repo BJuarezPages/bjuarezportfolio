@@ -379,7 +379,7 @@ footer {
         bottom: 0;
         width: 100%;
         z-index: 9999;
-        height: 4vh;
+        height: 5%;
         box-sizing: content-box;
     }
 
@@ -409,6 +409,7 @@ footer {
         height: 50%;
         position: absolute;
         top: 15%;
+        z-index: 100;
     }
 
     #generalLogo {
@@ -442,7 +443,7 @@ footer {
         height: 14.5vh;
         font-size: 2vh;
         flex-direction: column;
-        margin-bottom: 10vh;
+        margin-bottom: 18%;;
     }
 
     #redBar {

@@ -9,6 +9,7 @@
     height: 110vh;
     background-image: url("../../resources/Gallo/Fondo_Gallo.png");
     background-color: #D8D8D8;
+    overflow: hidden;
 }
 
 #galloWhiteLeft {

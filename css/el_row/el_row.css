@@ -211,3 +211,64 @@
     cursor: pointer;
     z-index: 3002;
 }
+
+/* --- MOBILE MODE --- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    #elRowWhite {
+        height: 200vh;
+        flex-direction: column;
+    }
+
+    #elRowWhite::after {
+        width: 150vw;
+        height: 100%;
+        top: 8%;
+        left: -35%;
+    }
+
+    #elRowWhiteLeft {
+        width: 80%;
+        height: 65%;
+        justify-content: flex-end;
+    }
+
+    #elRowWhiteLeft>#title {
+        font-size: 12vh;
+        width: 55%;
+    }
+
+    #elRowWhiteLeft>#text {
+        width: 86%;
+        font-size: 3.4vh;
+        margin-left: 0;
+    }
+
+    #elRowWhiteRight {
+        width: 80%;
+    }
+
+    #elRowCard {
+        width: 100%;
+        height: 68%;
+        border-radius: 3vw;
+    }
+
+    #elRowCard>#text1 {
+        font-size: 2vh;
+    }
+
+    #elRowCard>#text2 {
+        font-size: 4vh;
+    }
+
+    #elRowCard>#text3 {
+        font-size: 2vh;
+    }
+
+    #buttonVideo {
+        font-size: 3vh;
+        border-radius: 3vw;
+    }
+
+}

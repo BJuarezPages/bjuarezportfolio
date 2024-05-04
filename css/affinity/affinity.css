@@ -9,6 +9,7 @@
     height: 300vh;
     background-color: #FFFFFF;
     position: relative;
+    overflow: hidden;
 }
 
 .column1, .column2 {
@@ -146,4 +147,9 @@
     font-size: xxx-large;
     cursor: pointer;
     z-index: 3002;
+}
+
+/* --- MOBILE MODE --- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
 }
