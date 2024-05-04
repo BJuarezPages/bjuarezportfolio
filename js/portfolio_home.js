@@ -216,3 +216,36 @@ document.getElementById("consultForm").addEventListener("submit", function (even
 */
 
 /* ---- EXAMPLE ---- */
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Cargar imágenes en etiquetas <img>
+  var imgElements = document.getElementsByTagName('img');
+  for (var i = 0; i < imgElements.length; i++) {
+    var img = imgElements[i];
+    img.src = img.src; // Forzar la carga de la imagen
+  }
+
+  // Cargar imágenes en propiedades background-image
+  const elements = document.querySelectorAll('div');
+  for (var j = 0; j < elements.length; j++) {
+    var element = elements[j];
+    var bgImage = window.getComputedStyle(element).getPropertyValue('background-image');
+    if (bgImage && bgImage !== 'none') {
+      element.style.backgroundImage = bgImage; // Forzar la carga de la imagen
+      // Eliminar el estilo background-image
+      element.style.removeProperty('background-image');
+    }
+  }
+
+  // Cargar imágenes en propiedades :hover
+  var hoverElements = document.querySelectorAll('div');
+  for (var k = 0; k < hoverElements.length; k++) {
+    var hoverElement = hoverElements[k];
+    var hoverBgImage = window.getComputedStyle(hoverElement, ':hover').getPropertyValue('background-image');
+    if (hoverBgImage && hoverBgImage !== 'none') {
+      hoverElement.style.backgroundImage = hoverBgImage; // Forzar la carga de la imagen
+      // Eliminar el estilo background-image
+      hoverElement.style.removeProperty('background-image');
+    }
+  }
+})
