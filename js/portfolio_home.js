@@ -217,35 +217,24 @@ document.getElementById("consultForm").addEventListener("submit", function (even
 
 /* ---- EXAMPLE ---- */
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Cargar imágenes en etiquetas <img>
-  var imgElements = document.getElementsByTagName('img');
-  for (var i = 0; i < imgElements.length; i++) {
-    var img = imgElements[i];
-    img.src = img.src; // Forzar la carga de la imagen
+document.addEventListener('DOMContentLoaded', function () {
+  function insertarImagen(url, contenedor) {
+    // Crear un elemento de imagen
+    const imagen = document.createElement('img');
+    imagen.src = url;
+
+    // Agregar la imagen al contenedor
+    contenedor.appendChild(imagen);
   }
 
-  // Cargar imágenes en propiedades background-image
-  const elements = document.querySelectorAll('div');
-  for (var j = 0; j < elements.length; j++) {
-    var element = elements[j];
-    var bgImage = window.getComputedStyle(element).getPropertyValue('background-image');
-    if (bgImage && bgImage !== 'none') {
-      element.style.backgroundImage = bgImage; // Forzar la carga de la imagen
-      // Eliminar el estilo background-image
-      element.style.removeProperty('background-image');
-    }
+  const contenedor = document.getElementById('image-container');
+  insertarImagen('../resources/Portfolio/Portada_Gallo_Hover.png', contenedor);
+  insertarImagen('../resources/Portfolio/Home_V.svg', contenedor);
+
+  function limpiarContenedor(contenedor) {
+    // Eliminar todo el contenido del contenedor
+    contenedor.innerHTML = '';
   }
 
-  // Cargar imágenes en propiedades :hover
-  var hoverElements = document.querySelectorAll('div');
-  for (var k = 0; k < hoverElements.length; k++) {
-    var hoverElement = hoverElements[k];
-    var hoverBgImage = window.getComputedStyle(hoverElement, ':hover').getPropertyValue('background-image');
-    if (hoverBgImage && hoverBgImage !== 'none') {
-      hoverElement.style.backgroundImage = hoverBgImage; // Forzar la carga de la imagen
-      // Eliminar el estilo background-image
-      hoverElement.style.removeProperty('background-image');
-    }
-  }
+  limpiarContenedor(contenedor);
 })
