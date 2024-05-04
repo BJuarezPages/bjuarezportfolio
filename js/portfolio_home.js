@@ -228,8 +228,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   const contenedor = document.getElementById('image-container');
-  insertarImagen('../resources/Portfolio/Portada_Gallo_Hover.png', contenedor);
-  insertarImagen('../resources/Portfolio/Home_V.svg', contenedor);
+  insertarImagen('./../resources/Portfolio/Portada_Gallo_Hover.png', contenedor);
+  insertarImagen('./../resources/Portfolio/Home_V.svg', contenedor);
 
   function limpiarContenedor(contenedor) {
     // Eliminar todo el contenido del contenedor
