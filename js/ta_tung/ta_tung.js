@@ -53,10 +53,43 @@ function handleClick(event) {
     }
 }
 
-// Agregar eventos a cada contenedor de video
-videoContainers.forEach(container => {
-    container.addEventListener('mouseover', handleMouse);
-    container.addEventListener('mouseout', handleMouse);
-    container.addEventListener('click', handleClick);
-    container.addEventListener('click', handleClickVideo);
-});
+// Función para manejar el evento de clic en el video en mobil
+function handleClickVideoMobile(event) {
+    const currentContainer = event.currentTarget;
+
+    if (currentContainer !== activeVideo) {
+        if (activeVideo) {
+            const activeVideoElement = activeVideo.querySelector('video');
+            activeVideoElement.pause();
+        }
+
+        const video = currentContainer.querySelector('video');
+        video.play();
+        activeVideo = currentContainer;
+    } else {
+        const video = currentContainer.querySelector('video');
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+}
+
+// Verificar si es un dispositivo móvil
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth <= 768;
+console.log(isMobile)
+if (!isMobile) {
+    // Agregar eventos a cada contenedor de video
+    videoContainers.forEach(container => {
+        container.addEventListener('mouseover', handleMouse);
+        container.addEventListener('mouseout', handleMouse);
+        container.addEventListener('click', handleClick);
+        container.addEventListener('click', handleClickVideo);
+    });
+} else {
+    // Agregar eventos a cada contenedor de video
+    videoContainers.forEach(container => {
+        container.addEventListener('touchstart', handleClickVideoMobile, { passive: true });
+    });
+}
