@@ -863,3 +863,176 @@
 #redBar>#redBarContainer>#iconInstagram {
     background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Instagram_ElPrimo.svg");
 }
+
+/* --- MOBILE MODE --- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    /* ---- WHITE ---- */
+    #elPrimoWhite {
+        width: 100%;
+        height: 660vh;
+        background-image: url("./../../resources/El Primo/ElPrimo_Background_Mobile.png");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .video-world {
+        width: 43vh;
+        height: 77vh;
+        top: 59vh;
+        left: 16.5%;
+        rotate: 0deg;
+        border-radius: 10vw;
+    }
+
+    .primo-aniversary1 {
+        top: 22%;
+        left: 20%;
+        width: 56%;
+        height: 53vh;
+        rotate: 0deg;
+    }
+
+    .primo-aniversary2 {
+        top: 31%;
+        left: 8.5%;
+        width: 82%;
+        height: 28vh;
+        rotate: 0deg;
+    }
+
+    .video-happy {
+        width: 43vh;
+        height: 77vh;
+        top: 261vh;
+        left: 16.5%;
+        rotate: 0deg;
+        border-radius: 10vw;
+    }
+
+    .primo-high1 {
+        top: 54%;
+        left: 22%;
+        width: 55%;
+        height: 53vh;
+        rotate: 0deg;
+    }
+
+    .primo-high2 {
+        top: 63%;
+        left: 7%;
+        width: 83%;
+        height: 28vh;
+        rotate: 0deg;
+    }
+
+    .video-carnival {
+        width: 43vh;
+        height: 77vh;
+        top: 464vh;
+        left: 16.5%;
+        rotate: 0deg;
+        border-radius: 10vw;
+    }
+
+    .primo-carnival1 {
+        top: 84%;
+        left: 22.5%;
+        width: 52%;
+        height: 50vh;
+        rotate: 0deg;
+    }
+
+    .primo-carnival2 {
+        top: 93%;
+        left: 7%;
+        width: 83%;
+        height: 28vh;
+        rotate: 0deg;
+    }
+
+    .background-lights {
+        display: none;
+    }
+
+    .background-world {
+        display: none;
+    }
+
+    .cloud-container {
+        display: none;
+    }
+
+    .number-container {
+        display: none;
+    }
+
+    .background-happy {
+        display: none;
+    }
+
+    .r-back1 {
+        display: none;
+    }
+
+    .r-back2 {
+        display: none;
+    }
+
+    .primo-hand {
+        display: none;
+    }
+
+    .flowers-container {
+        display: none;
+    }
+
+    .mark-t-left {
+        display: none;
+    }
+
+    .mark-t-right {
+        display: none;
+    }
+
+    .mark-b-left {
+        display: none;
+    }
+
+    .mark-b-right {
+        display: none;
+    }
+
+    .background-carnival {
+        display: none;
+    }
+
+    .background-carnival-const {
+        display: none;
+    }
+
+    .primo-bambu1 {
+        display: none;
+    }
+
+    .primo-bambu2 {
+        display: none;
+    }
+
+    .primo-bambu3 {
+        display: none;
+    }
+
+    .primo-bambu4 {
+        display: none;
+    }
+
+    .farolillo {
+        display: none;
+    }
+
+    .carnival-cloud-container {
+        display: none;
+    }
+}

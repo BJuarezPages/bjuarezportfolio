@@ -1,168 +1,173 @@
-window.addEventListener('load', function () {
-  const container = document.querySelector('.background-world');
-  const cloudContainer = document.querySelector('.cloud-container');
-  const primoNumber1 = document.querySelector('.primo-number1');
-  const primoNumber2 = document.querySelector('.primo-number2');
-  const primoNumber3 = document.querySelector('.primo-number3');
-  const primoNumber4 = document.querySelector('.primo-number4');
+// Verificar si es un dispositivo móvil
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth <= 768;
+console.log(isMobile)
+if (!isMobile) {
+  window.addEventListener('load', function () {
+    const container = document.querySelector('.background-world');
+    const cloudContainer = document.querySelector('.cloud-container');
+    const primoNumber1 = document.querySelector('.primo-number1');
+    const primoNumber2 = document.querySelector('.primo-number2');
+    const primoNumber3 = document.querySelector('.primo-number3');
+    const primoNumber4 = document.querySelector('.primo-number4');
 
-  function handleScroll() {
-    const scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-    const rotation = scrollPercentage * 360;
+    function handleScroll() {
+      const scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      const rotation = scrollPercentage * 360;
 
-    container.style.transform = `rotate(${rotation}deg)`;
-    cloudContainer.style.transform = `rotate(${-rotation / 2}deg)`;
+      container.style.transform = `rotate(${rotation}deg)`;
+      cloudContainer.style.transform = `rotate(${-rotation / 2}deg)`;
 
-    const scrollDirection = getScrollDirection();
-    adjustElementPositions(scrollDirection);
-  }
-
-  function getScrollDirection() {
-    const scrollPosition = window.scrollY;
-
-    if (scrollPosition > 500) {
-      return 'bottom';
-    } else if (scrollPosition > 100) {
-      return 'top';
-    } else {
-      return 'middle';
+      const scrollDirection = getScrollDirection();
+      adjustElementPositions(scrollDirection);
     }
-  }
 
-  function adjustElementPositions(scrollDirection) {
-    switch (scrollDirection) {
-      case 'top':
-        primoNumber1.style.cssText = 'top: 21%; left: 19%;';
-        primoNumber2.style.cssText = 'top: 18%; right: 12%;';
-        primoNumber3.style.cssText = 'bottom: 45%; left: 45%;';
-        primoNumber4.style.cssText = 'bottom: 45%; right: 45%;';
-        break;
-      case 'bottom':
-        primoNumber1.style.cssText = 'top: 21%; left: 19%;';
-        primoNumber2.style.cssText = 'top: 18%; right: 12%;';
-        primoNumber3.style.cssText = 'bottom: -20%; left: 5%;';
-        primoNumber4.style.cssText = 'bottom: -5%; right: 15%;';
-        break;
-      default:
-        primoNumber1.style.cssText = 'top: 45%; left: 45%;';
-        primoNumber2.style.cssText = 'top: 45%; right: 45%;';
-        primoNumber3.style.cssText = 'bottom: 45%; left: 45%;';
-        primoNumber4.style.cssText = 'bottom: 45%; right: 45%;';
-        break;
+    function getScrollDirection() {
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition > 500) {
+        return 'bottom';
+      } else if (scrollPosition > 100) {
+        return 'top';
+      } else {
+        return 'middle';
+      }
     }
-  }
 
-  window.addEventListener('scroll', handleScroll);
-  window.addEventListener('resize', handleScroll);
+    function adjustElementPositions(scrollDirection) {
+      switch (scrollDirection) {
+        case 'top':
+          primoNumber1.style.cssText = 'top: 21%; left: 19%;';
+          primoNumber2.style.cssText = 'top: 18%; right: 12%;';
+          primoNumber3.style.cssText = 'bottom: 45%; left: 45%;';
+          primoNumber4.style.cssText = 'bottom: 45%; right: 45%;';
+          break;
+        case 'bottom':
+          primoNumber1.style.cssText = 'top: 21%; left: 19%;';
+          primoNumber2.style.cssText = 'top: 18%; right: 12%;';
+          primoNumber3.style.cssText = 'bottom: -20%; left: 5%;';
+          primoNumber4.style.cssText = 'bottom: -5%; right: 15%;';
+          break;
+        default:
+          primoNumber1.style.cssText = 'top: 45%; left: 45%;';
+          primoNumber2.style.cssText = 'top: 45%; right: 45%;';
+          primoNumber3.style.cssText = 'bottom: 45%; left: 45%;';
+          primoNumber4.style.cssText = 'bottom: 45%; right: 45%;';
+          break;
+      }
+    }
 
-  handleScroll(); // Llama a handleScroll() para ajustar las posiciones iniciales
-});
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
 
-//Funcion flores
-function adjustElementPositions(scrollDirection) {
-  var positions = {
-    'top': [
-      { top: '5%', left: '2%' },
-      { top: '5%', right: '-5%' },
-      { top: '3%', left: '45%' },
-      { top: '0%', left: '73%' },
-      { top: '7%', left: '60%' },
-
-      { top: '45%', left: '45%' },
-      { top: '45%', left: '45%' },
-      { top: '45%', right: '45%' },
-      { top: '45%', right: '45%' },
-
-      { top: '45%', left: '45%' },
-      { top: '45%', left: '45%' },
-      { top: '45%', left: '45%' },
-      { top: '45%', right: '45%' },
-      { top: '45%', right: '45%' }
-    ],
-    'middle': [
-      { top: '5%', left: '2%' },
-      { top: '5%', right: '-5%' },
-      { top: '3%', left: '45%' },
-      { top: '0%', left: '73%' },
-      { top: '7%', left: '60%' },
-
-      { top: '34%', left: '2%' },
-      { top: '36%', left: '20%' },
-      { top: '35%', right: '10%' },
-      { top: '26%', right: '2%' },
-
-      { top: '45%', left: '45%' },
-      { top: '45%', left: '45%' },
-      { top: '45%', left: '45%' },
-      { top: '45%', right: '45%' },
-      { top: '45%', right: '45%' }
-    ],
-    'bottom': [
-      { top: '5%', left: '2%' },
-      { top: '5%', right: '-5%' },
-      { top: '3%', left: '45%' },
-      { top: '0%', left: '73%' },
-      { top: '7%', left: '60%' },
-
-      { top: '34%', left: '2%' },
-      { top: '36%', left: '20%' },
-      { top: '35%', right: '10%' },
-      { top: '26%', right: '2%' },
-
-      { top: '61%', left: '-3%' },
-      { top: '56%', left: '20%' },
-      { top: '82%', left: '56%' },
-      { top: '51%', right: '3%' },
-      { top: '80%', right: '8%' }
-    ],
-    'default': [
-      { top: '45%', left: '45%' },
-      { top: '45%', right: '45%' },
-      { top: '45%', left: '45%' },
-      { top: '45%', left: '45%' },
-      { top: '45%', left: '45%' },
-
-      { top: '45%', left: '45%' },
-      { top: '45%', left: '45%' },
-      { top: '45%', right: '45%' },
-      { top: '45%', right: '45%' },
-
-      { top: '45%', left: '45%' },
-      { top: '45%', left: '45%' },
-      { top: '45%', left: '45%' },
-      { top: '45%', right: '45%' },
-      { top: '45%', right: '45%' }
-    ]
-  };
-
-  document.querySelectorAll('.primo-flowers').forEach(function (element, index) {
-    var pos = positions[scrollDirection][index];
-    element.style.top = pos.top || '';
-    element.style.left = pos.left || '';
-    element.style.right = pos.right || '';
-    element.style.bottom = pos.bottom || '';
+    handleScroll(); // Llama a handleScroll() para ajustar las posiciones iniciales
   });
-}
 
-window.addEventListener('scroll', function () {
-  var scrollDirection = 'default';
-  var scrollPosition = window.scrollY;
+  //Funcion flores
+  function adjustElementPositions(scrollDirection) {
+    var positions = {
+      'top': [
+        { top: '5%', left: '2%' },
+        { top: '5%', right: '-5%' },
+        { top: '3%', left: '45%' },
+        { top: '0%', left: '73%' },
+        { top: '7%', left: '60%' },
 
-  if (scrollPosition > 2200) {
-    scrollDirection = 'bottom';
-  } else if (scrollPosition > 2000) {
-    scrollDirection = 'middle';
-  } else if (scrollPosition > 1800) {
-    scrollDirection = 'top';
+        { top: '45%', left: '45%' },
+        { top: '45%', left: '45%' },
+        { top: '45%', right: '45%' },
+        { top: '45%', right: '45%' },
+
+        { top: '45%', left: '45%' },
+        { top: '45%', left: '45%' },
+        { top: '45%', left: '45%' },
+        { top: '45%', right: '45%' },
+        { top: '45%', right: '45%' }
+      ],
+      'middle': [
+        { top: '5%', left: '2%' },
+        { top: '5%', right: '-5%' },
+        { top: '3%', left: '45%' },
+        { top: '0%', left: '73%' },
+        { top: '7%', left: '60%' },
+
+        { top: '34%', left: '2%' },
+        { top: '36%', left: '20%' },
+        { top: '35%', right: '10%' },
+        { top: '26%', right: '2%' },
+
+        { top: '45%', left: '45%' },
+        { top: '45%', left: '45%' },
+        { top: '45%', left: '45%' },
+        { top: '45%', right: '45%' },
+        { top: '45%', right: '45%' }
+      ],
+      'bottom': [
+        { top: '5%', left: '2%' },
+        { top: '5%', right: '-5%' },
+        { top: '3%', left: '45%' },
+        { top: '0%', left: '73%' },
+        { top: '7%', left: '60%' },
+
+        { top: '34%', left: '2%' },
+        { top: '36%', left: '20%' },
+        { top: '35%', right: '10%' },
+        { top: '26%', right: '2%' },
+
+        { top: '61%', left: '-3%' },
+        { top: '56%', left: '20%' },
+        { top: '82%', left: '56%' },
+        { top: '51%', right: '3%' },
+        { top: '80%', right: '8%' }
+      ],
+      'default': [
+        { top: '45%', left: '45%' },
+        { top: '45%', right: '45%' },
+        { top: '45%', left: '45%' },
+        { top: '45%', left: '45%' },
+        { top: '45%', left: '45%' },
+
+        { top: '45%', left: '45%' },
+        { top: '45%', left: '45%' },
+        { top: '45%', right: '45%' },
+        { top: '45%', right: '45%' },
+
+        { top: '45%', left: '45%' },
+        { top: '45%', left: '45%' },
+        { top: '45%', left: '45%' },
+        { top: '45%', right: '45%' },
+        { top: '45%', right: '45%' }
+      ]
+    };
+
+    document.querySelectorAll('.primo-flowers').forEach(function (element, index) {
+      var pos = positions[scrollDirection][index];
+      element.style.top = pos.top || '';
+      element.style.left = pos.left || '';
+      element.style.right = pos.right || '';
+      element.style.bottom = pos.bottom || '';
+    });
   }
 
-  adjustElementPositions(scrollDirection);
-});
+  window.addEventListener('scroll', function () {
+    var scrollDirection = 'default';
+    var scrollPosition = window.scrollY;
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-  const clouds = document.querySelectorAll('.carnival-cloud');
-  clouds.forEach(cloud => {
+    if (scrollPosition > 2200) {
+      scrollDirection = 'bottom';
+    } else if (scrollPosition > 2000) {
+      scrollDirection = 'middle';
+    } else if (scrollPosition > 1800) {
+      scrollDirection = 'top';
+    }
+
+    adjustElementPositions(scrollDirection);
+  });
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    const clouds = document.querySelectorAll('.carnival-cloud');
+    clouds.forEach(cloud => {
       const randomSpeed = Math.random() * (20 - 5) + 5; // Velocidad aleatoria entre 5 y 20
       cloud.style.animationDuration = `${randomSpeed}s`;
+    });
   });
-});
+}
