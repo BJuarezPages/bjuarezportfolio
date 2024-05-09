@@ -576,6 +576,11 @@
         margin-left: 0%;
     }
 
+    #galloCombinatedLeftContainer p {
+        opacity: 1;
+        transition: unset;
+    }
+
     #galloCombinatedLeftContainer>#title1 {
         font-size: 4vw;
         height: 20%;
