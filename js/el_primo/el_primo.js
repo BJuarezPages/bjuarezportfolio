@@ -1,6 +1,6 @@
 // Verificar si es un dispositivo móvil
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth <= 768;
-console.log(isMobile)
+
 if (!isMobile) {
   window.addEventListener('load', function () {
     const container = document.querySelector('.background-world');

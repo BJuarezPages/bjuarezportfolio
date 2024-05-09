@@ -3,13 +3,16 @@
     background-image: url("../../resources/Portfolio/Logo_Gallo_SVG.svg");
 }
 
+#galloContainer {
+    overflow: hidden;
+}
+
 /* ---- WHITE ---- */
 #galloWhite {
     width: 100%;
     height: 110vh;
     background-image: url("../../resources/Gallo/Fondo_Gallo.png");
     background-color: #D8D8D8;
-    overflow: hidden;
 }
 
 #galloWhiteLeft {
@@ -100,8 +103,8 @@
 }
 
 #videoGalloMobile {
-    width: 52vh;
-    height: 104vh;
+    width: 24vw;
+    height: 105vh;
     position: relative;
     overflow: hidden;
     top: 15vh;
@@ -416,4 +419,191 @@
     font-size: xxx-large;
     cursor: pointer;
     z-index: 3002;
+}
+
+/* --- MOBILE MODE --- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    #galloWhiteLeft {
+        width: 80%;
+        height: 63%;
+        top: 68vh;
+        left: 10%;
+    }
+
+    #galloWhiteLeft>#title1 {
+        font-size: 4.6vw;
+    }
+
+    #galloWhiteLeft>#title2 {
+        font-size: 6.3vw;
+    }
+
+    #videoGalloMobile {
+        width: 45vw;
+        height: 62vh;
+        top: 76vh;
+        left: 27%;
+        border-radius: 7vw;
+    }
+
+    #galloBlack {
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #light1 {
+        position: absolute;
+        width: 140%;
+        height: 15vh;
+        top: 79%;
+        left: 50%;
+        opacity: 30%;
+    }
+
+    #light2 {
+        position: absolute;
+        width: 140%;
+        height: 30vh;
+        top: 79%;
+        left: 50%;
+        opacity: 30%;
+    }
+
+    #galloBlackContainer {
+        width: 100%;
+        height: 80%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: end;
+    }
+
+    #imageMockupWebBanner {
+        width: 100%;
+        height: 40%;
+        background-size: contain;
+        position: static;
+    }
+
+    #imageBlackContainer {
+        width: 100%;
+        height: 50%;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #imageBackgroundGallo {
+        width: 90%;
+        height: 40%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0%;
+        opacity: 1;
+        transition: unset;
+    }
+
+    #imageBackgroundGallo>#text1 {
+        font-size: 9.7vw;
+        line-height: 8vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    #imageBackgroundGallo>#text1>#text2 {
+        font-size: 13vw;
+    }
+
+    #imageWebBanner {
+        width: 100%;
+        height: 60%;
+        background-size: cover;
+        transform: translateX(0%);
+    }
+
+    #galloCombinated {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #imageWheat {
+        width: 31%;
+        height: 130%;
+        position: absolute;
+        top: -53vh;
+        left: -1%;
+    }
+
+    #galloCombinatedContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #galloCombinatedLeft {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #galloCombinatedLeftContainer {
+        width: 70%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+    }
+
+    #galloCombinatedLeftContainer>#title1 {
+        font-size: 4vw;
+        height: 20%;
+    }
+
+    #galloCombinatedLeftContainer>#title2 {
+        font-size: 9.5vw;
+        line-height: 6vw;
+        text-align: center;
+        width: 80%;
+        height: 20%;
+    }
+
+    #galloCombinatedLeftContainer>#description {
+        font-size: 3.7vw;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+
+    #buttonVideo {
+        width: 60%;
+        height: 20%;
+        font-size: 4vw;
+    }
+
+    #galloCombinatedRight {
+        width: 100%;
+        height: 40%;
+    }
+
 }
