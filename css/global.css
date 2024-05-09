@@ -379,7 +379,7 @@ footer {
         bottom: 0;
         width: 100%;
         z-index: 9999;
-        height: 5%;
+        height: 5vh;
         box-sizing: content-box;
     }
 
@@ -443,7 +443,7 @@ footer {
         height: 14.5vh;
         font-size: 2vh;
         flex-direction: column;
-        margin-bottom: 18%;;
+        margin-bottom: 11vh;
     }
 
     #redBar {
