@@ -449,7 +449,7 @@
         background-color: white;
     }
 
-    .item.item1 {
+    .item#item1 .video-container{
         top: 131%;
         left: 50%;
         transform: translateX(-50%);
@@ -516,7 +516,7 @@
         background-color: #000000;
     }
 
-    .item.item2 {
+    .item#item2 .video-container{
         top: 269%;
         left: 50%;
         transform: translateX(-50%);
