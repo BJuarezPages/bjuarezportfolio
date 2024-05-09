@@ -381,6 +381,11 @@ footer {
         z-index: 9999;
         height: 5vh;
         box-sizing: content-box;
+        transition: height 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #icons {

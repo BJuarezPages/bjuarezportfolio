@@ -984,7 +984,7 @@
     #contactRight>#circle {
         background-color: #0E2433;
         background-image: url(../../resources/Portfolio/Background.png);
-        background-size: 100vw 700vh;
+        background-size: 195vh;
         border-radius: 50%;
         width: 80vw;
         height: 60vh;
@@ -1016,7 +1016,7 @@
     }
 
     #contactContainer #icons.flex_between {
-        display: flex;
+        display: flex !important;
         width: 34vw;
     }
 
