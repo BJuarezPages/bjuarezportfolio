@@ -116,6 +116,14 @@
     text-align: left;
 }
 
+.divButtonsHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 #buttonWork {
     width: 14vw;
     height: 8vh;
@@ -127,8 +135,22 @@
     transition: transform 0.3s;
 }
 
-#buttonWork:hover {
+#buttonSobreMi {
+    width: 14vw;
+    height: 8vh;
+    background: #FF008A;
+    color: #FFFFFF;
+    border-radius: 2vh;
+    font-size: 3vh;
+    cursor: pointer;
+    border: 0px;
+    transition: transform 0.3s;
+}
+
+#buttonWork:hover, #buttonSobreMi:hover, #buttonOther:hover, #aboutMeLeft>#containerText>#buttonCV:hover, #buttonSend:hover {
     transform: scale(1.1);
+    background: #2B3E4B;
+    color: #FFFFFF;
 }
 
 /* MYWORK */
@@ -163,12 +185,18 @@
     width: 100%;
     height: 10%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     z-index: 10;
 }
 
+#myWork>#title img {
+    width: 3vw;
+}
+
 #myWork>#title>#name {
-    margin-left: 7.5%;
+    margin-left: 0%;
     font-size: 3vh;
 }
 
@@ -300,14 +328,11 @@
     transition: transform 0.3s;
 }
 
-#buttonOther:hover {
-    transform: scale(1.1);
-}
-
 #spaceSlider {
     width: 100%;
     height: 0.5vh;
     background-color: #0E2433;
+    display: block;
 }
 
 @keyframes moveLeftToRight {
@@ -385,11 +410,22 @@
 }
 
 #aboutMeLeft>#containerText>#title {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 #aboutMeLeft>#containerText>#title img {
     height: 2.9vh;
+}
+
+#aboutMeLeft>#containerText>.titleLine{
+    width: 3vw;
+    margin-bottom: 5%;
+}
+
+#aboutMeLeft>#containerText>#buttonCV{
+    margin-top: 5%;
+    background-color: #FF008A;
+    color: #FFFFFF;
 }
 
 #aboutMeRight {
@@ -410,7 +446,7 @@
 }
 
 #puzzle1 {
-    width: 10vh;
+    width: 8vh;
     position: absolute;
     top: 81%;
     left: 10%;
@@ -420,7 +456,7 @@
 }
 
 #puzzle2 {
-    width: 12vh;
+    width: 8vh;
     position: absolute;
     top: 27%;
     left: 53%;
@@ -430,7 +466,7 @@
 }
 
 #puzzle3 {
-    width: 18vh;
+    width: 8vh;
     position: absolute;
     top: 82%;
     left: 88%;
@@ -536,10 +572,6 @@
     transition: transform 0.3s;
 }
 
-#buttonSend:hover {
-    transform: scale(1.1);
-}
-
 #contactRight {
     width: 50%;
     z-index: 10;
@@ -594,10 +626,6 @@
     transition: transform 0.3s;
 }
 
-#buttonCV:hover {
-    transform: scale(1.1);
-}
-
 #iconTV {
     background-image: url("../../resources/Portfolio/Icon_TV.svg");
     margin-right: 1vh;
@@ -613,8 +641,13 @@
     margin-left: 1vh;
 }
 
+#iconCVWhite {
+    background-image: url("../../resources/Portfolio/Icon_CV_White.svg");
+    margin-left: 1vh;
+}
+
 #contactLeft>#puzzle1 {
-    width: 10vh;
+    width: 8vh;
     position: absolute;
     top: 18%;
     left: 8%;
@@ -624,7 +657,7 @@
 }
 
 #contactLeft>#puzzle2 {
-    width: 12vh;
+    width: 8vh;
     position: absolute;
     top: 80%;
     left: 40%;
@@ -634,7 +667,7 @@
 }
 
 #contactRight>#puzzle3 {
-    width: 14vh;
+    width: 8vh;
     position: absolute;
     top: 18%;
     left: 88%;
@@ -697,8 +730,18 @@
     }
 }
 
+/* Estilos para tablets (por ejemplo, iPads en orientación horizontal) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Agrega tus estilos para tablets aquí */
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    /* Agrega tus estilos para dispositivos móviles aquí */
+}
+
 /* --- MOBILE MODE --- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-device-width : 480px) {
     #home>.lightBackground {
         top: -38%;
         left: 17%;
@@ -847,7 +890,6 @@
         transition: transform 0.3s;
     }
 
-
     /* SOBRE MI*/
 
     #aboutMe {
@@ -874,7 +916,8 @@
     }
 
     #puzzle1 {
-        width: 10vh;
+        display: none;
+        width: 8vh;
         position: absolute;
         top: 43%;
         left: 10%;
@@ -901,7 +944,8 @@
     }
 
     #puzzle2 {
-        width: 12vh;
+        display: none;
+        width: 8vh;
         position: absolute;
         top: 4%;
         left: 75%;
@@ -911,7 +955,8 @@
     }
 
     #puzzle3 {
-        width: 18vh;
+        display: none;
+        width: 8vh;
         position: absolute;
         top: 44%;
         left: 71%;
@@ -1043,7 +1088,8 @@
     }
 
     #contactLeft>#puzzle1 {
-        width: 10vh;
+        display: none;
+        width: 8vh;
         position: absolute;
         top: 1%;
         left: 5%;
@@ -1053,7 +1099,8 @@
     }
 
     #contactLeft>#puzzle2 {
-        width: 12vh;
+        display: none;
+        width: 8vh;
         position: absolute;
         top: 38%;
         left: 13%;
@@ -1063,7 +1110,8 @@
     }
 
     #contactRight>#puzzle3 {
-        width: 14vh;
+        display: none;
+        width: 8vh;
         position: absolute;
         top: 46%;
         left: 77%;

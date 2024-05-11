@@ -394,7 +394,7 @@
 }
 
 /* --- MOBILE MODE --- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-device-width : 480px) {
 
     #boccaBlack {
         width: 100%;
@@ -505,7 +505,7 @@
         font-weight: 400;
         font-size: 4vw;
         text-align: center;
-        margin-bottom: 96%;
+        margin-bottom: 66vh;
     }
 
     .itemGrid {

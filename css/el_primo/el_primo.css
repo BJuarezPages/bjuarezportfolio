@@ -865,14 +865,14 @@
 }
 
 /* --- MOBILE MODE --- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-device-width : 480px) {
 
     /* ---- WHITE ---- */
     #elPrimoWhite {
         width: 100%;
         height: 660vh;
         background-image: url("./../../resources/El Primo/ElPrimo_Background_Mobile.png");
-        background-size: 100%;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -881,9 +881,10 @@
         width: 43vh;
         height: 77vh;
         top: 59vh;
-        left: 16.5%;
+        left: 50%;
         rotate: 0deg;
         border-radius: 10vw;
+        transform: translateX(-50%);
     }
 
     .primo-aniversary1 {
@@ -906,9 +907,10 @@
         width: 43vh;
         height: 77vh;
         top: 261vh;
-        left: 16.5%;
+        left: 50%;
         rotate: 0deg;
         border-radius: 10vw;
+        transform: translateX(-50%);
     }
 
     .primo-high1 {
@@ -931,9 +933,10 @@
         width: 43vh;
         height: 77vh;
         top: 464vh;
-        left: 16.5%;
+        left: 50%;
         rotate: 0deg;
         border-radius: 10vw;
+        transform: translateX(-50%);
     }
 
     .primo-carnival1 {

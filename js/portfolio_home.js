@@ -1,5 +1,19 @@
 /* ---- HEADER ---- */
 
+function hrefInstagram() {
+  window.location.href = 'https://www.instagram.com/bjuarezdesigns/';
+}
+
+function hrefLinkedIn() {
+  window.location.href = 'https://www.linkedin.com/in/bernat-juarez-188381205/';
+}
+
+
+function hrefBehance() {
+  window.location.href = 'https://www.behance.net/bernatjuarez';
+}
+
+
 /* MOVEMENT ON THE WEB */
 function updateHeader() {
   const currentSectionId = getVisibleSectionId();
@@ -98,27 +112,27 @@ function toggleLanguagesAndIcons() {
     element.style.order = isExpanded ? 'initial' : '2';
     element.style.width = isExpanded ? '' : '90%';
   });
-  
+
   const pagesContainer = document.querySelector('#pages');
   pagesContainer.style.flexWrap = isExpanded ? '' : 'wrap';
   pagesContainer.style.justifyContent = isExpanded ? '' : 'flex-start';
   pagesContainer.style.marginBottom = isExpanded ? '' : '15%';
-  
+
   const pagesLinks = document.querySelectorAll('#pages a');
   pagesLinks.forEach(link => {
     link.style.width = !isExpanded ? '50%' : '';
     link.style.height = !isExpanded ? '20vh' : '';
-  
+
     const paragraph = link.querySelector('p');
     paragraph.style.fontSize = !isExpanded ? '3vh' : '';
   });
-  
+
   const bgContainers = document.querySelectorAll('.backgroundSizeContainer');
   bgContainers.forEach(container => {
     container.style.height = !isExpanded ? '10vh' : '';
     container.style.maxWidth = !isExpanded ? '12.2vw' : '';
   });
-  
+
   const bgContainers2 = document.querySelectorAll('.backgroundSizeContainer2');
   bgContainers2.forEach(container => {
     container.style.width = !isExpanded ? '10.5vw' : '';
@@ -126,21 +140,33 @@ function toggleLanguagesAndIcons() {
     container.style.height = !isExpanded ? '10.5vh' : '';
     container.style.maxHeight = !isExpanded ? '10.5vh' : '';
   });
-  
 
   isExpanded = !isExpanded;
 
-  // Expandir o contraer el header
   header.style.height = isExpanded ? '100vh' : '5vh';
 }
 
-// Agregar un event listener al header para detectar clics
-header.addEventListener('click', toggleLanguagesAndIcons);
+// Verificar si es un dispositivo móvil
+const isMobile1 = window.innerWidth <= 480;
+
+if (isMobile1) {
+  header.addEventListener('click', toggleLanguagesAndIcons);
+}
 
 /* ---- HOME ---- */
 //Ir a la seccion de MyWork
 function redirectToMyWork() {
   var myWorkSection = document.getElementById('myWork');
+  if (myWorkSection) {
+    myWorkSection.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    window.location.href = 'index.html';
+  }
+}
+
+//Ir a la seccion de SobreMi
+function redirectToSobreMi() {
+  var myWorkSection = document.getElementById('aboutMe');
   if (myWorkSection) {
     myWorkSection.scrollIntoView({ behavior: 'smooth' });
   } else {

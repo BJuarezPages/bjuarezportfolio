@@ -14,9 +14,9 @@
   <header>
     <div id="backgroundHeader"></div>
     <div id="icons" class="flex_around">
-      <div id="iconInstagram" class="backgroundSizeContainer"></div>
-      <div id="iconLinkedin" class="backgroundSizeContainer"></div>
-      <div id="iconMessage" class="backgroundSizeContainer"></div>
+      <div id="iconInstagram" class="backgroundSizeContainer" onclick="hrefInstagram()"></div>
+      <div id="iconLinkedin" class="backgroundSizeContainer" onclick="hrefLinkedIn()"></div>
+      <div id="iconMessage" class="backgroundSizeContainer" onclick="hrefBehance()"></div>
     </div>
     <div id="pages" class="flex_around FuturaStd">
       <a id="linkHome" class="flex_center_column current" href="#home">
@@ -25,7 +25,7 @@
       </a>
       <a id="linkMyWork" class="flex_center_column" href="#myWork">
         <div id="pageMyWork" class="backgroundSizeContainer2 mywork-icon icon-mywork"></div>
-        <p>MY<span class="FuturaStdBold">WORK</span></p>
+        <p>MY WORK</p>
       </a>
       <a id="linkAboutMe" class="flex_center_column" href="#aboutMe">
         <div id="pageAboutMe" class="backgroundSizeContainer2 aboutme-icon icon-aboutme"></div>
@@ -55,7 +55,10 @@
             <span class="FuturaStdExtraBold">·</span> UX/UI Design
           </p>
           <br>
-          <button id="buttonWork" class="FuturaStdCondensedExtraBold" onclick="redirectToMyWork()">IR A MY WORK</button>
+          <div class="divButtonsHome">
+            <button id="buttonWork" class="FuturaStdCondensedExtraBold" onclick="redirectToMyWork()">MY WORK</button>
+            <button id="buttonSobreMi" class="FuturaStdCondensedExtraBold" onclick="redirectToSobreMi()">SOBRE MÍ</button>
+          </div>
         </div>
         <div id="video" class="flex_center_column">
           <div class="video-wrapper">
@@ -74,6 +77,7 @@
       <div class="light lightBackground2"></div>
       <div id="title">
         <p id="name" class="FuturaStdCondensedExtraBold">MY WORK <img src="./resources/Portfolio/Icon_Work.svg"></p>
+        <img src="./resources/Portfolio/Line_Green.svg">
       </div>
       <div id="containerMarks" class="flex_wrap_column2">
         <a id="gallo" class="sizeContainer" href="./html/gallo/gallo.html"></a>
@@ -110,6 +114,7 @@
         <div id="containerText">
           <p id="title"><span class="FuturaStdCondensedExtraBold">SOBRE MÍ </span><img
               src="./resources/Portfolio/Icon_AboutMe.svg"></p>
+          <img class="titleLine" src="./resources/Portfolio/Line_Pink.svg">
           <p><span class="FuturaStdMedium">Diseñador gráfico</span> creativo, enérgico e innovador con más de 6 años de
             experiencia que domina la creación de imágenes, ilustración, tipografía, locución, creación y edición de
             video, y motion graphics.</p>
@@ -119,6 +124,7 @@
             nuevas.</p>
           <br>
           <p>Me considero una persona que se puede <span class="FuturaStdMedium">adaptar a diferentes roles</span>.</p>
+          <button id="buttonCV" class="flex_center_row">CV <div id="iconCVWhite" class="backgroundSizeContainer3"></div>
         </div>
       </div>
       <div id="aboutMeRight">
@@ -156,9 +162,9 @@
               <div id="iconTV" class="backgroundSizeContainer3"></div>CONNECT ONLINE
             </div>
             <div id="icons" class="flex_between">
-              <div id="iconInstagram" class="backgroundSizeContainer"></div>
-              <div id="iconLinkedin" class="backgroundSizeContainer"></div>
-              <div id="iconMessage" class="backgroundSizeContainer"></div>
+              <div id="iconInstagram" class="backgroundSizeContainer" onclick="hrefInstagram()"></div>
+              <div id="iconLinkedin" class="backgroundSizeContainer" onclick="hrefLinkedIn()"></div>
+              <div id="iconMessage" class="backgroundSizeContainer" onclick="hrefBehance()"></div>
             </div>
             <div id="titleEmail" class="flex_center_row">
               <div id="iconEmail" class="backgroundSizeContainer3"></div>EMAIL
@@ -171,6 +177,7 @@
       </div>
     </section>
   </div>
+  <span id="spaceSlider"></span>
   <footer>
     <div>©bjuarezdesigns / Todos los derechos reservados.</div>
     <div>Tel: +34 663 507 349 · juarezbernat@gmail.com</div>

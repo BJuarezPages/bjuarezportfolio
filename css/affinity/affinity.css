@@ -79,6 +79,14 @@
     rotate: 10deg;
 }
 
+.desktop-img {
+    display: block;
+}
+
+.mobile-img {
+    display: none;
+}
+
 /* ---- Social ---- */
 #redBar {
     background-color: #E24301;
@@ -150,6 +158,50 @@
 }
 
 /* --- MOBILE MODE --- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-device-width : 480px) {
+    
+    #affinityWhite {
+        height: 500vh;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+    
+    .mobile-img {
+        display: block;
+    }
+
+    #affinityWhite .column1 img {
+        object-fit: fill;
+    }
+
+    #affinityWhite .column2 img {
+        object-fit: fill;
+    }
+
+    #gifAdvance {
+        top: 26%;
+        left: -1%;
+    }
+
+    #gifVariety {
+        top: 20%;
+        left: 23%;
+    }
+
+    #gifTrainer {
+        top: 20%;
+        left: 25.5%;
+    }
+
+    .gif {
+        position: absolute;
+        width: 50% !important;
+        height: 110% !important;
+        object-fit: contain !important;
+    }
+
+
 
 }
