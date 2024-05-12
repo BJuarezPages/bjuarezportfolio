@@ -5,6 +5,7 @@ document.getElementById('buttonVideo').addEventListener('click', function () {
 const imageWebBanner = document.getElementById('imageWebBanner');
 const imageBackgroundGallo = document.getElementById('imageBackgroundGallo');
 const paragraphs = document.querySelectorAll('#galloCombinatedLeftContainer p');
+const buttonVideo = document.getElementById('buttonVideo');
 
 function isElementInViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -30,6 +31,10 @@ function addVisibleClass() {
             paragraph.classList.add('visible');
         }
     });
+
+    if(isElementInViewport(buttonVideo)){
+        buttonVideo.classList.add('visible');
+    }
 }
 
 // Verificar si es un dispositivo móvil

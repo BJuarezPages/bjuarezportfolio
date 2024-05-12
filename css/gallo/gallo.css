@@ -290,11 +290,13 @@
 
 #galloCombinatedLeftContainer p {
     opacity: 0;
-    transition: opacity 2s;
+    transform: translateY(20vh);
+    transition: opacity 2s, transform 0.5s;
 }
 
 #galloCombinatedLeftContainer p.visible {
     opacity: 1;
+    transform: translateY(0);
 }
 
 #galloCombinatedLeftContainer>#title1 {
@@ -331,6 +333,14 @@
     padding: 1%;
     border: 0;
     cursor: pointer;
+    opacity: 0;
+    transform: translateY(20vh);
+    transition: opacity 2s, transform 0.5s;
+}
+
+#buttonVideo.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #buttonVideo:hover {

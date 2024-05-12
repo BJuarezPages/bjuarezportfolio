@@ -95,8 +95,8 @@ function toggleLanguagesAndIcons() {
 }
 
 // Verificar si es un dispositivo móvil
-const isMobile = window.innerWidth <= 480;
+const isMobileGlobal = window.innerWidth <= 480;
 
-if (isMobile) {
+if (isMobileGlobal) {
     header.addEventListener('click', toggleLanguagesAndIcons);
 }
