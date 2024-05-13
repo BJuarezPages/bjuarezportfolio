@@ -77,7 +77,7 @@ function handleClickVideoMobile(event) {
 }
 
 // Verificar si es un dispositivo móvil
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth <= 768;
+const isMobile =  window.innerWidth <= 768;
 
 if (!isMobile) {
     // Agregar eventos a cada contenedor de video

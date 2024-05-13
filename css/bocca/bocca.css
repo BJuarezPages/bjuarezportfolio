@@ -323,7 +323,7 @@
     height: 50%;
     position: absolute;
     top: 20%;
-    left: 40%;
+    left: 35%;
     background-image: url("./../../resources/Bocca/Carta_3.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -364,12 +364,8 @@
     z-index: 1;
 }
 
-#card3, #card4, #card5 {
+#card4, #card5 {
     transition: transform 0.3s ease-in-out;
-}
-
-#card3:hover {
-    transform: translate(-15%, 0) rotate(-5deg);
 }
 
 #card4:hover {

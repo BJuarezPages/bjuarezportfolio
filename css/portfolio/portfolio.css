@@ -224,20 +224,14 @@
     background-repeat: no-repeat;
     background-size: contain;
     transition: opacity 0.5s ease, transform 0.5s ease;
-    /* Ajuste del tiempo de transición */
     opacity: 0;
-    /* Inicialmente oculto */
     transform: scale(0.5);
-    /* Escalar inicialmente al 50% */
     border-radius: 15px;
-    /* Agrega esquinas redondeadas al contenedor */
 }
 
 .sizeContainer.visible {
     opacity: 1;
-    /* Mostrar cuando sea visible */
     transform: scale(1.1);
-    /* Escalar al 100% cuando sea visible */
 }
 
 .sizeContainer:hover {
@@ -396,11 +390,13 @@
 
 #aboutMeLeft p {
     opacity: 0;
-    transition: opacity 2s;
+    transform: translateY(10vh);
+    transition: opacity 2s, transform 2s;
 }
 
 #aboutMeLeft p.visible {
     opacity: 1;
+    transform: translateY(0);
 }
 
 #aboutMeLeft>#containerText {
@@ -417,12 +413,12 @@
     height: 2.9vh;
 }
 
-#aboutMeLeft>#containerText>.titleLine{
+#aboutMeLeft>#containerText>.titleLine {
     width: 3vw;
     margin-bottom: 5%;
 }
 
-#aboutMeLeft>#containerText>#buttonCV{
+#aboutMeLeft>#containerText>#buttonCV {
     margin-top: 5%;
     background-color: #FF008A;
     color: #FFFFFF;
@@ -809,6 +805,10 @@
         transition: transform 0.3s;
     }
 
+    #buttonSobreMi {
+        width: 40vw;
+    }
+
     #portfolio>#video {
         display: none;
     }
@@ -833,9 +833,13 @@
         width: 100%;
         height: 10%;
         display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
         z-index: 10;
+    }
+
+    #myWork>#title>img {
+        width: 16vw;
     }
 
     #myWork>#title>#name {
@@ -845,8 +849,7 @@
 
     #containerMarks {
         width: 100%;
-        height: 80vh;
-        /* Ajuste de la altura */
+        height: 65vh;
         z-index: 10;
         display: flex;
         flex-direction: row;
@@ -931,10 +934,18 @@
         font-size: 2.5vh;
         text-align: center;
         font-family: 'Futura Std Light';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     #aboutMeLeft>#containerText #title span {
         font-size: 4vh;
+    }
+
+    #aboutMeLeft>#containerText>.titleLine {
+        width: 16vw;
     }
 
     #aboutMeRight {

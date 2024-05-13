@@ -1,5 +1,5 @@
 // Verificar si es un dispositivo móvil
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth <= 768;
+const isMobile =  window.innerWidth <= 768;
 
 if (!isMobile) {
   window.addEventListener('load', function () {
@@ -165,9 +165,68 @@ if (!isMobile) {
 
   document.addEventListener("DOMContentLoaded", function (event) {
     const clouds = document.querySelectorAll('.carnival-cloud');
+    const usedSpeeds = []; // Registro de velocidades utilizadas
+    
     clouds.forEach(cloud => {
-      const randomSpeed = Math.random() * (20 - 5) + 5; // Velocidad aleatoria entre 5 y 20
+      let randomSpeed;
+      do {
+        randomSpeed = Math.random() * (22 - 10) + 10; // Genera una nueva velocidad aleatoria
+      } while (usedSpeeds.includes(randomSpeed)); // Verifica si la velocidad ya ha sido utilizada
+      
+      usedSpeeds.push(randomSpeed); // Agrega la velocidad a las utilizadas
       cloud.style.animationDuration = `${randomSpeed}s`;
     });
   });
+}
+
+//HANDS
+document.addEventListener("DOMContentLoaded", function() {
+  const hands = document.querySelectorAll(".primo-hand");
+
+  hands.forEach(hand => {
+      const durationLeft = Math.random() * 1 + 0.5; // Duración entre 1 y 3 segundos
+      const durationRight = Math.random() * 1 + 0.5; // Duración entre 1 y 3 segundos
+      const rotateLeft = Math.random() * 10 - 5; // Rotación entre -5 y 5 grados
+      const rotateRight = Math.random() * 10 - 5; // Rotación entre -5 y 5 grados
+      const translateLeft = Math.random() * 10 - 5; // Traslación horizontal entre -5 y 5 px
+      const translateRight = Math.random() * 10 - 5; // Traslación horizontal entre -5 y 5 px
+
+      hand.style.setProperty("--durationLeft", `${durationLeft}s`);
+      hand.style.setProperty("--durationRight", `${durationRight}s`);
+      hand.style.setProperty("--rotateLeft", `${rotateLeft}deg`);
+      hand.style.setProperty("--rotateRight", `${rotateRight}deg`);
+      hand.style.setProperty("--translateLeft", `${translateLeft}px`);
+      hand.style.setProperty("--translateRight", `${translateRight}px`);
+  });
+});
+
+//Animaciones
+
+const paragraphs = document.querySelectorAll('.primo-hand');
+
+function isElementInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function addVisibleClass() {
+    paragraphs.forEach(paragraph => {
+        if (isElementInViewport(paragraph)) {
+            paragraph.classList.add('visible');
+        }
+    });
+}
+
+// Verificar si es un dispositivo móvil
+const isMobilePrimo =  window.innerWidth <= 768;
+
+if (!isMobilePrimo) {
+    // Agregar eventos
+    window.addEventListener('scroll', addVisibleClass, { passive: true });
+    addVisibleClass();
 }

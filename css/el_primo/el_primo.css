@@ -284,42 +284,52 @@
     z-index: 1;
 }
 
-:root {
-    --initial-rotation-left1: 25deg;
-    --initial-rotation-left2: 0deg;
-    --initial-rotation-left3: -20deg;
-    --initial-rotation-right1: -25deg;
-    --initial-rotation-right2: 0deg;
-    --initial-rotation-right3: 29deg;
-}
-
-@keyframes rotateHandsLeft {
-    0%, 100% {
-        transform: rotate(var(--initial-rotation-left1));
+@keyframes wiggleLeft {
+    0% {
+        transform: rotate(var(--initialRotateLeft)) rotate(0deg);
     }
 
     50% {
-        transform: rotate(calc(var(--initial-rotation-left2) - var(--initial-rotation-left1)));
+        transform: rotate(var(--initialRotateLeft)) rotate(var(--rotateLeft)) translateX(var(--translateLeft));
+    }
+
+    100% {
+        transform: rotate(var(--initialRotateLeft)) rotate(0deg);
     }
 }
 
-@keyframes rotateHandsRight {
-    0%, 100% {
-        transform: rotate(var(--initial-rotation-right1)) scaleX(-1);
+@keyframes wiggleRight {
+    0% {
+        transform: rotate(var(--initialRotateRight)) rotate(0deg) scaleX(-1);
     }
 
     50% {
-        transform: rotate(calc(var(--initial-rotation-right2) - var(--initial-rotation-right1))) scaleX(-1);
+        transform: rotate(var(--initialRotateRight)) rotate(var(--rotateRight)) scaleX(-1) translateX(var(--translateRight));
+    }
+
+    100% {
+        transform: rotate(var(--initialRotateRight)) rotate(0deg) scaleX(-1);
     }
 }
 
+.hand-left1,
+.hand-left2,
+.hand-left3 {
+    animation: wiggleLeft var(--durationLeft) linear infinite;
+}
+
+.hand-right1,
+.hand-right2,
+.hand-right3 {
+    animation: wiggleRight var(--durationRight) linear infinite;
+}
 
 .hand-left1 {
     top: 42%;
     left: 16%;
     width: 27%;
     height: 33vh;
-    transform: rotate(25deg);
+    --initialRotateLeft: 25deg;
 }
 
 .hand-left2 {
@@ -327,7 +337,7 @@
     left: 18%;
     width: 27%;
     height: 33vh;
-    transform: rotate(0deg);
+    --initialRotateLeft: 0deg;
 }
 
 .hand-left3 {
@@ -335,30 +345,23 @@
     left: 22%;
     width: 27%;
     height: 33vh;
-    transform: rotate(-20deg);
-}
-
-.hand-left1,
-.hand-left2,
-.hand-left3 {
-    animation: rotateHandsLeft infinite linear;
-    animation-duration: 5s;
+    --initialRotateLeft: -20deg;
 }
 
 .hand-right1 {
-    top: 41%;
-    right: 42%;
+    top: 42%;
+    right: 46%;
     width: 27%;
     height: 33vh;
-    transform: rotate(-25deg) scaleX(-1);
+    --initialRotateRight: -25deg;
 }
 
 .hand-right2 {
-    top: 43%;
-    right: 44%;
+    top: 44%;
+    right: 45%;
     width: 27%;
     height: 33vh;
-    transform: rotate(0deg) scaleX(-1);
+    --initialRotateRight: 0deg;
 }
 
 .hand-right3 {
@@ -366,14 +369,7 @@
     right: 46%;
     width: 27%;
     height: 33vh;
-    transform: rotate(29deg) scaleX(-1);
-}
-
-.hand-right1,
-.hand-right2,
-.hand-right3 {
-    animation: rotateHandsRight infinite linear;
-    animation-duration: 5s;
+    --initialRotateRight: 29deg;
 }
 
 .primo-high1 {
@@ -778,7 +774,7 @@
 .carnival-cloud-container {
     position: absolute;
     top: 66%;
-    width: 100%;
+    width: 120%;
     height: 200vh;
 }
 
@@ -819,7 +815,7 @@
     width: 11vw;
     height: 11.2vh;
     background-image: url("./../../resources/El Primo/Nube 1.svg");
-    top: 30%;
+    top: 35%;
     left: 5%;
 }
 

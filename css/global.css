@@ -390,7 +390,7 @@ footer {
         align-items: center;
     }
 
-    header::after {
+    header .mobileArrow {
         content: '';
         position: absolute;
         left: 50%;
@@ -398,17 +398,14 @@ footer {
         transform: translateX(-50%) rotate(45deg);
         width: 18vw;
         height: 18vw;
-        background-color: black;
+        background-color: #071017;
         z-index: -2;
         transform-origin: center center;
     }
 
-    header::before {
+    header .iconArrow {
         content: '';
-        position: absolute;
-        left: 50%;
-        top: 10vw;
-        transform: translate(-50%, -250%) rotate(0deg);
+        transform: translate(18%,18%) rotate(-45deg);
         width: 6vw;
         height: 6vw;
         max-height: 100%;
@@ -439,6 +436,7 @@ footer {
     .backgroundSizeContainer2 {
         width: 5.5vw;
         max-width: 5.5vw;
+        background-position: bottom;
     }
 
     #generalTitleContainer {
