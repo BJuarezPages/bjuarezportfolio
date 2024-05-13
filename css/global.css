@@ -49,6 +49,10 @@ header {
     color: #FFFFFF;
 }
 
+header .mobileArrow {
+    display: none;
+}
+
 #pages {
     width: 30vw;
     max-width: 90%;
