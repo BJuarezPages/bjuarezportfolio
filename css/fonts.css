@@ -81,6 +81,15 @@
     font-family: 'Futura Std Medium';
 }
 
+@font-face {
+    font-family: 'Futura Std Heavy';
+    src: url("../fonts/Futura_STD/FuturaStdHeavy.otf");
+}
+
+.FuturaStdHeavy {
+    font-family: 'Futura Std Heavy';
+}
+
 /* ---- Karma ---- */
 
 @font-face {

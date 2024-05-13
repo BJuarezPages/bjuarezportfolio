@@ -301,7 +301,7 @@ footer {
     background-color: #071017;
     border: 0.3vh solid #000000;
     border-radius: 3vh;
-    background-size: 60%;
+    background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -453,6 +453,7 @@ footer {
         top: -15%;
         left: 50%;
         transform: translate(-50%, 0%);
+        border: 0.3vh solid #22425A;
     }
 
     #generalDescription {

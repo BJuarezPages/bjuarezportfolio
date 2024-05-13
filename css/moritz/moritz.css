@@ -680,6 +680,12 @@
         align-items: center;
     }
 
+    #textContainer div {
+        opacity: 1;
+        transform: unset;
+        transition: unset;
+    }
+
     #textContainer>#title1 {
         color: #E0881E;
         font-family: 'Montserrat Extra Bold';
@@ -702,6 +708,9 @@
         position: absolute;
         top: 68vh;
         left: 0%;
+        opacity: 1;
+        transform: unset;
+        transition: unset;
     }
 
     .video-container1 {
@@ -712,6 +721,9 @@
         left: 22.5%;
         rotate: 5deg;
         border-radius: 6vw;
+        opacity: 1;
+        transform: unset;
+        transition: unset;
     }
 
     #imageMoritz {
@@ -791,6 +803,12 @@
         left: 5.3%;
     }
 
+    #moritzBigContainerText p {
+        opacity: 1;
+        transform: unset;
+        transition: unset;
+    }
+
     #moritzBigContainerText>.text1 {
         color: #E0881E;
         font-family: 'Montserrat Extra Bold';
@@ -813,6 +831,9 @@
         top: 18vh;
         left: 17%;
         border-radius: 6vw;
+        opacity: 1;
+        transform: unset;
+        transition: unset;
     }
 
     #moritzGraphics {
@@ -842,6 +863,12 @@
         align-items: center;
         top: 12%;
         left: 10%;
+    }
+
+    #moritzGraphicsContainerText p {
+        opacity: 1;
+        transform: unset;
+        transition: unset;
     }
 
     #moritzGraphicsContainerText>.text1 {
@@ -875,6 +902,9 @@
         left: 18%;
         rotate: 7deg;
         border-radius: 6vw;
+        opacity: 1;
+        transform: unset;
+        transition: unset;
     }
 
     #beerImage {

@@ -588,6 +588,7 @@
 
     #galloCombinatedLeftContainer p {
         opacity: 1;
+        transform: unset;
         transition: unset;
     }
 
@@ -614,6 +615,9 @@
         width: 60%;
         height: 20%;
         font-size: 4vw;
+        opacity: 1;
+        transform: unset;
+        transition: unset;
     }
 
     #galloCombinatedRight {
