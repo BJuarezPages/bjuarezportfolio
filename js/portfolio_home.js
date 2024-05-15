@@ -239,3 +239,28 @@ document.getElementById("consultForm").addEventListener("submit", function (even
 */
 
 /* ---- EXAMPLE ---- */
+
+const container = document.getElementById('rectangleMarks');
+let currentGroup = 1;
+
+function switchGroup() {
+  if (currentGroup === 1) {
+    container.querySelector('.grupo1').style.transition = 'none';
+    container.querySelector('.grupo1').style.transform = 'translateX(100%)';
+    setTimeout(() => {
+      container.querySelector('.grupo1').style.transition = 'transform 1s ease-in-out';
+      container.querySelector('.grupo1').style.transform = 'translateX(0)';
+    }, 50);
+    currentGroup = 2;
+  } else {
+    container.querySelector('.grupo2').style.transition = 'none';
+    container.querySelector('.grupo2').style.transform = 'translateX(100%)';
+    setTimeout(() => {
+      container.querySelector('.grupo2').style.transition = 'transform 1s ease-in-out';
+      container.querySelector('.grupo2').style.transform = 'translateX(0)';
+    }, 50);
+    currentGroup = 1;
+  }
+}
+
+setInterval(switchGroup, 14000);

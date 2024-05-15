@@ -329,34 +329,65 @@
     display: block;
 }
 
-@keyframes moveLeftToRight {
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5vw;
+    overflow: hidden;
+    position: relative;
+    width: 190vw;
+    height: 18vh;
+    margin: 0 auto;
+}
+
+.image-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sizeContainerWork {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3vw;
+}
+
+.sizeContainerWork img {
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+}
+
+.grupo1 {
+    animation: moveContainer 14s linear infinite;
+}
+
+.grupo2 {
+    animation: moveContainer 14s linear infinite;
+    left: 100%;
+}
+
+@keyframes moveContainer {
     0% {
         transform: translateX(0);
     }
 
     100% {
-        transform: translateX(calc(-100% - 20px));
-        /* Ancho del contenedor más margen */
+        transform: translateX(-100%);
     }
-}
-
-#rectangleMarks {
-    display: flex;
-    align-items: center;
-    /* overflow: hidden; */
-    position: relative;
-    cursor: grab;
-    max-width: 100%;
-    width: 100%;
-    animation: moveLeftToRight 10s linear infinite;
-    z-index: 10;
-}
-
-.sizeContainerWork {
-    width: 30%;
-    max-width: 300px;
-    height: auto;
-    margin: 0 4%;
 }
 
 /* ABOUT ME */
@@ -513,8 +544,9 @@
 
 #contactLeft>#containerForm {
     width: 60%;
+    height: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
@@ -844,7 +876,7 @@
 
     #myWork>#title>#name {
         margin-left: 0%;
-        font-size: 3vh;
+        font-size: 4vh;
     }
 
     #containerMarks {
@@ -941,7 +973,7 @@
     }
 
     #aboutMeLeft>#containerText #title span {
-        font-size: 4vh;
+        font-size: 3vh;
     }
 
     #aboutMeLeft>#containerText>.titleLine {
@@ -1020,11 +1052,7 @@
     }
 
     #contactLeft>#containerForm {
-        width: 60%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        height: 88%;
     }
 
     #buttonSend {

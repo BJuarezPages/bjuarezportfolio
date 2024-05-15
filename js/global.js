@@ -33,13 +33,36 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// Verificar si es un dispositivo móvil
+const isMobileGlobal1 = window.innerWidth <= 480;
+
 function openPopup(videoSrc, popupWidth) {
-    const video = document.querySelector('.popup-inner');
-    video.src = videoSrc;
-    video.load();
-    video.style.width = popupWidth;
-    video.play();
-    popupContainer.classList.add('active');
+    if (isMobileGlobal1) {
+        const popupContainer = document.querySelector('.popup-container');
+        popupContainer.style.opacity = 1;
+        popupContainer.style.visibility = 'visible';
+        const video = document.querySelector('.popup-inner');
+        video.src = videoSrc;
+        video.load();
+        video.play();
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) { /* Firefox */
+            video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) { /* Chrome, Safari y Opera */
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) { /* IE/Edge */
+            video.msRequestFullscreen();
+        }
+
+    } else {
+        const video = document.querySelector('.popup-inner');
+        video.src = videoSrc;
+        video.load();
+        video.style.width = popupWidth;
+        video.play();
+        popupContainer.classList.add('active');
+    }
 }
 
 function closePopup() {

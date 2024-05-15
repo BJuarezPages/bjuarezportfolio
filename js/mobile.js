@@ -2,6 +2,7 @@
 
 const expandHeader = document.querySelector('.mobileArrow');
 let isExpanded = false;
+let startY = null;
 
 function toggleLanguagesAndIcons() {
     const languagesAndIcons = document.querySelectorAll('#languages, #icons');
@@ -50,9 +51,40 @@ function toggleLanguagesAndIcons() {
     expandHeader.style.zIndex = isExpanded ? '2' : '-2';
 }
 
+const header = document.querySelector('header');
+
+function handleTouchStart(e) {
+    startY = e.touches[0].clientY;
+}
+
+function handleTouchMove(e) {
+    if (startY !== null) {
+        const deltaY = e.touches[0].clientY - startY;
+        const newHeight = isExpanded ? Math.max(5, Math.min(100, 100 - deltaY)) : Math.max(5, Math.min(100, 5 - deltaY));
+        header.style.height = newHeight + 'vh';
+        if (deltaY > 50 && isExpanded) { // Desplazamiento hacia abajo mayor a 50 píxeles
+            toggleLanguagesAndIcons();
+            startY = null; // Restablecer startY para evitar múltiples expansiones
+        } else if (deltaY < -50 && !isExpanded) { // Desplazamiento hacia arriba mayor a 50 píxeles
+            toggleLanguagesAndIcons();
+            startY = null; // Restablecer startY para evitar múltiples contracciones
+        }
+    }
+}
+
+function resetHeaderHeight() {
+    header.style.transition = 'height 0.3s ease'; // Transición CSS
+    header.style.height = isExpanded ? '100vh' : '5vh';
+}
+
 // Verificar si es un dispositivo móvil
 const isMobileGlobal = window.innerWidth <= 480;
 
 if (isMobileGlobal) {
     expandHeader.addEventListener('click', toggleLanguagesAndIcons);
+    expandHeader.addEventListener('touchstart', handleTouchStart, { passive: true });
+    expandHeader.addEventListener('touchmove', handleTouchMove, { passive: true });
+
+    // Restablecer la altura del encabezado si se deja de mover
+    window.addEventListener('touchend', resetHeaderHeight);
 }
