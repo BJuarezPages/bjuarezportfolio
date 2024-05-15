@@ -46,7 +46,7 @@ function toggleLanguagesAndIcons() {
     const header = document.querySelector('header');
     header.style.height = isExpanded ? '100vh' : '5vh';
 
-    expandHeader.style.top = isExpanded ? '0vh' : '-3vh';
+    expandHeader.style.top = isExpanded ? '5vh' : '-3vh';
     expandHeader.style.transform = isExpanded ? 'translateX(-50%) rotate(225deg)' : 'translateX(-50%) rotate(45deg)';
     expandHeader.style.zIndex = isExpanded ? '2' : '-2';
 }
@@ -87,4 +87,11 @@ if (isMobileGlobal) {
 
     // Restablecer la altura del encabezado si se deja de mover
     window.addEventListener('touchend', resetHeaderHeight);
+
+    document.querySelectorAll('#pages a').forEach(link => {
+        link.addEventListener('click', () => {
+            isExpanded ? toggleLanguagesAndIcons() : null
+        });
+    });
 }
+
