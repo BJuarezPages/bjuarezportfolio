@@ -1,5 +1,5 @@
 {
-    "es": {
+    "Cast": {
         "inicio": "INICIO",
         "mywork": "MY WORK",
         "sobremi": "SOBRE MÍ",
@@ -76,7 +76,7 @@
         "tatungText2": "DIGITAL",
         "affinityDescription": "Creación de contenido digital, CRM, Ads y banners web para las siguientes marcas: Advance, Nature’s Variety, Natural Trainer y Ultima."
     },
-    "en": {
+    "Eng": {
         "inicio": "HOME",
         "mywork": "MY WORK",
         "sobremi": "ABOUT ME",
@@ -153,7 +153,7 @@
         "tatungText2": "CREATION",
         "affinityDescription": "Creation of digital content, CRM, Ads and web banners for the following brands: Advance, Nature's Variety, Natural Trainer and Ultima."
     },
-    "ca": {
+    "Cat": {
         "inicio": "INICIO",
         "mywork": "MY WORK",
         "sobremi": "SOBRE MÍ",

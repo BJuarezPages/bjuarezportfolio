@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Obtenemos el idioma guardado en localStorage, si no hay ninguno, utilizamos el idioma por defecto ('es')
-    var idiomaSeleccionado = localStorage.getItem('idioma') || 'es';
+    var idiomaSeleccionado = localStorage.getItem('idioma') || 'Cast';
     var rutaActual = window.location.pathname;
 
     var ultimoSegmento = rutaActual.substring(rutaActual.lastIndexOf("/") + 1, rutaActual.lastIndexOf("."));
@@ -8,23 +8,43 @@ document.addEventListener('DOMContentLoaded', function () {
     // Cargamos el texto correspondiente al idioma guardado
     cargarIdioma(idiomaSeleccionado, ultimoSegmento);
 
+    const idiomas = document.querySelectorAll('#languages div');
+    
+    eliminarActives(idiomas)
+    document.getElementById('lang'+idiomaSeleccionado).classList.add('active');
+
     // Manejamos el evento de click en las banderas
     document.getElementById('langCast').addEventListener('click', function () {
         // Guardamos el idioma seleccionado en localStorage
-        localStorage.setItem('idioma', 'es');
-        cargarIdioma('es', ultimoSegmento);
+        localStorage.setItem('idioma', 'Cast');
+        cargarIdioma('Cast', ultimoSegmento);
+
+        eliminarActives(idiomas)
+        this.classList.add('active');
     });
 
     document.getElementById('langEng').addEventListener('click', function () {
-        localStorage.setItem('idioma', 'en');
-        cargarIdioma('en', ultimoSegmento);
+        localStorage.setItem('idioma', 'Eng');
+        cargarIdioma('Eng', ultimoSegmento);
+
+        eliminarActives(idiomas)
+        this.classList.add('active');
     });
 
     document.getElementById('langCat').addEventListener('click', function () {
-        localStorage.setItem('idioma', 'ca');
-        cargarIdioma('ca', ultimoSegmento);
+        localStorage.setItem('idioma', 'Cat');
+        cargarIdioma('Cat', ultimoSegmento);
+
+        eliminarActives(idiomas)
+        this.classList.add('active');
     });
 });
+
+function eliminarActives(idiomas) {
+    idiomas.forEach(function(lang) {
+        lang.classList.remove('active');
+    });
+}
 
 function cargarIdioma(idioma, html) {
     // Obtenemos el archivo JSON utilizando una ruta relativa

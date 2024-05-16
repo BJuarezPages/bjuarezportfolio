@@ -200,11 +200,15 @@ header .mobileArrow {
     background-image: url("./../resources/Portfolio/Icon_Catala_BW.svg");
 }
 
-#langCat:hover {
+#langCat:hover, #langCat.active {
     background-image: url("./../resources/Portfolio/Icon_Catala_Color.svg");
 }
 
 #langCast {
+    background-image: url("./../resources/Portfolio/Icon_Castella_BW.svg");
+}
+
+#langCast:hover, #langCast.active {
     background-image: url("./../resources/Portfolio/Icon_Castella_Color.svg");
 }
 
@@ -212,7 +216,7 @@ header .mobileArrow {
     background-image: url("./../resources/Portfolio/Icon_English_BW.svg");
 }
 
-#langEng:hover {
+#langEng:hover, #langEng.active{
     background-image: url("./../resources/Portfolio/Icon_English_Color.svg");
 }
 
