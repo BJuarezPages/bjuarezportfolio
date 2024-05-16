@@ -411,8 +411,8 @@ footer {
     header .iconArrow {
         content: '';
         transform: translate(18%,18%) rotate(-45deg);
-        width: 6vw;
-        height: 6vw;
+        width: 7vw;
+        height: 7vw;
         max-height: 100%;
         background-image: url("./../resources/Portfolio/Icon_Arrow.svg");
         background-size: contain;

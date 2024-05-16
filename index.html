@@ -24,19 +24,19 @@
     <div id="pages" class="flex_around FuturaStd">
       <a id="linkHome" class="flex_center_column current" href="#home">
         <div id="pageHome" class="backgroundSizeContainer2 home-icon icon-home"></div>
-        <p class="current-text">INICIO</p>
+        <p class="current-text"></p>
       </a>
       <a id="linkMyWork" class="flex_center_column" href="#myWork">
         <div id="pageMyWork" class="backgroundSizeContainer2 mywork-icon icon-mywork"></div>
-        <p>MY WORK</p>
+        <p></p>
       </a>
       <a id="linkAboutMe" class="flex_center_column" href="#aboutMe">
         <div id="pageAboutMe" class="backgroundSizeContainer2 aboutme-icon icon-aboutme"></div>
-        <p>SOBRE MÍ</p>
+        <p></p>
       </a>
       <a id="linkContact" class="flex_center_column" href="#contact">
         <div id="pageContact" class="backgroundSizeContainer2 contact-icon icon-contact"></div>
-        <p>CONTACTO</p>
+        <p></p>
       </a>
     </div>
     <div id="languages" class="flex_around">
@@ -54,8 +54,10 @@
           <p id="name" class="FuturaStdBook letter-spacing-20">BERNAT JUAREZ <img
               src="./resources/Portfolio/Icon_Home.svg"></p>
           <p id="portName">PORTFOLIO</p>
-          <p id="work" class="FuturaStdLight">Graphic Design <span class="FuturaStdExtraBold">·</span> Motion Graphics
-            <span class="FuturaStdExtraBold">·</span> UX/UI Design
+          <p id="work" class="FuturaStdLight">
+            <span id="graphics">Graphic Design</span> <span class="FuturaStdExtraBold">·</span>
+            <span id="motion">Motion Graphics</span> <span class="FuturaStdExtraBold">·</span>
+            <span id="design">UX/UI Design</span>
           </p>
           <br>
           <div class="divButtonsHome">
@@ -80,7 +82,8 @@
       <div class="light lightBackground1"></div>
       <div class="light lightBackground2"></div>
       <div id="title">
-        <p id="name" class="FuturaStdCondensedExtraBold">MY WORK <img src="./resources/Portfolio/Icon_Work.svg"></p>
+        <p id="name" class="FuturaStdCondensedExtraBold"><span id="trabajo">MY WORK</span> <img
+            src="./resources/Portfolio/Icon_Work.svg"></p>
         <img src="./resources/Portfolio/Line_Green.svg">
       </div>
       <div id="containerMarks" class="flex_wrap_column2">
@@ -94,7 +97,7 @@
         <a id="babiesuganda" class="sizeContainer" href="./html/babies_uganda/babies_uganda.html"></a>
       </div>
       <div class="buttonOtherContainer">
-        <button id="buttonOther" class="FuturaStdCondensedExtraBold">OTROS PROYECTOS</button>
+        <button id="buttonOther" class="FuturaStdCondensedExtraBold"></button>
       </div>
       <span id="spaceSlider"></span>
       <div id="rectangleMarks" class="contenedor">
@@ -109,7 +112,8 @@
           <div class="sizeContainerWork"><img src="./resources/Portfolio/Logo_Ta-Tung_SVG.svg"></div>
           <div class="sizeContainerWork"><img src="./resources/Portfolio/Logo_Kiron.png"></div>
           <div class="sizeContainerWork"><img src="./resources/Portfolio/Logo_Rocktail.png"></div>
-          <div class="sizeContainerWork"><img src="./resources/Portfolio/Logo_ClinicaDentalGilVernet.png" class="horizontal"></div>
+          <div class="sizeContainerWork"><img src="./resources/Portfolio/Logo_ClinicaDentalGilVernet.png"
+              class="horizontal"></div>
         </div>
         <div class="image-container grupo2">
           <div class="sizeContainerWork"><img src="./resources/Portfolio/Logo_Bocca_SVG.svg"></div>
@@ -131,18 +135,15 @@
       <div id="aboutMeLeft">
         <img id="puzzle1" src="./resources/Portfolio/Puzzle_1.svg" class="shake-on-hover1">
         <div id="containerText">
-          <p id="title"><span class="FuturaStdCondensedExtraBold">SOBRE MÍ </span><img
+          <p id="title"><span class="FuturaStdCondensedExtraBold" id="sobremi2">SOBRE MÍ</span> <img
               src="./resources/Portfolio/Icon_AboutMe.svg"></p>
           <img class="titleLine" src="./resources/Portfolio/Line_Pink.svg">
-          <p><span class="FuturaStdMedium">Diseñador gráfico</span> creativo, enérgico e innovador con más de 6 años de
-            experiencia que domina la creación de imágenes, ilustración, tipografía, locución, creación y edición de
-            video, y motion graphics.</p>
+          <p><span class="FuturaStdMedium" id="sobremiText1"></span> <span id="sobremiText2"></span></p>
           <br>
-          <p>Considero importante que se tenga que estar siempre <span class="FuturaStdMedium">aprendiendo y
-              creciendo</span>, por eso me gusta desafiarme a mi mismo para mejorar mis habilidades y aprender cosas
-            nuevas.</p>
+          <p><span id="sobremiText3"></span> <span class="FuturaStdMedium" id="sobremiText4"></span> <span
+              id="sobremiText5"></span></p>
           <br>
-          <p>Me considero una persona que se puede <span class="FuturaStdMedium">adaptar a diferentes roles</span>.</p>
+          <p><span id="sobremiText6"></span> <span class="FuturaStdMedium" id="sobremiText7"></span></p>
           <button id="buttonCV" class="flex_center_row">CV <div id="iconCVWhite" class="backgroundSizeContainer3"></div>
         </div>
       </div>
@@ -159,18 +160,15 @@
         <img id="puzzle1" src="./resources/Portfolio/Puzzle_1.svg" class="shake-on-hover1">
         <img id="puzzle2" src="./resources/Portfolio/Puzzle_1.svg" class="shake-on-hover2">
         <div id="containerForm">
-          <p id="title" class="FuturaStdCondensedExtraBold">¡CONTACTA CONMIGO! <img
+          <p id="title" class="FuturaStdCondensedExtraBold"><span id="contacta"></span> <img
               src="./resources/Portfolio/Icon_Contact.svg"></p>
           <img src="./resources/Portfolio/Line_Green.svg">
           <br>
           <form id="consultForm">
-            <input type="email" id="emailFormValue" name="email" placeholder="example@gmail.com" required
-              autocomplete="email"><br><br>
-            <input type="text" id="nameFormValue" name="name" placeholder="Escribe tu nombre" required
-              autocomplete="name"><br><br>
-            <textarea id="consultFormValue" name="consult" rows="4"
-              placeholder="¿Qué quieres contarme? ¿Quieres enviarme alguna imagen?" required></textarea><br><br>
-            <input id="buttonSend" type="submit" value="ENVIAR">
+            <input type="email" id="emailFormValue" name="email" placeholder="" required autocomplete="email"><br><br>
+            <input type="text" id="nameFormValue" name="name" placeholder="" required autocomplete="name"><br><br>
+            <textarea id="consultFormValue" name="consult" rows="4" placeholder="" required></textarea><br><br>
+            <input id="buttonSend" type="submit" value="">
           </form>
         </div>
       </div>
@@ -179,7 +177,7 @@
         <div id="circle" class="flex_center_column">
           <div id="contactContainer">
             <div id="titleTV" class="flex_center_row">
-              <div id="iconTV" class="backgroundSizeContainer3"></div>CONNECT ONLINE
+              <div id="iconTV" class="backgroundSizeContainer3"></div><span id="conectar"></span>
             </div>
             <div id="icons" class="flex_between">
               <div id="iconInstagram" class="backgroundSizeContainer" onclick="hrefInstagram()"></div>
@@ -187,7 +185,7 @@
               <div id="iconMessage" class="backgroundSizeContainer" onclick="hrefBehance()"></div>
             </div>
             <div id="titleEmail" class="flex_center_row">
-              <div id="iconEmail" class="backgroundSizeContainer3"></div>EMAIL
+              <div id="iconEmail" class="backgroundSizeContainer3"></div><span id="emailText"></span>
             </div>
             <div id="emailName">juarezbernat@gmail.com</div>
             <button id="buttonCV" class="flex_center_row">CV <div id="iconCV" class="backgroundSizeContainer3"></div>
@@ -199,13 +197,14 @@
   </div>
   <span id="spaceSlider"></span>
   <footer>
-    <div>©bjuarezdesigns / Todos los derechos reservados.</div>
-    <div>Tel: +34 663 507 349 · juarezbernat@gmail.com</div>
-    <div>Desde Terrassa, o por ahí.</div>
+    <div id="copyright"></div>
+    <div id="telefon"></div>
+    <div id="locate"></div>
   </footer>
 </body>
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="./js/portfolio_home.js"></script>
 <script src="./js/mobile.js"></script>
+<script src="./js/languages/languages.js"></script>
 
 </HTML>

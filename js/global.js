@@ -6,7 +6,6 @@
 
 //Index redirect
 var enlaces = document.querySelectorAll('[id^="link"]');
-console.log(enlaces)
 
 enlaces.forEach(function (enlace) {
     enlace.addEventListener('click', function (event) {

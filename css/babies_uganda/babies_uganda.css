@@ -106,7 +106,7 @@
     font-size: 1vw;
 }
 
-#babiesUgandaWhiteRight span {
+#babiesUgandaWhiteRight span.bold {
     font-family: 'Futura Std Light';
     font-weight: 1000;
 }

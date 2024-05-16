@@ -16,6 +16,7 @@ function toggleLanguagesAndIcons() {
     pagesContainer.style.flexWrap = isExpanded ? '' : 'wrap';
     pagesContainer.style.justifyContent = isExpanded ? '' : 'flex-start';
     pagesContainer.style.marginBottom = isExpanded ? '' : '15%';
+    pagesContainer.style.marginTop = isExpanded ? '' : '40%';
 
     const pagesLinks = document.querySelectorAll('#pages a');
     pagesLinks.forEach(link => {
@@ -46,7 +47,7 @@ function toggleLanguagesAndIcons() {
     const header = document.querySelector('header');
     header.style.height = isExpanded ? '100vh' : '5vh';
 
-    expandHeader.style.top = isExpanded ? '5vh' : '-3vh';
+    expandHeader.style.top = isExpanded ? '10vh' : '-3vh';
     expandHeader.style.transform = isExpanded ? 'translateX(-50%) rotate(225deg)' : 'translateX(-50%) rotate(45deg)';
     expandHeader.style.zIndex = isExpanded ? '2' : '-2';
 }
