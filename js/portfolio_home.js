@@ -264,3 +264,34 @@ function switchGroup() {
 }
 
 setInterval(switchGroup, 14000);
+
+//Descargar CV
+var buttons = document.querySelectorAll('#buttonCV');
+
+buttons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    window.location.href = './pdf/bjuarezportfolio.pdf';
+  });
+});
+
+
+/*document.getElementById('consultForm').addEventListener('submit', sendEmail);
+
+function sendEmail(event) {
+  event.preventDefault(); 
+
+  const mailBernat = 'marcortizburgos@gmail.com';//juarezbernat@gmail.com
+  const mailUser = document.getElementById('emailFormValue').value;
+  const nameUser = document.getElementById('nameFormValue').value;
+  const messageUser = document.getElementById('consultFormValue').value;
+
+  const data = {
+    mailBernat,
+    mailUser,
+    nameUser,
+    messageUser
+  };
+
+  console.log('Enviando correo:', data);
+}
+*/

@@ -96,7 +96,7 @@
 .video-container {
     position: relative;
     width: 15vw;
-    height: 70vh;
+    height: 33vw;
     overflow: hidden;
     border-radius: 2vw;
     z-index: 2;
@@ -159,6 +159,7 @@
 
     #taTungWhiteContainer {
         width: 100%;
+        height: 40%;
     }
 
     #taTungWhiteContainer>#title1 {
@@ -191,7 +192,7 @@
     .video-container {
         flex-shrink: 0;
         width: 62vw;
-        height: 83vh;
+        height: 135vw;
         margin-right: 12vw;
         border-radius: 6vw;
     }

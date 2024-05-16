@@ -324,7 +324,7 @@
 }
 
 #moritzBigContainerText {
-    width: 80%;
+    width: 30%;
     height: 60%;
     position: absolute;
     top: 20%;
@@ -361,7 +361,7 @@
     height: 170%;
     position: absolute;
     top: -54%;
-    left: 13%;
+    left: 20%;
     background-image: url("./../../resources/Moritz/M Horaria.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -715,8 +715,8 @@
 
     .video-container1 {
         position: absolute;
-        width: 37vh;
-        height: 80vh;
+        width: 56vw;
+        height: 120vw;
         top: 42vh;
         left: 22.5%;
         rotate: 5deg;
@@ -826,8 +826,8 @@
     }
 
     .video-container2 {
-        width: 39vh;
-        height: 83vh;
+        width: 58vw;
+        height: 126vw;
         top: 18vh;
         left: 17%;
         border-radius: 6vw;
@@ -896,8 +896,8 @@
     }
 
     .video-container3 {
-        width: 44vh;
-        height: 95vh;
+        width: 65vw;
+        height: 141vw;
         top: 37vh;
         left: 18%;
         rotate: 7deg;

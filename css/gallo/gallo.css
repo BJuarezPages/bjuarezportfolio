@@ -104,7 +104,7 @@
 
 #videoGalloMobile {
     width: 24vw;
-    height: 105vh;
+    height: 48vw;
     position: relative;
     overflow: hidden;
     top: 15vh;
@@ -451,7 +451,7 @@
 
     #videoGalloMobile {
         width: 45vw;
-        height: 62vh;
+        height: 91vw;
         top: 76vh;
         left: 27%;
         border-radius: 7vw;
