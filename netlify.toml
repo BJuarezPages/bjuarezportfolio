@@ -1,4 +1,21 @@
 [[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png" 
+  [headers.values]
+    Cache-Control = "max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.gif"
+  [headers.values]
+    Cache-Control = "max-age=31536000, immutable"
+
+[[headers]]
   for = "/*"
   [headers.values]
-    Cache-Control = "max-age=0,no-cache,no-store,must-revalidate"
+    Cache-Control = "max-age=31536000, immutable"
+
+/* /index.html 200
