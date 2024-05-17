@@ -3,15 +3,19 @@ document.addEventListener('DOMContentLoaded', function () {
     var idiomaSeleccionado = localStorage.getItem('idioma') || 'Cast';
     var rutaActual = window.location.pathname;
 
-    var ultimoSegmento = rutaActual.substring(rutaActual.lastIndexOf("/") + 1, rutaActual.lastIndexOf("."));
-
+    // Verificar si la URL tiene la extensión .html
+    if (rutaActual.endsWith(".html")) {
+        ultimoSegmento = rutaActual.substring(rutaActual.lastIndexOf("/") + 1, rutaActual.length - 5);
+    } else {
+        ultimoSegmento = rutaActual.substring(rutaActual.lastIndexOf("/") + 1);
+    }
     // Cargamos el texto correspondiente al idioma guardado
     cargarIdioma(idiomaSeleccionado, ultimoSegmento);
 
     const idiomas = document.querySelectorAll('#languages div');
-    
+
     eliminarActives(idiomas)
-    document.getElementById('lang'+idiomaSeleccionado).classList.add('active');
+    document.getElementById('lang' + idiomaSeleccionado).classList.add('active');
 
     // Manejamos el evento de click en las banderas
     document.getElementById('langCast').addEventListener('click', function () {
@@ -41,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function eliminarActives(idiomas) {
-    idiomas.forEach(function(lang) {
+    idiomas.forEach(function (lang) {
         lang.classList.remove('active');
     });
 }
