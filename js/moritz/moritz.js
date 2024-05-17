@@ -1,14 +1,14 @@
 //Video redirect
 document.getElementById('buttonVideo').addEventListener('click', function () {
-    openPopup('./../../resources/Moritz/Campaña Graus Moritz.mp4', '65vw');
+    openPopup('./../../resources/Moritz/Campaña Graus Moritz.mp4', '65vw', '36.55vw');
 });
 
 document.getElementById('videoButton2').addEventListener('click', function () {
-    openPopup('./../../resources/Moritz/Mockup_Video_Gaudir Dun Dijous.mp4', '17vw')
+    openPopup('./../../resources/Moritz/Mockup_Video_Gaudir Dun Dijous.mp4', '17vw', '36.55vw')
 });
 
 document.getElementById('videoButton3').addEventListener('click', function () {
-    openPopup('./../../resources/Moritz/Mockup_Video_SantJordi.mp4', '17vw')
+    openPopup('./../../resources/Moritz/Mockup_Video_SantJordi.mp4', '17vw', '36.55vw')
 });
 
 //Hearts

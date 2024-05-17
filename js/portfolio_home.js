@@ -186,6 +186,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* WHILE SLIDER */
 
+const container = document.getElementById('rectangleMarks');
+let currentGroup = 1;
+
+function switchGroup() {
+  if (currentGroup === 1) {
+    container.querySelector('.grupo1').style.transition = 'none';
+    container.querySelector('.grupo1').style.transform = 'translateX(100%)';
+    setTimeout(() => {
+      container.querySelector('.grupo1').style.transition = 'transform 1s ease-in-out';
+      container.querySelector('.grupo1').style.transform = 'translateX(0)';
+    }, 50);
+    currentGroup = 2;
+  } else {
+    container.querySelector('.grupo2').style.transition = 'none';
+    container.querySelector('.grupo2').style.transform = 'translateX(100%)';
+    setTimeout(() => {
+      container.querySelector('.grupo2').style.transition = 'transform 1s ease-in-out';
+      container.querySelector('.grupo2').style.transform = 'translateX(0)';
+    }, 50);
+    currentGroup = 1;
+  }
+}
+
+setInterval(switchGroup, 14000);
+
 /* ---- ABOUT ME ---- */
 
 const paragraphs = document.querySelectorAll('#aboutMeLeft p');
@@ -212,59 +237,6 @@ window.addEventListener('scroll', addVisibleClass);
 addVisibleClass();
 
 /* ---- CONTACT ---- */
-/*
-document.getElementById("consultForm").addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevenir el envío del formulario
-
-  var email = document.getElementById("emailFormValue").value.trim();
-  var name = document.getElementById("nameFormValue").value.trim();
-  var consult = document.getElementById("consultFormValue").value.trim();
-
-  if (email === "" || name === "" || consult === "") {
-    alert("Por favor, complete todos los campos.");
-    return; // Salir de la función sin enviar el formulario
-  }
-
-  // Enviar el formulario por correo electrónico utilizando EmailJS
-  emailjs.send("default_service", "template_id", {
-    email: email,
-    name: name,
-    consult: consult
-  }).then(function (response) {
-    alert("Consulta enviada con éxito.");
-  }, function (error) {
-    alert("Error al enviar la consulta. Por favor, inténtelo de nuevo más tarde.");
-  });
-});
-*/
-
-/* ---- EXAMPLE ---- */
-
-const container = document.getElementById('rectangleMarks');
-let currentGroup = 1;
-
-function switchGroup() {
-  if (currentGroup === 1) {
-    container.querySelector('.grupo1').style.transition = 'none';
-    container.querySelector('.grupo1').style.transform = 'translateX(100%)';
-    setTimeout(() => {
-      container.querySelector('.grupo1').style.transition = 'transform 1s ease-in-out';
-      container.querySelector('.grupo1').style.transform = 'translateX(0)';
-    }, 50);
-    currentGroup = 2;
-  } else {
-    container.querySelector('.grupo2').style.transition = 'none';
-    container.querySelector('.grupo2').style.transform = 'translateX(100%)';
-    setTimeout(() => {
-      container.querySelector('.grupo2').style.transition = 'transform 1s ease-in-out';
-      container.querySelector('.grupo2').style.transform = 'translateX(0)';
-    }, 50);
-    currentGroup = 1;
-  }
-}
-
-setInterval(switchGroup, 14000);
-
 //Descargar CV
 var buttons = document.querySelectorAll('#buttonCV');
 
@@ -274,24 +246,4 @@ buttons.forEach(function(button) {
   });
 });
 
-
-/*document.getElementById('consultForm').addEventListener('submit', sendEmail);
-
-function sendEmail(event) {
-  event.preventDefault(); 
-
-  const mailBernat = 'marcortizburgos@gmail.com';//juarezbernat@gmail.com
-  const mailUser = document.getElementById('emailFormValue').value;
-  const nameUser = document.getElementById('nameFormValue').value;
-  const messageUser = document.getElementById('consultFormValue').value;
-
-  const data = {
-    mailBernat,
-    mailUser,
-    nameUser,
-    messageUser
-  };
-
-  console.log('Enviando correo:', data);
-}
-*/
+/* ---- EXAMPLE ---- */

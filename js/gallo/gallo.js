@@ -1,5 +1,5 @@
 document.getElementById('buttonVideo').addEventListener('click', function () {
-    openPopup('./../../resources/Gallo/Video Final Unai .mp4', '65vw');
+    openPopup('./../../resources/Gallo/Video Final Unai .mp4', '65vw', '36.55vw');
 });
 
 const imageWebBanner = document.getElementById('imageWebBanner');

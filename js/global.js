@@ -33,13 +33,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Verificar si es un dispositivo móvil
-const isMobileGlobal1 = window.innerWidth <= 480;
+var isMobileGlobal1 = window.innerWidth <= 480;
 
-function openPopup(videoSrc, popupWidth) {
+// Función para verificar si es un dispositivo móvil
+function checkIfMobile() {
+    isMobileGlobal1 = window.innerWidth <= 480;
+}
+
+// Verificar al cambiar el tamaño de la ventana
+window.addEventListener('resize', checkIfMobile);
+
+function openPopup(videoSrc, popupWidth, popupHeight) {
     if (isMobileGlobal1) {
         const popupContainer = document.querySelector('.popup-container');
-        popupContainer.style.opacity = 1;
-        popupContainer.style.visibility = 'visible';
+        popupContainer.classList.add('active');
         const video = document.querySelector('.popup-inner');
         video.src = videoSrc;
         video.load();
@@ -54,11 +61,36 @@ function openPopup(videoSrc, popupWidth) {
             video.msRequestFullscreen();
         }
 
+        // Función para salir de pantalla completa
+        function exitFullscreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+
+            video.pause();
+
+            popupContainer.classList.remove('active');
+        }
+
+        // Evento para detectar cambios en el estado de pantalla completa
+        document.addEventListener('fullscreenchange', function () {
+            if (!document.fullscreenElement) {
+                exitFullscreen();
+            }
+        });
+
     } else {
         const video = document.querySelector('.popup-inner');
         video.src = videoSrc;
         video.load();
         video.style.width = popupWidth;
+        video.style.height = popupHeight;
         video.play();
         popupContainer.classList.add('active');
     }
