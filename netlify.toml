@@ -18,7 +18,10 @@
   [headers.values]
     Cache-Control = "max-age=31536000, immutable"
 
-/* /index.html 200
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[redirects]]
   from = "/*"
