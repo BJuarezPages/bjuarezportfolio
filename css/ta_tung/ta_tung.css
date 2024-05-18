@@ -135,6 +135,16 @@
     background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Web_Ta-Tung.svg");
 }
 
+#arrow-left, .anterior {
+    border-right-color: #F2EEE7;
+    color: #F2EEE7;
+}
+
+#arrow-right, .siguiente {
+    border-left-color: #F2EEE7;
+    color: #F2EEE7;
+}
+
 /* --- MOBILE MODE --- */
 @media only screen and (max-device-width : 480px) {
 

@@ -74,7 +74,9 @@
         "tatungDescription": "Marca por excelencia y líder en gastronomía asiática en España. Creación de contenido digital para redes sociales.",
         "tatungText1": "CREACIÓN DE CONTENIDO",
         "tatungText2": "DIGITAL",
-        "affinityDescription": "Creación de contenido digital, CRM, Ads y banners web para las siguientes marcas: Advance, Nature’s Variety, Natural Trainer y Ultima."
+        "affinityDescription": "Creación de contenido digital, CRM, Ads y banners web para las siguientes marcas: Advance, Nature’s Variety, Natural Trainer y Ultima.",
+        "anterior": "PROYECTO ANTERIOR",
+        "siguiente": "SIGUIENTE PROYECTO"
     },
     "Eng": {
         "inicio": "HOME",
@@ -151,7 +153,9 @@
         "tatungDescription": "Brand par excellence and leader in Asian gastronomy in Spain. Creation of digital content for social networks.",
         "tatungText1": "DIGITAL CONTENT",
         "tatungText2": "CREATION",
-        "affinityDescription": "Creation of digital content, CRM, Ads and web banners for the following brands: Advance, Nature's Variety, Natural Trainer and Ultima."
+        "affinityDescription": "Creation of digital content, CRM, Ads and web banners for the following brands: Advance, Nature's Variety, Natural Trainer and Ultima.",
+        "anterior": "BEFORE PROJECT",
+        "siguiente": "NEXT PROJECT"
     },
     "Cat": {
         "inicio": "INICIO",
@@ -228,6 +232,8 @@
         "tatungDescription": "Marca por excelencia y líder en gastronomía asiática en España. Creación de contenido digital para redes sociales.",
         "tatungText1": "CREACIÓN DE CONTENIDO",
         "tatungText2": "DIGITAL",
-        "affinityDescription": "Creación de contenido digital, CRM, Ads y banners web para las siguientes marcas: Advance, Nature’s Variety, Natural Trainer y Ultima."
+        "affinityDescription": "Creación de contenido digital, CRM, Ads y banners web para las siguientes marcas: Advance, Nature’s Variety, Natural Trainer y Ultima.",
+        "anterior": "PROYECTO ANTERIOR",
+        "siguiente": "SIGUIENTE PROYECTO"
     }
 }

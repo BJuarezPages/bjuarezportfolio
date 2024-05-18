@@ -104,3 +104,13 @@ function checkIfMobileGallo() {
 
 window.addEventListener('resize', checkIfMobileGallo);
 window.addEventListener('load', checkIfMobileGallo);
+
+let projectLeft = document.getElementById("projectLeft");
+let projectRight = document.getElementById("projectRight");
+
+projectLeft.addEventListener("click", function () {
+    window.location.href = './../../html/affinity/affinity.html'
+});
+projectRight.addEventListener("click", function () {
+    window.location.href = './../../html/el_primo/el_primo.html'
+});

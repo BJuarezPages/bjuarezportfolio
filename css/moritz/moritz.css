@@ -558,6 +558,16 @@
     background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Web_Moritz.svg");
 }
 
+#arrow-left, .anterior {
+    border-right-color: #E0881E;
+    color: #E0881E;
+}
+
+#arrow-right, .siguiente {
+    border-left-color: #E0881E;
+    color: #E0881E;
+}
+
 /* ---- POPUP CONTAINER ---- */
 .popup-container {
     position: fixed;

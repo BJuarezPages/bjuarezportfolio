@@ -235,3 +235,13 @@ function checkIfMobilePrimo() {
 
 window.addEventListener('resize', checkIfMobilePrimo);
 window.addEventListener('load', checkIfMobilePrimo);
+
+let projectLeft = document.getElementById("projectLeft");
+let projectRight = document.getElementById("projectRight");
+
+projectLeft.addEventListener("click", function () {
+    window.location.href = './../../html/ta_tung/ta_tung.html'
+});
+projectRight.addEventListener("click", function () {
+    window.location.href = './../../html/el_row/el_row.html'
+});

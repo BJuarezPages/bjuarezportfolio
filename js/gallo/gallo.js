@@ -45,7 +45,7 @@ function checkIfMobileGallo() {
 
     if (isMobileGallo) {
         window.removeEventListener('scroll', addVisibleClass);
-    } else{
+    } else {
         window.addEventListener('scroll', addVisibleClass);
         addVisibleClass();
     }
@@ -53,3 +53,13 @@ function checkIfMobileGallo() {
 
 window.addEventListener('resize', checkIfMobileGallo);
 window.addEventListener('load', checkIfMobileGallo);
+
+let projectLeft = document.getElementById("projectLeft");
+let projectRight = document.getElementById("projectRight");
+
+projectLeft.addEventListener("click", function () {
+    window.location.href = './../../html/babies_uganda/babies_uganda.html'
+});
+projectRight.addEventListener("click", function () {
+    window.location.href = './../../html/bocca/bocca.html'
+});

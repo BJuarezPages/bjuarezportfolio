@@ -389,6 +389,16 @@
     background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Web_Bocca.svg");
 }
 
+#arrow-left, .anterior {
+    border-right-color: #252525;
+    color: #252525;
+}
+
+#arrow-right, .siguiente {
+    border-left-color: #252525;
+    color: #252525;
+}
+
 /* --- MOBILE MODE --- */
 @media only screen and (max-device-width : 480px) {
 

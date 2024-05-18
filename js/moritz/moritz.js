@@ -114,3 +114,13 @@ function checkIfMobileMoritz() {
 
 window.addEventListener('resize', checkIfMobileMoritz);
 window.addEventListener('load', checkIfMobileMoritz);
+
+let projectLeft = document.getElementById("projectLeft");
+let projectRight = document.getElementById("projectRight");
+
+projectLeft.addEventListener("click", function () {
+    window.location.href = './../../html/bocca/bocca.html'
+});
+projectRight.addEventListener("click", function () {
+    window.location.href = './../../html/affinity/affinity.html'
+});

@@ -858,6 +858,16 @@
     background-image: url("../../resources/Iconos_Web_Instagram_SVG/Icon_Instagram_ElPrimo.svg");
 }
 
+#arrow-left, .anterior {
+    border-right-color: #FF0D1B;
+    color: #FF0D1B;
+}
+
+#arrow-right, .siguiente {
+    border-left-color: #FF0D1B;
+    color: #FF0D1B;
+}
+
 /* --- MOBILE MODE --- */
 @media only screen and (max-device-width : 480px) {
 

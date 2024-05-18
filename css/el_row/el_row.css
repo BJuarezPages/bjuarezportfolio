@@ -215,6 +215,16 @@
     z-index: 3002;
 }
 
+#arrow-left, .anterior {
+    border-right-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+#arrow-right, .siguiente {
+    border-left-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
 /* --- MOBILE MODE --- */
 @media only screen and (max-device-width : 480px) {
 

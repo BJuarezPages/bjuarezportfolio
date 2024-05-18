@@ -216,7 +216,7 @@ header .mobileArrow {
     background-image: url("./../resources/Portfolio/Icon_English_BW.svg");
 }
 
-#langEng:hover, #langEng.active{
+#langEng:hover, #langEng.active {
     background-image: url("./../resources/Portfolio/Icon_English_Color.svg");
 }
 
@@ -350,7 +350,7 @@ footer {
     height: 4.5vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 0.5% 0 0.5% 0;
 }
@@ -380,6 +380,39 @@ footer {
     background-position: center;
     cursor: pointer;
 }
+
+#projectLeft, #projectRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 10%;
+}
+
+.anterior {
+    margin-left: 10%;
+}
+
+.siguiente {
+    margin-right: 10%;
+}
+
+#arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid black;
+}
+
+#arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+}
+
 
 /* --- MOBILE MODE --- */
 @media only screen and (max-device-width : 480px) {
@@ -414,7 +447,7 @@ footer {
 
     header .iconArrow {
         content: '';
-        transform: translate(18%,18%) rotate(-45deg);
+        transform: translate(18%, 18%) rotate(-45deg);
         width: 7vw;
         height: 7vw;
         max-height: 100%;

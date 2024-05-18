@@ -108,6 +108,8 @@ function cargarIdioma(idioma, html) {
             } else {
                 document.querySelector('#agency').innerText = data[idioma].agency;
                 document.querySelector('#year').innerText = data[idioma].year;
+                document.querySelector('#projectLeft .anterior').innerText = data[idioma].anterior;
+                document.querySelector('#projectRight .siguiente').innerText = data[idioma].siguiente;
             }
 
             //Gallo
