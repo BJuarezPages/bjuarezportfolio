@@ -247,3 +247,15 @@ buttons.forEach(function(button) {
 });
 
 /* ---- EXAMPLE ---- */
+/*
+self.addEventListener('install', function(event) {
+  event.waitUntil(
+    caches.open('v1').then(function(cache) {
+      console.log('entra')
+      return cache.addAll([
+        './resources/Portfolio/Portada_Gallo_Hover.png',
+      ]);
+    })
+  );
+});
+*/

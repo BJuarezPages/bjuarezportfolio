@@ -32,16 +32,24 @@ function addVisibleClass() {
         }
     });
 
-    if(isElementInViewport(buttonVideo)){
+    if (isElementInViewport(buttonVideo)) {
         buttonVideo.classList.add('visible');
     }
 }
 
 // Verificar si es un dispositivo móvil
-const isMobile =  window.innerWidth <= 768;
+var isMobileGallo = window.innerWidth <= 480;
 
-if (!isMobile) {
-    // Agregar eventos
-    window.addEventListener('scroll', addVisibleClass);
-    addVisibleClass();
+function checkIfMobileGallo() {
+    isMobileGallo = window.innerWidth <= 480;
+
+    if (isMobileGallo) {
+        window.removeEventListener('scroll', addVisibleClass);
+    } else{
+        window.addEventListener('scroll', addVisibleClass);
+        addVisibleClass();
+    }
 }
+
+window.addEventListener('resize', checkIfMobileGallo);
+window.addEventListener('load', checkIfMobileGallo);

@@ -53,8 +53,8 @@ function isElementInViewport2(element) {
     var elementBottom = rect.bottom + scrollY;
 
     // Verifica si alguna parte del elemento está dentro de la ventana
-    return (elementTop >= viewportTop && elementTop <= viewportBottom) || 
-           (elementBottom >= viewportTop && elementBottom <= viewportBottom);
+    return (elementTop >= viewportTop && elementTop <= viewportBottom) ||
+        (elementBottom >= viewportTop && elementBottom <= viewportBottom);
 }
 
 function addVisibleClass() {
@@ -99,10 +99,18 @@ function addVisibleClass() {
 }
 
 // Verificar si es un dispositivo móvil
-const isMobile =  window.innerWidth <= 768;
+var isMobileMoritz = window.innerWidth <= 480;
 
-if (!isMobile) {
-    // Agregar eventos
-    window.addEventListener('scroll', addVisibleClass, { passive: true });
-    addVisibleClass();
+function checkIfMobileMoritz() {
+    isMobileMoritz = window.innerWidth <= 480;
+
+    if (isMobileMoritz) {
+        window.removeEventListener('scroll', addVisibleClass, { passive: true });
+    } else {
+        window.addEventListener('scroll', addVisibleClass, { passive: true });
+        addVisibleClass();
+    }
 }
+
+window.addEventListener('resize', checkIfMobileMoritz);
+window.addEventListener('load', checkIfMobileMoritz);

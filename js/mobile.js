@@ -79,20 +79,77 @@ function resetHeaderHeight() {
 }
 
 // Verificar si es un dispositivo móvil
-const isMobileGlobal = window.innerWidth <= 480;
+var isMobileGlobal = window.innerWidth <= 480;
 
-if (isMobileGlobal) {
-    expandHeader.addEventListener('click', toggleLanguagesAndIcons);
-    expandHeader.addEventListener('touchstart', handleTouchStart, { passive: true });
-    expandHeader.addEventListener('touchmove', handleTouchMove, { passive: true });
+function checkIfMobile1() {
+    isMobileGlobal = window.innerWidth <= 480;
 
-    // Restablecer la altura del encabezado si se deja de mover
-    window.addEventListener('touchend', resetHeaderHeight);
+    if (isMobileGlobal) {
+        expandHeader.addEventListener('click', toggleLanguagesAndIcons);
+        expandHeader.addEventListener('touchstart', handleTouchStart, { passive: true });
+        expandHeader.addEventListener('touchmove', handleTouchMove, { passive: true });
+    
+        // Restablecer la altura del encabezado si se deja de mover
+        window.addEventListener('touchend', resetHeaderHeight);
+    
+        document.querySelectorAll('#pages a').forEach(link => {
+            link.addEventListener('click', () => {
+                isExpanded ? toggleLanguagesAndIcons() : null
+            });
+        });
+    } else {
+        removeMobileListeners();
+        resetHTML();
+    }
+}
+
+window.addEventListener('resize', checkIfMobile1);
+window.addEventListener('load', checkIfMobile1);
+
+function resetHTML() {
+    const languagesAndIcons = document.querySelectorAll('#languages, #icons');
+    languagesAndIcons.forEach(element => {
+        element.style = '';
+    });
+
+    const pagesContainer = document.querySelector('#pages');
+    pagesContainer.style = '';
+
+    const pagesLinks = document.querySelectorAll('#pages a');
+    pagesLinks.forEach(link => {
+        link.style = '';
+
+        const paragraph = link.querySelector('p');
+        paragraph.style = '';
+    });
+
+    const bgContainers = document.querySelectorAll('.backgroundSizeContainer');
+    bgContainers.forEach(container => {
+        container.style = '';
+    });
+
+    const bgContainers2 = document.querySelectorAll('.backgroundSizeContainer2');
+    bgContainers2.forEach(container => {
+        container.style = '';
+    });
+
+    const header = document.querySelector('header');
+    header.style = '';
+
+    expandHeader.style = '';
+
+    isExpanded = false;
+}
+
+function removeMobileListeners() {
+    expandHeader.removeEventListener('click', toggleLanguagesAndIcons);
+    expandHeader.removeEventListener('touchstart', handleTouchStart);
+    expandHeader.removeEventListener('touchmove', handleTouchMove);
+    window.removeEventListener('touchend', resetHeaderHeight);
 
     document.querySelectorAll('#pages a').forEach(link => {
-        link.addEventListener('click', () => {
+        link.removeEventListener('click', () => {
             isExpanded ? toggleLanguagesAndIcons() : null
         });
     });
 }
-

@@ -77,19 +77,30 @@ function handleClickVideoMobile(event) {
 }
 
 // Verificar si es un dispositivo móvil
-const isMobile =  window.innerWidth <= 768;
+var isMobileTaTung = window.innerWidth <= 480;
 
-if (!isMobile) {
-    // Agregar eventos a cada contenedor de video
-    videoContainers.forEach(container => {
-        container.addEventListener('mouseover', handleMouse);
-        container.addEventListener('mouseout', handleMouse);
-        container.addEventListener('click', handleClick);
-        container.addEventListener('click', handleClickVideo);
-    });
-} else {
-    // Agregar eventos a cada contenedor de video
-    videoContainers.forEach(container => {
-        container.addEventListener('touchstart', handleClickVideoMobile, { passive: true });
-    });
+function checkIfMobileGallo() {
+    isMobileTaTung = window.innerWidth <= 480;
+
+    if (isMobileTaTung) {
+        videoContainers.forEach(container => {
+            container.addEventListener('touchstart', handleClickVideoMobile, { passive: true });
+
+            container.removeEventListener('mouseover', handleMouse);
+            container.removeEventListener('mouseout', handleMouse);
+            container.removeEventListener('click', handleClick);
+            container.removeEventListener('click', handleClickVideo);
+        });
+    } else {
+        videoContainers.forEach(container => {
+            container.addEventListener('touchstart', handleClickVideoMobile, { passive: true });
+            container.addEventListener('mouseover', handleMouse);
+            container.addEventListener('mouseout', handleMouse);
+            container.addEventListener('click', handleClick);
+            container.addEventListener('click', handleClickVideo);
+        });
+    }
 }
+
+window.addEventListener('resize', checkIfMobileGallo);
+window.addEventListener('load', checkIfMobileGallo);
