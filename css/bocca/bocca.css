@@ -453,17 +453,18 @@
         display: flex;
         flex-direction: row;
         background-color: white;
+        position: relative;
     }
 
     .item#item1 .video-container{
-        top: 131%;
+        top: 36%;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .video-container {
-        width: 50%;
-        height: 50%;
+        width: 75%;
+        height: 40%;
         position: absolute;
         overflow: hidden;
     }
@@ -523,7 +524,7 @@
     }
 
     .item#item2 .video-container{
-        top: 269%;
+        top: 36%;
         left: 50%;
         transform: translateX(-50%);
     }
