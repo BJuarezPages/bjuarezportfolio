@@ -7,8 +7,23 @@
 //Index redirect
 var enlaces = document.querySelectorAll('[id^="link"]');
 
-enlaces.forEach(function (enlace) {
-    enlace.addEventListener('click', function (event) {
+enlaces.forEach(function (link) {
+
+    link.addEventListener('mouseenter', () => {
+        const linkIcon = link.querySelector('.backgroundSizeContainer2');
+        const linkText = link.querySelector('p');
+        linkIcon.classList.add('hovered');
+        linkText.classList.add('hovered-text');
+    });
+
+    link.addEventListener('mouseleave', () => {
+        const linkIcon = link.querySelector('.backgroundSizeContainer2');
+        const linkText = link.querySelector('p');
+        linkIcon.classList.remove('hovered');
+        linkText.classList.remove('hovered-text');
+    });
+
+    link.addEventListener('click', function (event) {
         event.preventDefault();
         // Agregar clase para animar la transición
         // document.body.classList.add('fade-out');

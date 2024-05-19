@@ -153,18 +153,3 @@ function removeMobileListeners() {
         });
     });
 }
-
-/*
-var arrayLinks = ["./../html/gallo/gallo.html","./../html/moritz/moritz.html"]
-var locateNow = 0
-
-function moveProjectsLeft(){
-    
-}
-
-function moveProjectsRight(){
-
-}
-
-document.getElementById("projectLeft").addEventListener("click", moveProjectsLeft());
-document.getElementById("projectRight").addEventListener("click", moveProjectsRight());*/

@@ -77,39 +77,19 @@ header .mobileArrow {
     transition: background-image 0.3s, opacity 0.3s;
 }
 
-.home-icon {
-    background-image: url("./../resources/Portfolio/Home_50.svg");
-}
-
 .home-icon.current {
-    background-image: url("./../resources/Portfolio/Home_V.svg");
     opacity: 1;
-}
-
-.mywork-icon {
-    background-image: url("./../resources/Portfolio/MyWork_50.svg");
 }
 
 .mywork-icon.current {
-    background-image: url("./../resources/Portfolio/MyWork_V.svg");
     opacity: 1;
-}
-
-.aboutme-icon {
-    background-image: url("./../resources/Portfolio/About_me_50.svg");
 }
 
 .aboutme-icon.current {
-    background-image: url("./../resources/Portfolio/About_me_V.svg");
     opacity: 1;
 }
 
-.contact-icon {
-    background-image: url("./../resources/Portfolio/Contacto_50.svg");
-}
-
 .contact-icon.current {
-    background-image: url("./../resources/Portfolio/Contacto_V.svg");
     opacity: 1;
 }
 
@@ -122,24 +102,16 @@ header .mobileArrow {
     font-family: 'Futura Std Bold' !important;
 }
 
+.current path {
+    fill: #CCFF00;
+}
+
+.current.hovered path {
+    fill: #FFFFFF;
+}
+
 #pages a:hover .backgroundSizeContainer2 {
     opacity: 1;
-}
-
-#pages a:hover .icon-home {
-    background-image: url("./../resources/Portfolio/Home_W.svg");
-}
-
-#pages a:hover .icon-mywork {
-    background-image: url("./../resources/Portfolio/MyWork_W.svg");
-}
-
-#pages a:hover .icon-aboutme {
-    background-image: url("./../resources/Portfolio/About_me_W.svg");
-}
-
-#pages a:hover .icon-contact {
-    background-image: url("./../resources/Portfolio/Contacto_W.svg");
 }
 
 #pages a p.hovered-text {
@@ -172,54 +144,38 @@ header .mobileArrow {
     cursor: pointer;
 }
 
-#iconInstagram {
-    background-image: url("./../resources/Portfolio/Icon_Instagram.svg");
-}
-
-#iconInstagram:hover {
-    background-image: url("./../resources/Portfolio/Icon_Instagram_V.svg");
-}
-
-#iconLinkedin {
-    background-image: url("./../resources/Portfolio/Icon_Linkedin.svg");
-}
-
-#iconLinkedin:hover {
-    background-image: url("./../resources/Portfolio/Icon_Linkedin_V.svg");
-}
-
-#iconMessage {
-    background-image: url("./../resources/Portfolio/Behance_Off.svg");
-}
-
-#iconMessage:hover {
-    background-image: url("./../resources/Portfolio/Behance_On.svg");
+#iconInstagram:hover path, #iconMessage:hover path, #iconLinkedin:hover path {
+    fill: #CCFF00;
+    transition: fill 0.3s ease;
 }
 
 #langCat {
-    background-image: url("./../resources/Portfolio/Icon_Catala_BW.svg");
-}
-
-#langCat:hover, #langCat.active {
-    background-image: url("./../resources/Portfolio/Icon_Catala_Color.svg");
-}
+    background-image: url("./../resources/Portfolio/Icon_Catala_Color.svg");}
 
 #langCast {
-    background-image: url("./../resources/Portfolio/Icon_Castella_BW.svg");
-}
-
-#langCast:hover, #langCast.active {
     background-image: url("./../resources/Portfolio/Icon_Castella_Color.svg");
 }
 
 #langEng {
-    background-image: url("./../resources/Portfolio/Icon_English_BW.svg");
-}
-
-#langEng:hover, #langEng.active {
     background-image: url("./../resources/Portfolio/Icon_English_Color.svg");
 }
 
+#langCat:hover, #langCat.active {
+    filter: grayscale(0%);
+}
+
+#langCast:hover, #langCast.active {
+    filter: grayscale(0%);
+}
+
+#langEng:hover, #langEng.active {
+    filter: grayscale(0%);
+}
+
+#langCast, #langEng, #langCat {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
 
 #icons {
     width: 15vw;
