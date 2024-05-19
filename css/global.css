@@ -387,6 +387,7 @@ footer {
     align-items: center;
     cursor: pointer;
     width: 10%;
+    font-size: 1vw;
 }
 
 .anterior {
@@ -528,7 +529,11 @@ footer {
     }
 
     #redBarContainer {
-        width: 54vw;
+        width: 45%;
+    }
+
+    #projectLeft, #projectRight {
+        font-size: 3vw;
     }
 
     #redBar>#iconInstagram {

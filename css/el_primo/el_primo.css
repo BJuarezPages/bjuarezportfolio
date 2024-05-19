@@ -891,46 +891,74 @@
         transform: translateX(-50%);
     }
 
+    .video-world:hover {
+        transform: translateX(-50%) scale(1.1);
+    }
+
     .primo-aniversary1 {
         top: 22%;
-        left: 20%;
+        left: 50%;
         width: 56vw;
         height: 80vw;
         rotate: 0deg;
+        transform: translateX(-50%);
+    }
+
+    .primo-aniversary1:hover {
+        transform: translateX(-50%) scale(1.1);
     }
 
     .primo-aniversary2 {
         top: 31%;
-        left: 8.5%;
+        left: 50%;
         width: 82vw;
         height: 41vw;
         rotate: 0deg;
+        transform: translateX(-50%);
+    }
+
+    .primo-aniversary2:hover {
+        transform: translateX(-50%) scale(1.1);
     }
 
     .video-happy {
         width: 64vw;
         height: 113vw;
-        top: 261vh;
+        top: 276vh;
         left: 50%;
         rotate: 0deg;
         border-radius: 10vw;
         transform: translateX(-50%);
     }
 
+    .video-happy:hover {
+        transform: translateX(-50%) scale(1.1);
+    }
+
     .primo-high1 {
         top: 54%;
-        left: 22%;
+        left: 50%;
         width: 56vw;
         height: 80vw;
         rotate: 0deg;
+        transform: translateX(-50%);
+    }
+
+    .primo-high1:hover {
+        transform: translateX(-50%) scale(1.1);
     }
 
     .primo-high2 {
         top: 63%;
-        left: 7%;
+        left: 50%;
         width: 82vw;
         height: 41vw;
         rotate: 0deg;
+        transform: translateX(-50%);
+    }
+
+    .primo-high2:hover {
+        transform: translateX(-50%) scale(1.1);
     }
 
     .video-carnival {
@@ -943,20 +971,34 @@
         transform: translateX(-50%);
     }
 
+    .video-carnival:hover {
+        transform: translateX(-50%) scale(1.1);
+    }
+
     .primo-carnival1 {
         top: 84%;
-        left: 22.5%;
+        left: 50%;
         width: 56vw;
         height: 80vw;
         rotate: 0deg;
+        transform: translateX(-50%);
+    }
+
+    .primo-carnival1:hover {
+        transform: translateX(-50%) scale(1.1);
     }
 
     .primo-carnival2 {
         top: 93%;
-        left: 7%;
+        left: 50%;
         width: 82vw;
         height: 41vw;
         rotate: 0deg;
+        transform: translateX(-50%);
+    }
+
+    .primo-carnival2:hover {
+        transform: translateX(-50%) scale(1.1);
     }
 
     .background-lights {

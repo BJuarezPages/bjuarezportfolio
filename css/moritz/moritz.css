@@ -166,9 +166,12 @@
     transform: translateY(0);
 }
 
+.video-container1.hover-transition {
+    transition: transform 0.3s;
+}
+
 .video-container1:hover {
     transform: scale(1.1);
-    transition: transform 0.3s;
 }
 
 .video-container1 video {
@@ -389,9 +392,12 @@
     transform: translateY(0);
 }
 
+.video-container2.hover-transition {
+    transition: transform 0.3s;
+}
+
 .video-container2:hover {
     transform: scale(1.1);
-    transition: transform 0.3s;
 }
 
 .video-container2 video {
@@ -534,9 +540,12 @@
     transform: translateY(0);
 }
 
+.video-container3.hover-transition {
+    transition: transform 0.3s;
+}
+
 .video-container3:hover {
     transform: scale(1.1);
-    transition: transform 0.3s;
 }
 
 .video-container3 video {

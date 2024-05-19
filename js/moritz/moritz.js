@@ -124,3 +124,15 @@ projectLeft.addEventListener("click", function () {
 projectRight.addEventListener("click", function () {
     window.location.href = './../../html/affinity/affinity.html'
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const videoContainers = document.querySelectorAll('.video-container1, .video-container2, .video-container3');
+
+    videoContainers.forEach(container => {
+        container.addEventListener('transitionend', function (event) {
+            if (event.propertyName === 'transform' && container.classList.contains('visible')) {
+                container.classList.add('hover-transition');
+            }
+        });
+    });
+});
