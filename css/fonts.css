@@ -64,6 +64,15 @@
 }
 
 @font-face {
+    font-family: 'Futura Std Book Oblique';
+    src: url("../fonts/Futura_STD/FuturaStdBookOblique.otf");
+}
+
+.FuturaStdBookOblique {
+    font-family: 'Futura Std Book Oblique';
+}
+
+@font-face {
     font-family: 'Futura Std Condensed Extra Bold';
     src: url("../fonts/Futura_STD/FuturaStdCondensedExtraBd.otf");
 }

@@ -219,14 +219,21 @@
 }
 
 .sizeContainer {
+    position: relative;
     width: 35vw;
-    height: 45vh;
+    height: 43vh;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     transition: opacity 0.5s ease, transform 0.5s ease;
     opacity: 0;
     transform: scale(0.5);
     border-radius: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .sizeContainer.visible {
@@ -238,68 +245,71 @@
     transform: scale(1.2);
 }
 
-#containerMarks>#gallo {
-    background-image: url("../../resources/Portfolio/Portada_Gallo_Color.png");
+.sizeContainer:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    border-radius: 15px;
 }
 
-#containerMarks>#gallo:hover {
-    background-image: url("../../resources/Portfolio/Portada_Gallo_Hover.png");
+.sizeContainer div {
+    position: relative;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sizeContainer div p:first-child {
+    font-family: 'Futura Std Heavy';
+    font-size: 1.5vw;
+}
+
+.sizeContainer div p:last-child {
+    font-family: 'Futura Std Book Oblique';
+    font-size: 1vw;
+}
+
+#containerMarks>a:hover.sizeContainer div {
+    display: flex;
+}
+
+#containerMarks>#gallo {
+    background-image: url("../../resources/Portfolio/Portada_Gallo_Color.png");
 }
 
 #containerMarks>#bocca {
     background-image: url("../../resources/Portfolio/Portada_Bocca.png");
 }
 
-#containerMarks>#bocca:hover {
-    background-image: url("../../resources/Portfolio/Portada_Bocca_Hover.png");
-}
-
 #containerMarks>#moritz {
     background-image: url("../../resources/Portfolio/Portada_Moritz.png");
-}
-
-#containerMarks>#moritz:hover {
-    background-image: url("../../resources/Portfolio/Portada_Moritz_Hover.png");
 }
 
 #containerMarks>#affinity {
     background-image: url("../../resources/Portfolio/Portada_Affinity.png");
 }
 
-#containerMarks>#affinity:hover {
-    background-image: url("../../resources/Portfolio/Portada_Affinity_Hover.png");
-}
-
 #containerMarks>#tatung {
     background-image: url("../../resources/Portfolio/Portada_Ta-Tung.png");
-}
-
-#containerMarks>#tatung:hover {
-    background-image: url("../../resources/Portfolio/Portada_Ta-Tung_Hover.png");
 }
 
 #containerMarks>#elprimo {
     background-image: url("../../resources/Portfolio/Portada_ElPrimo.png");
 }
 
-#containerMarks>#elprimo:hover {
-    background-image: url("../../resources/Portfolio/Portada_ElPrimo_Hover.png");
-}
-
 #containerMarks>#elrowlimited {
     background-image: url("../../resources/Portfolio/Portada_ElRowLimited.png");
 }
 
-#containerMarks>#elrowlimited:hover {
-    background-image: url("../../resources/Portfolio/Portada_ElRowLimited_Hover.png");
-}
-
 #containerMarks>#babiesuganda {
     background-image: url("../../resources/Portfolio/Portada_BabiesUganda.png");
-}
-
-#containerMarks>#babiesuganda:hover {
-    background-image: url("../../resources/Portfolio/Portada_BabiesUganda_Hover.png");
 }
 
 .buttonOtherContainer {
