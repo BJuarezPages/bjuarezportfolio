@@ -56,6 +56,7 @@ const header = document.querySelector('header');
 
 function handleTouchStart(e) {
     startY = e.touches[0].clientY;
+    document.body.classList.add('no-scroll');
 }
 
 function handleTouchMove(e) {
@@ -76,6 +77,9 @@ function handleTouchMove(e) {
 function resetHeaderHeight() {
     header.style.transition = 'height 0.3s ease'; // Transición CSS
     header.style.height = isExpanded ? '100vh' : '5vh';
+    if(!isExpanded) {
+        document.body.classList.remove('no-scroll');
+    }
 }
 
 // Verificar si es un dispositivo móvil
