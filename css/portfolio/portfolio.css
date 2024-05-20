@@ -147,10 +147,14 @@
     transition: transform 0.3s;
 }
 
-#buttonWork:hover, #buttonSobreMi:hover, #buttonOther:hover, #aboutMeLeft>#containerText>#buttonCV:hover, #buttonSend:hover {
+#buttonWork:hover, #buttonSobreMi:hover, #buttonOther:hover, #aboutMeLeft>#containerText>#buttonCV:hover, #buttonSend:hover, #contactContainer>#buttonCV:hover {
     transform: scale(1.1);
     background: #2B3E4B;
     color: #FFFFFF;
+}
+
+#contactContainer>#buttonCV:hover path{
+    fill: #FFFFFF;
 }
 
 /* MYWORK */
@@ -685,7 +689,6 @@
 }
 
 #iconCV {
-    background-image: url("../../resources/Portfolio/Icon_CV.svg");
     margin-left: 1vh;
 }
 

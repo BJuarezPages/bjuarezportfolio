@@ -230,15 +230,18 @@
     position: absolute;
     top: 5%;
     left: 85%;
-    background-image: url("./../../resources/Moritz/Cor_None.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     cursor: pointer;
 }
 
-#slideHeart.slideHeartClick {
-    background-image: url("./../../resources/Moritz/Cor.svg");
+#slideHeart path{
+    fill: none;
+}
+
+#slideHeart.slideHeartClick path{
+    fill: #000000
 }
 
 #slideImage {
