@@ -923,20 +923,20 @@
         justify-content: space-around;
         overflow-x: auto;
     }
-
+    
     .sizeContainer {
         flex: 0 0 auto;
         width: 65vw;
-        height: 40vh;
+        height: 65vw;
         margin: 0 10px;
-        /* Margen a ambos lados */
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         transition: opacity 0.5s ease, transform 0.5s ease;
         opacity: 0;
         transform: scale(0.5);
         border-radius: 20px;
+        overflow: unset;
     }
 
     .sizeContainer:first-child {
@@ -945,6 +945,88 @@
 
     .sizeContainer:last-child {
         margin-right: 18%;
+    } 
+    
+    .sizeContainer.visible {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    
+    .sizeContainer:hover {
+        transform: scale(1.2);
+    }
+    
+    .sizeContainer:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+        border-radius: 15px;
+    }
+    
+    .sizeContainer div {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 116%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    
+    .sizeContainer div p:first-child {
+        font-family: 'Futura Std Heavy';
+        font-size: 6vw;
+        text-align: center;
+    }
+    
+    .sizeContainer div p:last-child {
+        font-family: 'Futura Std Book Oblique';
+        font-size: 3.5vw;
+        text-align: center;
+    }
+    
+    #containerMarks>a:hover.sizeContainer div {
+        display: flex;
+    }
+    
+    #containerMarks>#gallo {
+        background-image: url("../../resources/Portfolio/Portada_Gallo_Mobile.png");
+    }
+    
+    #containerMarks>#bocca {
+        background-image: url("../../resources/Portfolio/Portada_Bocca_Mobile.png");
+    }
+    
+    #containerMarks>#moritz {
+        background-image: url("../../resources/Portfolio/Portada_Moritz_Mobile.png");
+    }
+    
+    #containerMarks>#affinity {
+        background-image: url("../../resources/Portfolio/Portada_Affinity_Mobile.png");
+    }
+    
+    #containerMarks>#tatung {
+        background-image: url("../../resources/Portfolio/Portada_Ta-Tung_Mobile.png");
+    }
+    
+    #containerMarks>#elprimo {
+        background-image: url("../../resources/Portfolio/Portada_ElPrimo_Mobile.png");
+    }
+    
+    #containerMarks>#elrowlimited {
+        background-image: url("../../resources/Portfolio/Portada_ElRowLimited_Mobile.png");
+    }
+    
+    #containerMarks>#babiesuganda {
+        background-image: url("../../resources/Portfolio/Portada_BabiesUganda_Mobile.png");
     }
 
     #buttonOther {
