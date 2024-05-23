@@ -287,6 +287,11 @@
     font-size: 1.5vw;
 }
 
+.sizeContainer div p:last-child span {
+    font-family: 'Futura STD Extra Bold';
+    color: #CCFF00;
+}
+
 .sizeContainer div p:last-child {
     font-family: 'Futura Std Book Oblique';
     font-size: 1vw;
@@ -593,7 +598,7 @@
     width: 110%;
     height: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
 }
@@ -651,7 +656,8 @@
     height: 35vw;
     border: 0.5vh solid #FFFFFF;
     position: absolute;
-    transform: translate(19%, 30%);
+    top: 50%;
+    transform: translate(19%, -50%);
 }
 
 #contactContainer {
@@ -1009,8 +1015,8 @@
     }
 
     .sizeContainer div p:first-child {
-        font-family: 'Futura Std Heavy';
-        font-size: 6vw;
+        font-family: 'Futura Std Bold';
+        font-size: 5vw;
         text-align: center;
     }
 

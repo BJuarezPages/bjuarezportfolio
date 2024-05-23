@@ -121,6 +121,12 @@ function redirectToSobreMi() {
   }
 }
 
+//Scroll a la izquierda
+window.onload = function() {
+  var scrollContainer = document.getElementById('containerMarks');
+  scrollContainer.scrollLeft = 0;
+};
+
 /* ---- MYWORK ---- */
 
 /* SCROLL INTERACTIVE */

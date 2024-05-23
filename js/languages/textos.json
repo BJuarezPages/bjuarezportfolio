@@ -76,7 +76,15 @@
         "tatungText2": "DIGITAL",
         "affinityDescription": "Creación de contenido digital, CRM, Ads y banners web para las siguientes marcas: Advance, Nature’s Variety, Natural Trainer y Ultima.",
         "anterior": "PROYECTO ANTERIOR",
-        "siguiente": "SIGUIENTE PROYECTO"
+        "siguiente": "SIGUIENTE PROYECTO",
+        "galloText": "Graphic Design <span>·</span> Ads Design <span>·</span> Web Design",
+        "boccaText": "Motion Graphics <span>·</span> Graphic Design <span>·</span> Digital Content Design",
+        "moritzText": "Video Editing <span>·</span> Creative Campaign <span>·</span> Voiceover",
+        "affinityText": "CRM Design <span>·</span> Web Banners Design <span>·</span> Ads Design",
+        "tatungText": "Motion Graphics <span>·</span> Digital Content Design",
+        "elprimoText": "Digital illustration <span>·</span> Motion Graphics",
+        "elrowlimitedText": "2D Animation <span>·</span> Illustration",
+        "babiesugandaText": "Creative Campaign <span>·</span> Video Editing"
     },
     "Eng": {
         "inicio": "HOME",
@@ -155,7 +163,15 @@
         "tatungText2": "CREATION",
         "affinityDescription": "Creation of digital content, CRM, Ads and web banners for the following brands: Advance, Nature's Variety, Natural Trainer and Ultima.",
         "anterior": "BEFORE PROJECT",
-        "siguiente": "NEXT PROJECT"
+        "siguiente": "NEXT PROJECT",
+        "galloText": "Graphic Design <span>·</span> Ads Design <span>·</span> Web Design",
+        "boccaText": "Motion Graphics <span>·</span> Graphic Design <span>·</span> Digital Content Design",
+        "moritzText": "Video Editing <span>·</span> Creative Campaign <span>·</span> Voiceover",
+        "affinityText": "CRM Design <span>·</span> Web Banners Design <span>·</span> Ads Design",
+        "tatungText": "Motion Graphics <span>·</span> Digital Content Design",
+        "elprimoText": "Digital illustration <span>·</span> Motion Graphics",
+        "elrowlimitedText": "2D Animation <span>·</span> Illustration",
+        "babiesugandaText": "Creative Campaign <span>·</span> Video Editing"
     },
     "Cat": {
         "inicio": "INICIO",
@@ -234,6 +250,14 @@
         "tatungText2": "DIGITAL",
         "affinityDescription": "Creación de contenido digital, CRM, Ads y banners web para las siguientes marcas: Advance, Nature’s Variety, Natural Trainer y Ultima.",
         "anterior": "PROYECTO ANTERIOR",
-        "siguiente": "SIGUIENTE PROYECTO"
+        "siguiente": "SIGUIENTE PROYECTO",
+        "galloText": "Graphic Design <span>·</span> Ads Design <span>·</span> Web Design",
+        "boccaText": "Motion Graphics <span>·</span> Graphic Design <span>·</span> Digital Content Design",
+        "moritzText": "Video Editing <span>·</span> Creative Campaign <span>·</span> Voiceover",
+        "affinityText": "CRM Design <span>·</span> Web Banners Design <span>·</span> Ads Design",
+        "tatungText": "Motion Graphics <span>·</span> Digital Content Design",
+        "elprimoText": "Digital illustration <span>·</span> Motion Graphics",
+        "elrowlimitedText": "2D Animation <span>·</span> Illustration",
+        "babiesugandaText": "Creative Campaign <span>·</span> Video Editing"
     }
 }

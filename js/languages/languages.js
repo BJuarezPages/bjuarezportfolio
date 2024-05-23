@@ -83,6 +83,16 @@ function cargarIdioma(idioma, html) {
                 document.querySelector('#buttonSobreMi').innerText = data[idioma].sobremi;
 
                 document.querySelector('#myWork>#title>#name #trabajo').innerText = data[idioma].mywork;
+
+                document.querySelector('.sizeContainer#gallo div p:last-child').innerHTML = data[idioma].galloText;
+                document.querySelector('.sizeContainer#bocca div p:last-child').innerHTML = data[idioma].boccaText;
+                document.querySelector('.sizeContainer#moritz div p:last-child').innerHTML = data[idioma].moritzText;
+                document.querySelector('.sizeContainer#affinity div p:last-child').innerHTML = data[idioma].affinityText;
+                document.querySelector('.sizeContainer#tatung div p:last-child').innerHTML = data[idioma].tatungText;
+                document.querySelector('.sizeContainer#elprimo div p:last-child').innerHTML = data[idioma].elprimoText;
+                document.querySelector('.sizeContainer#elrowlimited div p:last-child').innerHTML = data[idioma].elrowlimitedText;
+                document.querySelector('.sizeContainer#babiesuganda div p:last-child').innerHTML = data[idioma].babiesugandaText;
+
                 document.querySelector('#buttonOther').innerText = data[idioma].otros;
 
                 document.querySelector('#sobremi2').innerText = data[idioma].sobremi;
