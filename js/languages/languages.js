@@ -95,7 +95,7 @@ function cargarIdioma(idioma, html) {
                 document.querySelector('#sobremiText6').innerText = data[idioma].sobremiText6;
                 document.querySelector('#sobremiText7').innerText = data[idioma].sobremiText7;
 
-                document.querySelector('#contactLeft>#containerForm>#title #contacta').innerText = data[idioma].contacta;
+                document.querySelector('#contactLeft>#containerForm>#title #contacta').innerText = isMobileGlobal ? data[idioma].contacto : data[idioma].contacta;
 
                 document.querySelector('#emailFormValue').placeholder = data[idioma].example;
                 document.querySelector('#nameFormValue').placeholder = data[idioma].escribe;

@@ -45,7 +45,7 @@ function toggleLanguagesAndIcons() {
     isExpanded = !isExpanded;
 
     const header = document.querySelector('header');
-    header.style.height = isExpanded ? '100vh' : '5vh';
+    header.style.height = isExpanded ? '100vh' : '10vw';
 
     expandHeader.style.top = isExpanded ? '10vh' : '-3vh';
     expandHeader.style.transform = isExpanded ? 'translateX(-50%) rotate(225deg)' : 'translateX(-50%) rotate(45deg)';

@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 12%;
+    margin-bottom: 25%;
 }
 
 #home>#portfolio {
@@ -103,7 +103,7 @@
 }
 
 #portfolio>#container>#name {
-    font-family: 'Futura Std Light';
+    font-family: 'Futura Std Medium';
     font-size: 3vh;
     font-weight: 300;
     line-height: 37px;
@@ -165,7 +165,7 @@
     color: #FFFFFF;
 }
 
-#contactContainer>#buttonCV:hover path{
+#contactContainer>#buttonCV:hover path {
     fill: #FFFFFF;
 }
 
@@ -600,7 +600,7 @@
 
 #emailFormValue, #nameFormValue, #consultFormValue {
     width: 100%;
-    height: 20%;
+    height: 10%;
     padding: 15px;
     border: none;
     border-radius: 2vh;
@@ -612,10 +612,11 @@
     text-align: left;
     resize: none;
     overflow-y: auto;
+    font-size: 1.5vw;
 }
 
 #consultFormValue {
-    height: 40%;
+    height: 20%;
 }
 
 #emailFormValue::placeholder,
@@ -667,6 +668,7 @@
 
 #contactContainer>#emailName {
     color: #CCFF00;
+    font-size: 1.5vw;
 }
 
 #titleTV {
@@ -844,7 +846,7 @@
     }
 
     #portfolio>#container>#name {
-        font-family: 'Futura Std Light';
+        font-family: 'Futura Std Medium';
         font-size: 4vh;
         font-weight: 300;
         line-height: 37px;
@@ -852,6 +854,7 @@
     }
 
     #portfolio>#container>#name img {
+        display: none;
         height: 6vw;
         width: 6vw;
     }
@@ -868,6 +871,10 @@
         font-weight: 300;
         line-height: 37px;
         text-align: center;
+    }
+
+    .divButtonsHome {
+        justify-content: space-around;
     }
 
     #buttonWork {
@@ -893,21 +900,21 @@
 
     #myWork {
         width: 100%;
-        height: 130vh;
+        height: 225vw;
         background-color: #071017;
         position: relative;
         overflow: hidden;
         color: #FFFFFF;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 12%;
+        margin-bottom: 25%;
     }
 
     #myWork>#title {
         width: 100%;
-        height: 10%;
+        height: 16%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -929,12 +936,12 @@
     }
 
     #myWork>#title img {
-        width: 16vw;
+        width: 24%;
     }
 
     #containerMarks {
         width: 100%;
-        height: 65vh;
+        height: 100vw;
         z-index: 10;
         display: flex;
         flex-direction: row;
@@ -942,7 +949,7 @@
         justify-content: space-around;
         overflow-x: auto;
     }
-    
+
     .sizeContainer {
         flex: 0 0 auto;
         width: 65vw;
@@ -956,6 +963,7 @@
         transform: scale(0.5);
         border-radius: 20px;
         overflow: unset;
+        margin-bottom: 20%;
     }
 
     .sizeContainer:first-child {
@@ -964,17 +972,17 @@
 
     .sizeContainer:last-child {
         margin-right: 18%;
-    } 
-    
+    }
+
     .sizeContainer.visible {
         opacity: 1;
         transform: scale(1.1);
     }
-    
+
     .sizeContainer:hover {
         transform: scale(1.2);
     }
-    
+
     .sizeContainer:hover::before {
         content: "";
         position: absolute;
@@ -986,7 +994,7 @@
         z-index: 1;
         border-radius: 15px;
     }
-    
+
     .sizeContainer div {
         position: absolute;
         z-index: 2;
@@ -999,61 +1007,61 @@
         transform: translate(-50%, -50%);
         width: 100%;
     }
-    
+
     .sizeContainer div p:first-child {
         font-family: 'Futura Std Heavy';
         font-size: 6vw;
         text-align: center;
     }
-    
+
     .sizeContainer div p:last-child {
         font-family: 'Futura Std Book Oblique';
         font-size: 3.5vw;
         text-align: center;
     }
-    
+
     #containerMarks>a:hover.sizeContainer div {
         display: flex;
     }
-    
+
     #containerMarks>#gallo {
         background-image: url("../../resources/Portfolio/Portada_Gallo_Mobile.png");
     }
-    
+
     #containerMarks>#bocca {
         background-image: url("../../resources/Portfolio/Portada_Bocca_Mobile.png");
     }
-    
+
     #containerMarks>#moritz {
         background-image: url("../../resources/Portfolio/Portada_Moritz_Mobile.png");
     }
-    
+
     #containerMarks>#affinity {
         background-image: url("../../resources/Portfolio/Portada_Affinity_Mobile.png");
     }
-    
+
     #containerMarks>#tatung {
         background-image: url("../../resources/Portfolio/Portada_Ta-Tung_Mobile.png");
     }
-    
+
     #containerMarks>#elprimo {
         background-image: url("../../resources/Portfolio/Portada_ElPrimo_Mobile.png");
     }
-    
+
     #containerMarks>#elrowlimited {
         background-image: url("../../resources/Portfolio/Portada_ElRowLimited_Mobile.png");
     }
-    
+
     #containerMarks>#babiesuganda {
         background-image: url("../../resources/Portfolio/Portada_BabiesUganda_Mobile.png");
     }
 
     #buttonOther {
-        width: 60vw;
+        width: 70vw;
         height: 10vh;
         background: #CCFF00;
         border-radius: 2vh;
-        font-size: 4vh;
+        font-size: 7vw;
         cursor: pointer;
         border: 0px;
         z-index: 10;
@@ -1062,6 +1070,10 @@
 
     .buttonOtherContainer {
         margin: 18% 0 18% 0;
+    }
+
+    .contenedor {
+        height: 26vw;
     }
 
     /* SOBRE MI*/
@@ -1077,7 +1089,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        margin-bottom: 12%;
+        margin-bottom: 25%;
     }
 
     #aboutMeLeft {
@@ -1121,7 +1133,8 @@
     }
 
     #aboutMeLeft>#containerText>.titleLine {
-        width: 16vw;
+        width: 24%;
+        max-height: 2%;
     }
 
     #aboutMeRight {
@@ -1177,7 +1190,7 @@
 
     #contact {
         width: 100%;
-        height: 170vh;
+        height: 120vh;
         background-color: #071017;
         color: #FFFFFF;
         position: relative;
@@ -1191,7 +1204,7 @@
         height: 50%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         z-index: 10;
     }
 
@@ -1202,25 +1215,50 @@
 
     #contactLeft>#containerForm>#title {
         width: 45vw;
+        height: 20%;
         font-size: 7vw;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
 
+    #contactLeft>#containerForm>img {
+        width: 30%;
+        max-height: 2%;
+    }
+
+    #emailFormValue, #nameFormValue, #consultFormValue {
+        width: 90%;
+        height: 10%;
+        padding: 5%;
+        font-size: 3.5vw;
+        background-color: #0E2433;
+        color: #39566C;
+    }
+
     #contactLeft>#containerForm {
+        width: 70%;
+        height: 100%;
+    }
+
+    #consultForm {
+        width: 100%;
         height: 88%;
+        justify-content: space-between;
     }
 
     #buttonSend {
-        width: 30vw;
+        width: 100%;
+        height: 14vw;
+        font-size: 7vw;
     }
 
     #contactRight {
         width: 100%;
         height: 50%;
         z-index: 10;
+        position: relative;
     }
 
     #contactRight>#circle {
@@ -1233,7 +1271,8 @@
         border: 0.5vh solid #FFFFFF;
         position: absolute;
         left: 50%;
-        transform: translate(-50%, 17%);
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     #contactContainer {
@@ -1249,8 +1288,20 @@
         border: 0.5vh solid #0E2433;
     }
 
+    #contactContainer>#emailName {
+        font-size: 5.5vw;
+    }
+
+    #titleTV {
+        font-size: 5vw;
+    }
+
+    #titleEmail {
+        font-size: 5vw;
+    }
+
     .backgroundSizeContainer3 {
-        height: 4vh;
+        height: 6vw;
         width: 8vw;
         max-width: 8vw;
         background-size: contain;
@@ -1272,7 +1323,7 @@
     }
 
     #buttonCV {
-        width: 48vw;
+        width: 60vw;
         height: 6vh;
         background: #CCFF00;
         border-radius: 2vh;

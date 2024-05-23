@@ -383,13 +383,14 @@ footer {
         bottom: 0;
         width: 100%;
         z-index: 9999;
-        height: 5vh;
+        height: 10vw;
         box-sizing: content-box;
         transition: height 0.3s ease;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 5%;
     }
 
     header .mobileArrow {
@@ -436,10 +437,14 @@ footer {
         max-width: 100%;
     }
 
+    #pages a p {
+        font-size: 2vw;}
+
     .backgroundSizeContainer2 {
-        width: 5.5vw;
-        max-width: 5.5vw;
+        width: 7.5vw;
+        max-width: 7.5vw;
         background-position: bottom;
+        margin-bottom: 20%;
     }
 
     #generalTitleContainer {
