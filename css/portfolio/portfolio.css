@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 25%;
+    margin-bottom: 12%;
 }
 
 #home>#portfolio {
@@ -813,6 +813,11 @@
 
 /* --- MOBILE MODE --- */
 @media only screen and (max-device-width : 480px) {
+
+    #home {
+        margin-bottom: 25%;
+    }
+
     #home>.lightBackground {
         top: -38%;
         left: 17%;

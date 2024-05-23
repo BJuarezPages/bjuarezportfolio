@@ -436,6 +436,7 @@
         align-items: center;
         font-size: 4.3vw;
         margin-left: 0%;
+        font-family: 'Montserrat Bold';
     }
 
     #boccaBlackItemContainer {
@@ -481,7 +482,7 @@
 
     .titleContainer {
         width: 80%;
-        height: 8%;
+        height: 10%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -490,9 +491,9 @@
 
     .text1 {
         width: 100%;
-        height: 50%;
+        height: 28%;
         color: #000000;
-        font-family: 'Montserrat Extra Bold';
+        font-family: 'Montserrat Black';
         font-weight: 800;
         font-size: 4.8vw;
         text-align: center;
@@ -500,7 +501,7 @@
 
     .spanTitle {
         width: 10%;
-        height: 10%;
+        height: 5%;
         background-color: #DDB34B;
     }
 
@@ -512,7 +513,6 @@
         font-weight: 400;
         font-size: 4vw;
         text-align: center;
-        margin-bottom: 66vh;
     }
 
     .itemGrid {
@@ -521,6 +521,7 @@
         width: 100%;
         margin: 0 auto;
         background-color: #000000;
+        margin-top: auto;
     }
 
     .item#item2 .video-container{
@@ -533,7 +534,7 @@
 
     #boccaSocialMedia {
         width: 100%;
-        height: 100vh;
+        height: 70vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -558,7 +559,7 @@
 
     #boccaSocialMediaTitleContainer>#title1 {
         width: 100%;
-        height: 30%;
+        height: 60%;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -574,11 +575,12 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        filter: drop-shadow(-3vh 2vh 8px rgba(0, 0, 0, 0.6));
     }
 
     #boccaSocialMediaImage {
         width: 100%;
-        height: 85.2vh;
+        height: 86.2%;
         position: static;
         top: 20%;
         left: 44%;
@@ -591,7 +593,7 @@
 
     #boccaMenu {
         width: 100%;
-        height: 271vh;
+        height: 200vh;
         background-color: #0D0D0D;
         display: flex;
         justify-content: center;
@@ -641,7 +643,7 @@
     }
 
     #card1 {
-        width: 80%;
+        width: 90%;
         height: 45%;
         position: absolute;
         top: -3%;
@@ -651,7 +653,7 @@
     }
 
     #card2 {
-        width: 80%;
+        width: 90%;
         height: 45%;
         position: absolute;
         top: 30%;
@@ -710,7 +712,7 @@
         transition: unset;
     }
 
-    #card3:hover, #card4:hover, #card5:hover {
+    #boccaSocialMediaImage img:hover, #card3:hover, #card4:hover, #card5:hover {
         transform: unset;
     }
 

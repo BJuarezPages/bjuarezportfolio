@@ -110,6 +110,16 @@
     font-family: 'Karma Bold';
 }
 
+@font-face {
+    font-family: 'Karma SemiBold';
+    src: url("../fonts/Karma/Karma-SemiBold.ttf");
+}
+
+.KarmaSemiBold {
+    font-family: 'Karma SemiBold';
+}
+
+
 /* ---- Arquitecta ---- */
 
 @font-face {
@@ -179,6 +189,24 @@
     font-family: 'Montserrat Extra Bold';
 }
 
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url("../fonts/Montserrat/Montserrat-Black.ttf");
+}
+
+.MontserratBlack {
+    font-family: 'Montserrat Black';
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+.MontserratBold {
+    font-family: 'Montserrat Bold';
+}
+
 /* ---- Pulp Display ---- */
 
 @font-face {
@@ -197,6 +225,33 @@
 
 .PulpDisplayBold {
     font-family: 'Pulp Display Bold';
+}
+
+@font-face {
+    font-family: 'Pulp Display Extra Bold';
+    src: url("../fonts/Pulp_Display/PulpDisplay-ExtraBold.ttf");
+}
+
+.PulpDisplayExtraBold {
+    font-family: 'Pulp Display Extra Bold';
+}
+
+@font-face {
+    font-family: 'Pulp Display Extra Bold';
+    src: url("../fonts/Pulp_Display/PulpDisplay-ExtraBold.ttf");
+}
+
+.PulpDisplayExtraBold {
+    font-family: 'Pulp Display Medium';
+}
+
+@font-face {
+    font-family: 'Pulp Display Medium';
+    src: url("../fonts/Pulp_Display/PulpDisplay-Medium.ttf");
+}
+
+.PulpDisplayMedium {
+    font-family: 'Pulp Display Extra Bold';
 }
 
 /* ---- font-size ---- */

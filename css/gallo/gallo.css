@@ -214,6 +214,8 @@
     font-size: 2.7vw;
     line-height: 2vw;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #imageBackgroundGallo>#text1>#text2 {
@@ -301,7 +303,7 @@
 
 #galloCombinatedLeftContainer>#title1 {
     color: #E31F1D;
-    font-family: 'Karma Bold';
+    font-family: 'Karma SemiBold';
     font-weight: 600;
     font-size: 2vw;
     margin-bottom: -3%;
@@ -450,6 +452,7 @@
         height: 63%;
         top: 68vh;
         left: 10%;
+        text-align: center;
     }
 
     #galloWhiteLeft>#title1 {
@@ -461,10 +464,10 @@
     }
 
     #videoGalloMobile {
-        width: 45vw;
-        height: 91vw;
-        top: 76vh;
-        left: 27%;
+        width: 64vw;
+        height: 130vw;
+        top: 60%;
+        left: 21%;
         border-radius: 7vw;
     }
 
@@ -480,7 +483,7 @@
         position: absolute;
         width: 140%;
         height: 15vh;
-        top: 79%;
+        top: 76%;
         left: 50%;
         opacity: 30%;
     }
@@ -489,7 +492,7 @@
         position: absolute;
         width: 140%;
         height: 30vh;
-        top: 79%;
+        top: 74%;
         left: 50%;
         opacity: 30%;
     }
@@ -516,7 +519,7 @@
         position: static;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
@@ -549,8 +552,8 @@
     }
 
     #imageWebBanner {
-        width: 100%;
-        height: 60%;
+        width: 90%;
+        height: 44%;
         background-size: cover;
         transform: translateX(0%);
     }
@@ -588,8 +591,8 @@
     }
 
     #galloCombinatedLeftContainer {
-        width: 70%;
-        height: 70%;
+        width: 80%;
+        height: 80%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -604,28 +607,28 @@
     }
 
     #galloCombinatedLeftContainer>#title1 {
-        font-size: 4vw;
-        height: 20%;
+        font-size: 5vw;
+        height: 14%;
     }
 
     #galloCombinatedLeftContainer>#title2 {
-        font-size: 9.5vw;
-        line-height: 6vw;
+        font-size: 10vw;
+        line-height: 7vw;
         text-align: center;
         width: 80%;
         height: 20%;
     }
 
     #galloCombinatedLeftContainer>#description {
-        font-size: 3.7vw;
+        font-size: 4.7vw;
         margin-bottom: 0%;
         text-align: center;
     }
 
     #buttonVideo {
-        width: 60%;
+        width: 75%;
         height: 20%;
-        font-size: 4vw;
+        font-size: 7vw;
         opacity: 1;
         transform: unset;
         transition: unset;

@@ -44,7 +44,7 @@
 
 #elRowWhiteLeft>#title {
     color: #7E00C1;
-    font-family: 'Pulp Display Bold';
+    font-family: 'Pulp Display Extra Bold';
     font-weight: 400;
     font-size: 8vw;
 }
@@ -102,7 +102,7 @@
 #elRowCard>#text1 {
     width: 100%;
     color: #928E90;
-    font-family: 'Pulp Display Light';
+    font-family: 'Pulp Display Medium';
     font-weight: 750;
     font-size: 0.8vw;
     text-align: left;
@@ -111,7 +111,7 @@
 #elRowCard>#text2 {
     width: 100%;
     color: #545253;
-    font-family: 'Pulp Display Bold';
+    font-family: 'Pulp Display Extra Bold';
     font-weight: 750;
     font-size: 1.4vw;
     text-align: left;
@@ -120,7 +120,7 @@
 #elRowCard>#text3 {
     width: 100%;
     color: #928E90;
-    font-family: 'Pulp Display Light';
+    font-family: 'Pulp Display Medium';
     font-weight: 750;
     font-size: 0.8vw;
     text-align: left;
@@ -242,8 +242,8 @@
 
     #elRowWhiteLeft {
         width: 80%;
-        height: 100%;
-        justify-content: center;
+        height: 50%;
+        justify-content: space-evenly;
     }
 
     #elRowWhiteLeft>#title {
@@ -260,6 +260,7 @@
 
     #elRowWhiteRight {
         width: 80%;
+        height: 50%;
     }
 
     #elRowCard {
@@ -269,19 +270,19 @@
     }
 
     #elRowCard>#text1 {
-        font-size: 2vh;
+        font-size: 4vw;
     }
 
     #elRowCard>#text2 {
-        font-size: 4vh;
+        font-size: 6vw;
     }
 
     #elRowCard>#text3 {
-        font-size: 2vh;
+        font-size: 4vw;
     }
 
     #buttonVideo {
-        font-size: 3vh;
+        font-size: 5vw;
         border-radius: 3vw;
     }
 

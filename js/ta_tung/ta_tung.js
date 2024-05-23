@@ -84,8 +84,7 @@ function checkIfMobileGallo() {
 
     if (isMobileTaTung) {
         videoContainers.forEach(container => {
-            container.addEventListener('touchstart', handleClickVideoMobile, { passive: true });
-
+            container.removeEventListener('touchstart', handleClickVideoMobile, { passive: true });
             container.removeEventListener('mouseover', handleMouse);
             container.removeEventListener('mouseout', handleMouse);
             container.removeEventListener('click', handleClick);
