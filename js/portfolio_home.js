@@ -122,7 +122,7 @@ function redirectToSobreMi() {
 }
 
 //Scroll a la izquierda
-window.onload = function() {
+window.onload = function () {
   var scrollContainer = document.getElementById('containerMarks');
   scrollContainer.scrollLeft = 0;
 };
@@ -189,6 +189,10 @@ document.addEventListener('DOMContentLoaded', () => {
   loadContainers(); // Llamar a la función para cargar los contenedores hasta el halfwaypoint
 });
 
+/* OTHERS */
+document.getElementById('buttonOther').addEventListener('click', function () {
+  window.location.href = './html/others/others.html';
+});
 
 /* WHILE SLIDER */
 
@@ -246,8 +250,8 @@ addVisibleClass();
 //Descargar CV
 var buttons = document.querySelectorAll('#buttonCV');
 
-buttons.forEach(function(button) {
-  button.addEventListener('click', function() {
+buttons.forEach(function (button) {
+  button.addEventListener('click', function () {
     window.location.href = './pdf/bjuarezportfolio.pdf';
   });
 });

@@ -1,0 +1,128 @@
+/* ---- TITLE ---- */
+#generalTitle {
+    height: 20vh;
+}
+
+/* ---- WHITE ---- */
+#othersWhite {
+    width: 100%;
+    background-color: #071017;
+    position: relative;
+    overflow: hidden;
+}
+
+#othersTitle {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#othersTitle p {
+    color: #FFFFFF;
+    font-size: 1.5vw;
+    font-family: 'Futura Std Condensed Extra Bold';
+    margin-bottom: 2%;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column1>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.image1, .image2, .image3, .image4, .image5, .image6, .image7 {
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.image1>div, .image2>div, .image3>div, .image4>div, .image5>div, .image6>div, .image7>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+}
+
+.image1:hover>div, .image2:hover>div, .image3:hover>div, .image4:hover>div, .image5:hover>div, .image6:hover>div, .image7:hover>div {
+    opacity: 1;
+}
+
+.image1::before, .image2::before, .image3::before, .image4::before, .image5::before, .image6::before, .image7::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.image1:hover::before, .image2:hover::before, .image3:hover::before, .image4:hover::before, .image5:hover::before, .image6:hover::before, .image7:hover::before {
+    opacity: 1;
+}
+
+.image1 {
+    background-image: url("./../../../resources/others/Animacio 2D.png");
+}
+
+.image2 {
+    background-image: url("./../../../resources/others/Creación videojuegos.png");
+}
+
+.image3 {
+    background-image: url("./../../../resources/others/Dibujo digital.png");
+}
+
+.image4 {
+    background-image: url("./../../../resources/others/Mattepainting.png");
+}
+
+.image5 {
+    background-image: url("./../../../resources/others/Quesos Candel.png");
+}
+
+.image6 {
+    background-image: url("./../../../resources/others/Gatos Telebotella.png");
+}
+
+.image7 {
+    background-image: url("./../../../resources/others/Padua.png");
+}
+
+.column1 div p:first-child {
+    font-size: 2.5vw;
+    font-family: 'Futura Std Bold';
+}
+
+.column1 div p:last-child {
+    font-size: 2vw;
+    font-family: 'Futura Std Book Oblique';
+}
+
+
+/* --- MOBILE MODE --- */
+@media only screen and (max-device-width : 480px) {}

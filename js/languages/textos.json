@@ -84,7 +84,21 @@
         "tatungText": "Motion Graphics <span>·</span> Digital Content Design",
         "elprimoText": "Digital illustration <span>·</span> Motion Graphics",
         "elrowlimitedText": "2D Animation <span>·</span> Illustration",
-        "babiesugandaText": "Creative Campaign <span>·</span> Video Editing"
+        "babiesugandaText": "Creative Campaign <span>·</span> Video Editing",
+        "imagen1Title": "Animación 2D",
+        "imagen1Text": "Animaciones varias",
+        "imagen2Title": "Creación de videojuegos",
+        "imagen2Text": "Modelación 3D y diseño de espacios interactivos",
+        "imagen3Title": "Dibujo Digital",
+        "imagen3Text": "XXXXXX",
+        "imagen4Title": "Mattepainting",
+        "imagen4Text": "Collage digital",
+        "imagen5Title": "Quesos Candel",
+        "imagen5Text": "Diseño de etiqueta",
+        "imagen6Title": "Telebotella",
+        "imagen6Text": "Animaciones surreales de gatos",
+        "imagen7Title": "PÀDUA",
+        "imagen7Text": "Montaje de video"
     },
     "Eng": {
         "inicio": "HOME",
@@ -171,7 +185,21 @@
         "tatungText": "Motion Graphics <span>·</span> Digital Content Design",
         "elprimoText": "Digital illustration <span>·</span> Motion Graphics",
         "elrowlimitedText": "2D Animation <span>·</span> Illustration",
-        "babiesugandaText": "Creative Campaign <span>·</span> Video Editing"
+        "babiesugandaText": "Creative Campaign <span>·</span> Video Editing",
+        "imagen1Title": "Animación 2D",
+        "imagen1Text": "Animaciones varias",
+        "imagen2Title": "Creación de videojuegos",
+        "imagen2Text": "Modelación 3D y diseño de espacios interactivos",
+        "imagen3Title": "Dibujo Digital",
+        "imagen3Text": "XXXXXX",
+        "imagen4Title": "Mattepainting",
+        "imagen4Text": "Collage digital",
+        "imagen5Title": "Quesos Candel",
+        "imagen5Text": "Diseño de etiqueta",
+        "imagen6Title": "Telebotella",
+        "imagen6Text": "Animaciones surreales de gatos",
+        "imagen7Title": "PÀDUA",
+        "imagen7Text": "Montaje de video"
     },
     "Cat": {
         "inicio": "INICIO",
@@ -258,6 +286,20 @@
         "tatungText": "Motion Graphics <span>·</span> Digital Content Design",
         "elprimoText": "Digital illustration <span>·</span> Motion Graphics",
         "elrowlimitedText": "2D Animation <span>·</span> Illustration",
-        "babiesugandaText": "Creative Campaign <span>·</span> Video Editing"
+        "babiesugandaText": "Creative Campaign <span>·</span> Video Editing",
+        "imagen1Title": "Animación 2D",
+        "imagen1Text": "Animaciones varias",
+        "imagen2Title": "Creación de videojuegos",
+        "imagen2Text": "Modelación 3D y diseño de espacios interactivos",
+        "imagen3Title": "Dibujo Digital",
+        "imagen3Text": "XXXXXX",
+        "imagen4Title": "Mattepainting",
+        "imagen4Text": "Collage digital",
+        "imagen5Title": "Quesos Candel",
+        "imagen5Text": "Diseño de etiqueta",
+        "imagen6Title": "Telebotella",
+        "imagen6Text": "Animaciones surreales de gatos",
+        "imagen7Title": "PÀDUA",
+        "imagen7Text": "Montaje de video"
     }
 }

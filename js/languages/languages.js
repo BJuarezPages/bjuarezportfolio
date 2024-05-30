@@ -115,6 +115,23 @@ function cargarIdioma(idioma, html) {
 
                 document.querySelector('#conectar').innerText = data[idioma].conectar;
                 document.querySelector('#emailText').innerText = data[idioma].email;
+            } else if (html == "others") {
+                document.querySelector('#othersTitle p').innerText = data[idioma].otros;
+
+                const column1Divs = document.querySelectorAll('.column1 > div');
+
+                column1Divs.forEach((div, index) => {
+                    const pTags = div.querySelectorAll('p');
+
+                    if (pTags.length >= 2) {
+                        let titleKey = `imagen${index + 1}Title`;
+                        let textKey = `imagen${index + 1}Text`;
+
+                        pTags[0].innerText = data[idioma][titleKey];
+                        pTags[1].innerText = data[idioma][textKey];
+                    }
+                });
+
             } else {
                 document.querySelector('#agency').innerText = data[idioma].agency;
                 document.querySelector('#year').innerText = data[idioma].year;
